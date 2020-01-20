@@ -64,28 +64,29 @@
     <script src="/js/jquery.scrolly.min.js"></script>
     <script src="/js/skel.min.js"></script>
     <script src="/js/util.js"></script>
-    <script src="/js/main.js"></script><!-- hexo-inject:begin --><link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/themes/prism.min.css'><link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/plugins/line-numbers/prism-line-numbers.min.css'><!-- hexo-inject:end -->
+    <script src="/js/main.js"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
 	
 </head>
     
-		
-<!-- Layouts -->
-
-
-<link rel="stylesheet" href="/css/prism_okaidia.css">
-
-<link rel="stylesheet" href="/css/typo.css">
-
-<!-- 文章页 -->
-<body class="is-loading">
+		<body class="is-loading">
     <!-- hexo-inject:begin --><!-- hexo-inject:end --><!-- Wrapper 外包 s-->
-    <div id="wrapper" class="fade-in">
+    <div id="wrapper" class="fade-in overlay">
         <!-- Intro 头部显示 s -->
+                <div id="intro">
+            <h1>This is<br>
+                        TAKONOHEYA </h1>
+            <p> たこの部屋
+            </p>
+            <ul class="actions">
+                <li><a href="#header" class="button icon solo fa-arrow-down scrolly">Continue</a></li>
+            </ul>
+        </div>
         <!-- Intro 头部显示 e -->
         <!-- Header 头部logo start -->
         <header id="header">
     <a href="/" class="logo">TAKOOCTOPUS</a>
 </header>
+        <!-- Header 头部logo end -->
         <!-- Nav 导航条 start -->
         <nav id="nav" class="special">
             <ul class="menu links">
@@ -164,39 +165,55 @@
                     
 			</ul>
 </nav>
+        <!-- Nav 导航条 end -->
+        <!-- Main 主要部分 start -->
+        
+        <!-- 文章列表   s -->
+        <div id="main" style="background-color: transparent; padding:0;">
+        <section class="link_container" style="margin-top: 0; background-color: transparent; ">
+            <div class="link_row">
+                <!-- 文章sample  s-->
 
-        <div id="main">
-            <div class="post_page_title_img" style="height: 25rem;background-image: url(/assets/img/posts/Linux/VASP.jpg);background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;overflow:hidden;">
-                <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2>VASP在linux下的安装和使用</h2></a>
-            </div>
-            <!-- Post -->
-            <div class="typo" style="padding: 3rem;">
-                <h1 id="vasp-软件介绍"><a class="markdownIt-Anchor" href="#vasp-软件介绍"></a> VASP 软件介绍</h1>
-<h1 id="vasp-的安装"><a class="markdownIt-Anchor" href="#vasp-的安装"></a> VASP 的安装</h1>
-<h1 id="vasp-基本脚本"><a class="markdownIt-Anchor" href="#vasp-基本脚本"></a> VASP 基本脚本</h1>
-
-<!-- Has Prism -->
-<pre class="line-numbers tako-codeblock" style="max-height:30em" data-start="-5"><code class="language-shell">[ms.pbs]
-
-#!&#x2F;bin&#x2F;bash
-#PBS -N tjusff_MS
-#PBS -l nodes=117:ppn=4
-#PBS -q wxy46wxy_queue
-#PBS -j oe
-
-$SEED_FILE = 3D Atomistic (1 1 0).param
-LOG_FILE=run.log
-
-cd &#x2F;public&#x2F;home&#x2F;[username]&#x2F;data&#x2F;Atom
-RunCASTEP.sh -q normal -np 12 $SEED_FILE
-</code></pre>
-
-            </div>
-
-            <!-- Post Comments -->
+                
+                <div class="6u 12u(narrower)">
+                    <section class="link_box special">
+                       <a href="/2020-01-17-regular-expression/">
+                        <div class="page_title" style="background-image: url(/assets/img/posts/CS/regular-expression.jpg);background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;">
+                            <!--标题-->
+                            <h2 class="page_title_text"> 正则表达 </h2>
+                            <!--段落-->
+                        </div>
+                        </a>
+                        <div class="home-post-info">
+                            <!-- Author Avatar -->
+                            <div class="home-post-info-author-avatar">
+                                <h6><span class="home-post-info-data">2020-01-17</span></h6>
+                                <div class="home-post-info-Category">
+                                    <!-- Category -->
+                                    <span>
+                            <h6>
+                            <a class="post_category-link" href="http://localhost:4000/categories/Algorithm/">
+                                <a class="post_category-link" href="/categories/CS/">CS</a></a>
+                            </h6>
+                        </span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <!-- 文章sample  e-->
             
-
+            </div>
+        </section>
         </div>
+        <!-- 文章列表   end -->
+        <!-- Main 主要部分 end -->
+        <!-- footer  页码 start-->
+        <footer style="text-align: center; padding-top: 2em;">
+  
+</footer>
+
+        <!-- footer  页码 end-->
         <!-- Copyright 版权 start -->
                 <div id="copyright">
             <ul>
@@ -204,8 +221,10 @@ RunCASTEP.sh -q normal -np 12 $SEED_FILE
                 <li>Design: <a href="http://miccall.tech " style="border-bottom: none;">miccall</a></li>
             </ul>
         </div>
+        <!-- Copyright 版权 end -->
     </div>
-    <script src="/js/prism.js"></script><!-- hexo-inject:begin --><!-- Begin: Injected MathJax -->
+    <!-- Wrapper 外包 e-->
+    <!-- Scripts --><!-- hexo-inject:begin --><!-- Begin: Injected MathJax -->
 <script type="text/x-mathjax-config">
   MathJax.Hub.Config("");
 </script>
@@ -222,10 +241,8 @@ RunCASTEP.sh -q normal -np 12 $SEED_FILE
 <script type="text/javascript" src>
 </script>
 <!-- End: Injected MathJax -->
-<script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/prism.min.js'></script><script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/plugins/line-numbers/prism-line-numbers.min.js'></script><script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/plugins/normalize-whitespace/prism-normalize-whitespace.min.js'></script><!-- hexo-inject:end -->
+<!-- hexo-inject:end -->
 </body>
-
-
 
  	
 </html>
