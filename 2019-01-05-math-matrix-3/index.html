@@ -1,0 +1,420 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<!-- hexo-inject:begin --><!-- hexo-inject:end --><link rel="bookmark"  type="image/x-icon"  href="/img/logo_tako.jpg"/>
+	<link rel="shortcut icon" href="/img/logo_tako.jpg">
+	
+			    <title>
+    TAKONOHEYA
+    </title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="/css/mic_main.css" />
+    <link rel="stylesheet" href="/css/dropdownMenu.css" />
+    <meta name="keywords" content="takooctopus takonoheya" />
+    <noscript>
+        <link rel="stylesheet" href="/css/noscript.css" />
+    </noscript>
+    <style type="text/css">
+        body:before {
+          content: ' ';
+          position: fixed;
+          top: 0;
+          background: url('/img/bg.jpg') center 0 no-repeat;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          background-size: cover; 
+        }
+    </style>
+
+			    
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+          processEscapes: true
+        },
+        TeX: {
+          equationNumbers: {
+            autoNumber: "AMS"
+          }
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    
+    <script async type="text/javascript" src="https://cdn.bootcss.com/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+  
+
+ 
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/jquery.scrollex.min.js"></script>
+    <script src="/js/jquery.scrolly.min.js"></script>
+    <script src="/js/skel.min.js"></script>
+    <script src="/js/util.js"></script>
+    <script src="/js/main.js"></script>
+	
+<meta name="generator" content="Hexo 5.4.0"><!-- hexo-inject:begin --><!-- hexo-inject:end --></head>
+    
+		
+<!-- Layouts -->
+
+
+<link rel="stylesheet" href="/css/prism_okaidia.css" />
+
+<link rel="stylesheet" href="/css/typo.css" />
+
+<!-- 文章页 -->
+<body class="is-loading">
+    <!-- hexo-inject:begin --><!-- hexo-inject:end --><!-- Wrapper 外包 s-->
+    <div id="wrapper" class="fade-in">
+        <!-- Intro 头部显示 s -->
+        <!-- Intro 头部显示 e -->
+        <!-- Header 头部logo start -->
+        <header id="header">
+    <a href="/" class="logo">TAKOOCTOPUS</a>
+</header>
+        <!-- Nav 导航条 start -->
+        <nav id="nav" class="special" >
+            <ul class="menu links" >
+			<!-- Homepage  主页  --> 
+			<li >
+	            <a href="/" rel="nofollow">主页</a>
+	        </li>
+			<!-- categories_name  分类   --> 
+	        
+	        <!-- archives  归档   --> 
+	        
+	        
+		        <!-- Pages 自定义   -->
+		        
+		        <li>
+		            <a href="/about/" title="简介">
+		                简介
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/group/" title="团队">
+		                团队
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/series/" title="系列">
+		                系列
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/gallery/" title="图库">
+		                图库
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/tag/" title="标签">
+		                标签
+		            </a>
+		        </li>
+		        
+
+
+            </ul>
+            <!-- icons 图标   -->
+			<ul class="icons">
+                    
+                    <li>
+                        <a title="github" href="https://github.com/takooctopus" target="_blank" rel="noopener">
+                            <i class="icon fa fa-github"></i>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a title="tv" href="https://space.bilibili.com/499056" target="_blank" rel="noopener">
+                            <i class="icon fa fa-tv"></i>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a title="home" href="https://takooctopus.github.io" target="_blank" rel="noopener">
+                            <i class="icon fa fa-home"></i>
+                        </a>
+                    </li>
+                    
+			</ul>
+</nav>
+
+        <div id="main" >
+            <div class ="post_page_title_img" style="height: 25rem;background-image: url(/assets/img/posts/Math/matrix.jpg);background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;overflow:hidden;" >
+                <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2 >矩阵分析与应用（三）：随机向量</h2></a>
+            </div>
+            <!-- Post -->
+            <div class="typo" style="padding: 3rem;">
+                <h1 id="随机向量"><a class="markdownIt-Anchor" href="#随机向量"></a> 随机向量</h1>
+<p>这节我们讨论概率：</p>
+<p>概率论基本概念：</p>
+<ul>
+<li>基本事件： $ \omega $</li>
+<li>事件：$ A (\in \mathcal{F}) $</li>
+<li>事件的全体： $ \mathcal{F} $</li>
+<li>事件的概率: $ P(A) $</li>
+</ul>
+<h2 id="l2-理论"><a class="markdownIt-Anchor" href="#l2-理论"></a> $ L^2 $ 理论</h2>
+<p>对于概率空间：$ (\Omega, \mathcal{F}, P) $ ，我们以 $ L_p = L_p(\Omega,\mathcal{F},P) $ 表示随机变量 $ \xi = \xi (\omega) $ 的空间</p>
+<p><code>Banach空间</code>：</p>
+<p>我们定义满足如下的式子的 $ L_P (P&gt;1) $ 为Banach空间：</p>
+<p>$$ E \lbrace \lvert \xi \rvert ^P \rbrace  = \int_{\Omega} \lvert \xi \rvert ^P dp \qquad < \infty $$</p>
+<p>$ L_2 $ <code>空间</code>：</p>
+<p>在Banach空间中，起重要作用的是空间 $ L_2 =  L_2(\Omega,\mathcal{F},P) $</p>
+<p>这种空间有限二阶矩 $ E \lbrace \xi ^2 \rbrace &lt; \infty $</p>
+<p>我们称其为 $ L_2 $ 空间</p>
+<p>$ L^2 $ <code>理论</code>：</p>
+<p>只讨论向量空间中一阶和二阶的统计性质的理论</p>
+<hr />
+<h2 id="概率密度函数"><a class="markdownIt-Anchor" href="#概率密度函数"></a> 概率密度函数</h2>
+<p>一个含有 m 个随机变量的实值向量：</p>
+<p>$$ x(\xi) = [x_1(\xi), x_2(\xi), \cdots, x_m(\xi)] $$</p>
+<ul>
+<li><code>联合累积分布函数</code>：  <p>$$ F(x) = F_x(x_1,x_2,\cdots,x_m) $$</p>
+</li>
+<li><code>联合概率密度函数</code>：  <p>
+  $$ 
+  \begin{split}
+  f(x)    &= f_x(x_1,x_2,\cdots,x_m) \\
+          &= \frac{\partial ^m}{\partial x_1 \partial x_2 \cdots \partial x_m}F_x(x_1, x_2, \cdots , x_m)
+  \end{split}
+  $$
+  </p>
+</li>
+<li><code>边缘概率密度函数</code>  <p>
+  $$ 
+  f(x_i) \overset{def}{=} \int_{-\infty}^{\infty} \cdots \int_{-\infty}^{\infty} f_x(x_1,x_2, \cdots ,x_m)dx_1 \cdots dx_{i-1}dx_{x+1} \cdots dx_m
+  $$
+  </p>
+</li>
+</ul>
+<h3 id="联合独立"><a class="markdownIt-Anchor" href="#联合独立"></a> 联合独立</h3>
+<p><code>联合独立</code>：</p>
+<p>对随机变量 $ x_1(\xi), x_2(\xi), \cdots , x_m(\xi)$ 如果存在对这m个事件 $ \lbrace x_1(\xi) \leq x_1\rbrace , \lbrace x_2(\xi) \leq x_2\rbrace , \cdots , \lbrace x_m(\xi) \leq x_m\rbrace $ 有:</p>
+<p>$$ P \lbrace x_1(\xi) \leq x_1 , \cdots , x_m(\xi) \leq x_m \rbrace = P \lbrace x_1(\xi) \leq x_1 \rbrace \cdots P \lbrace x_m(\xi) \leq x_m \rbrace$$</p>
+<p>即我们知道联合概率分布函数(联合概率密度函数)为各个边缘概率分布函数(边缘概率密度函数)之积，即称为联合独立</p>
+<hr />
+<h2 id="复随机向量的概率密度函数"><a class="markdownIt-Anchor" href="#复随机向量的概率密度函数"></a> 复随机向量的概率密度函数</h2>
+<p>与上面实随机向量相似，但在这里面需要加上复数域：</p>
+<ul>
+<li><code>复随机向量</code>：  <p>$$ x(\xi) = x_R(\xi) + jx_I(\xi) $$</p>
+</li>
+<li><code>联合累积分布函数</code>：  <p>$$ F(x) \overset{def}{=} P \lbrace x(\xi) \leq x \rbrace \overset{def}{=} P \lbrace x_R(\xi) \leq x_R , x_I(\xi) \leq x_I \rbrace $$</p>
+</li>
+<li><code>联合概率密度函数</code>：  <p>
+  $$ 
+  f(x) = \frac{\partial ^2m}{\partial x_{R1} \partial x_{I1} \partial x_{R2} \partial x_{I2} \cdots \partial x_{Rm} \partial x_{Im} }F_x(x_1, x_2, \cdots , x_m)
+  $$
+  </p>
+</li>
+</ul>
+<p><label class="label-warning"> 特别的： <label></p>
+<p>$$ \int_{-\infty}^{\infty} f(x)dx = 1 $$</p>
+<hr />
+<h2 id="随机向量的统计描述"><a class="markdownIt-Anchor" href="#随机向量的统计描述"></a> 随机向量的统计描述</h2>
+<h3 id="均值向量"><a class="markdownIt-Anchor" href="#均值向量"></a> 均值向量</h3>
+<p><code>均值向量</code>：</p>
+<p>随机向量的数学期望就是均值向量：</p>
+<p>
+$$
+\mu _x = E \lbrace x(\xi) \rbrace = 
+    \begin{bmatrix}
+        E \lbrace x_1(\xi) \rbrace \\
+        E \lbrace x_2(\xi) \rbrace \\
+        \cdots \\
+        E \lbrace x_m(\xi) \rbrace \\
+    \end{bmatrix}
+    =
+    \begin{bmatrix}
+        \mu _1 \\
+        \mu _2 \\
+        \cdots \\
+        \mu _m \\
+    \end{bmatrix}
+$$
+</p>
+<p>其中数学期望定义为：</p>
+<p>$$ E \lbrace x(\xi) \rbrace \overset{def}{=} \int_{-\infty}^{\infty} xf(x)dx $$</p>
+<p>我们很容易就能发现，均值向量的实质是随机向量的<code>一阶矩</code></p>
+<h3 id="相关矩阵和协方差矩阵"><a class="markdownIt-Anchor" href="#相关矩阵和协方差矩阵"></a> 相关矩阵和协方差矩阵</h3>
+<p>随机向量的<code>二阶矩</code>是矩阵，其描述随机向量分布的散布情况：</p>
+<h4 id="自相关矩阵"><a class="markdownIt-Anchor" href="#自相关矩阵"></a> 自相关矩阵</h4>
+<p><code>自相关矩阵</code>：</p>
+<p>
+$$
+    R_x \overset{def}{=}    E \lbrace x(\xi)x^H(\xi) \rbrace = 
+        \begin{bmatrix}
+            r_{11}&r_{12}&\cdots&r_{1m}\\
+            r_{21}&r_{22}&\cdots&r_{2m}\\
+            \vdots&\vdots&&\vdots\\
+            r_{m1}&r_{m2}&\cdots&r_{mmhu}\\
+        \end{bmatrix}
+$$
+</p>
+<p>明显的，自相关矩阵是<code>共轭对称</code>的</p>
+<p><code>自相关函数</code>：</p>
+<p>在上面矩阵中的主对角线元素就是自相关函数</p>
+<p>$$ r_{ii} \overset{def}{=}   E \lbrace \lvert x_i(\xi)^2 \rvert \rbrace  ,   i = 1,2,\cdots ,m $$</p>
+<p><code>互相关函数</code>：</p>
+<p>在上面矩阵中非主对角线的其他元素</p>
+<p>$$ r_{ij} \overset{def}{=}   E \lbrace x_i(\xi) x_j^{\ast}(\xi) \rbrace  ,   i,j = 1,2,\cdots ,m \qquad i \neq j $$</p>
+<h4 id="协方差矩阵"><a class="markdownIt-Anchor" href="#协方差矩阵"></a> 协方差矩阵</h4>
+<p><code>自协方差矩阵</code>：</p>
+<p>我们就可以得到我们随机向量 $ x(\xi) $ 的自协方差矩阵：</p>
+<p>
+$$
+    C_x \overset{def}{=}    E \lbrace [x(\xi)-\mu_x][x(\xi)-\mu_x]^H \rbrace = 
+        \begin{bmatrix}
+            c_{11}&c_{12}&\cdots&c_{1m}\\
+            c_{21}&c_{22}&\cdots&c_{2m}\\
+            \vdots&\vdots&&\vdots\\
+            c_{m1}&c_{m2}&\cdots&c_{mm}\\
+        \end{bmatrix}
+$$
+</p>
+<p><code>方差</code>：</p>
+<p>协方差矩阵主对角线上元素称为方差 $ \delta^2_i = c_{ii} $</p>
+<p><code>协方差</code>：</p>
+<p>协方差矩阵非主对角线上元素表示随机变量 $ x_i(\xi) $ 和 $ x_j(\xi) $ 之间的协方差</p>
+<p>$$ c_{ij} \overset{def}{=}   E \lbrace [x_i(\xi) -\mu_i] [x_j(\xi) - \mu_j]^{\ast} \rbrace  =  E \lbrace x_i(\xi) x_j^{\ast}(\xi) \rbrace - \mu_i \mu_j ^{\ast} = c_{ji}^{\ast} $$</p>
+<p><label class = "label-theorem"> 两矩阵关系 </label></p>
+<p>$$ C_x = R_x -\mu_x \mu_x^H $$</p>
+<h3 id="互相关矩阵和互协方差矩阵"><a class="markdownIt-Anchor" href="#互相关矩阵和互协方差矩阵"></a> 互相关矩阵和互协方差矩阵</h3>
+<p><code>互相关矩阵</code>：</p>
+<p>同理，我们也能得到两个随机向量 $ x(\xi) $ 和 $ y(\xi) $ 的互相关矩阵：</p>
+<p>
+$$
+    R_{xy} \overset{def}{=}    E \lbrace x(\xi)y^H(\xi) \rbrace = 
+        \begin{bmatrix}
+            r_{x_1,y_1}&r_{x_1,y_2}&\cdots&r_{x_1,y_m}\\
+            r_{x_2,y_1}&r_{x_2,y_2}&\cdots&r_{x_2,y_m}\\
+            \vdots&\vdots&&\vdots\\
+            r_{x_m,y_1}&r_{x_m,y_2}&\cdots&r_{x_m,y_m}\\
+        \end{bmatrix}
+$$
+</p>
+<p><code>互协方差矩阵</code>：</p>
+<p>
+$$
+    C_xy \overset{def}{=}    E \lbrace [x(\xi)-\mu_x][y(\xi)-\mu_y]^H \rbrace = R_{xy} - \mu_x \mu_y^H =
+        \begin{bmatrix}
+            c_{x_1,y_1}&c_{x_1,y_2}&\cdots&c_{x_1,y_m}\\
+            c_{x_2,y_1}&c_{x_2,y_2}&\cdots&c_{x_2,y_m}\\
+            \vdots&\vdots&&\vdots\\
+            c_{x_m,y_1}&c_{x_m,y_2}&\cdots&c_{x_m,y_m}\\
+        \end{bmatrix}
+$$
+</p>
+<h3 id="两个随机向量的统计不相关和正交"><a class="markdownIt-Anchor" href="#两个随机向量的统计不相关和正交"></a> 两个随机向量的统计不相关和正交</h3>
+<p>我们知道随机信号减去其自己的均值之后，只剩下了随机变化的部分，即互协方差表示了 $ x_i(\xi) $ 和 $ x_j(\xi) $ 之间<code>随机变化部分</code>的相乘</p>
+<p>即这个可以提取出两个信号随机变化之间的共性，并且抑制非共性部分</p>
+<p>即互协方差表现了 $ x_i(\xi) $ 和 $ x_j(\xi) $ 之间的<code>相关联程度</code></p>
+<p><label class = "label-warning"> 互协方差越大，则相关程度越强 </label></p>
+<p><code>相关系数</code>：</p>
+<p>两个随机变量 $ x(\xi) $ 和 $ y(\xi) $ 之间的相关系数定义：</p>
+<p>$$ \rho_{xy} \overset{def}{=} \frac{c_{xy}}{\sqrt{ E \lbrace \lvert x(\xi)^2 \rvert \rbrace  E \lbrace \lvert y(\xi)^2 \rvert \rbrace}} = \frac{c_{xy}}{\delta_x \delta_y } $$</p>
+<p>明显的，由Cauchy-Schwartz不等式知道：</p>
+<p>$$ 0 \leq \lvert \rho_{xy} \rvert \leq 1 $$</p>
+<p><label class = "label-warning"> $ \rho_{xy} $ 越大，则相关程度越强 </label></p>
+<p><code>统计不相关</code>：</p>
+<p>两个随机向量 $ x(\xi) $ 和 $ y(\xi) $ 统计不相关，即它们的互协方差矩阵为零矩阵 $ C_{xy} = O $，即有：</p>
+<p>$$ r_{xy} = E \lbrace x(\xi)y^{\ast}(\xi) \rbrace = 0 $$</p>
+<p><code>正交</code>：</p>
+<p>两个随机向量 $ x(\xi) $ 和 $ y(\xi) $ 互相关矩阵为零矩阵，即  $ R_{xy} = O $ ，则称其为正交</p>
+<h3 id="随机向量的线性变换"><a class="markdownIt-Anchor" href="#随机向量的线性变换"></a> 随机向量的线性变换</h3>
+<p>在这里我们对复正态分布的随机向量的线性变换的一些性质做点分析：</p>
+<p>对于复常数矩阵A，和复正态分布随机向量 $ x(\xi) \sim CN(\mu_x , \Gamma_x) $ 有线性变换：</p>
+<p>$$ y(\xi) = Ax(\xi) $$</p>
+<p>明显的，y仍然为正态随机向量</p>
+<p><code>均值</code>：</p>
+<p>$$ \mu_y = E \lbrace y(\xi) \rbrace = E \lbrace Ax(\xi) \rbrace = AE \lbrace x(\xi) \rbrace = A \mu_x $$</p>
+<p><code>自相关矩阵</code>：</p>
+<p>$$ R_y = E \lbrace y(\xi)y(\xi)^H \rbrace = E \lbrace Ax(\xi)x(\xi)^HA^H \rbrace = AE \lbrace x(\xi)x(\xi)^H \rbrace A^H = AR_xA^H $$</p>
+<p><code>自协方差矩阵</code>：</p>
+<p>同理，我们能得到：</p>
+<p>$$ C_y = AC_xA^H $$</p>
+<p><code>互相关矩阵</code>：</p>
+<p>$$ R_{xy} = R_{x}A^H $$</p>
+<p><label class = "label-warning"> 顺序改变后有些许变化：</label></p>
+<p>$$ R_{yx} = R_{xy}^H = AR_{x} $$</p>
+<p><code>互协方差矩阵</code>：</p>
+<p>$$ C_{xy} = C_{x}A^H $$</p>
+<p>$$ C_{yx} = C_{xy}^H = AC_{x} $$</p>
+<hr />
+<h2 id="正态随机向量"><a class="markdownIt-Anchor" href="#正态随机向量"></a> 正态随机向量</h2>
+<h3 id="实正态随机向量"><a class="markdownIt-Anchor" href="#实正态随机向量"></a> 实正态随机向量</h3>
+<p><code>实正态随机向量</code>：</p>
+<p>我们定义一个均值向量为 $ \mu_x $ 协方差矩阵为 $ \Gamma_x $ 的 实正态随机向量记作 $ x \sim N(\mu_x , \Gamma_x) $</p>
+<p>此时其概率密度函数：</p>
+<p>$$ f(x) = \frac{1}{(2\pi)^{m/2} { \lvert \Gamma_x \rvert }^{1/2} }  exp[-\frac{1}{2}(x-\mu_x)^T \Gamma_x^{-1} (x-\mu_x) ] $$</p>
+<p><code>正定二次型</code>：</p>
+<p>$$ (x-\mu_x)^T \Gamma_x^{-1} (x-\mu_x) = \sum_{i=1}^{m} \sum_{j=1}^{m} \Gamma_x^{-1} (i,j) (x_i-\mu_i) (x_j-\mu_j) $$</p>
+<p><code>特征函数</code>：</p>
+<p>$$ \Phi_x(\omega) = exp(j\omega^T\mu_x - \frac{1}{2} \omega^T \Gamma_x \omega) $$</p>
+<h3 id="复正态随机向量"><a class="markdownIt-Anchor" href="#复正态随机向量"></a> 复正态随机向量</h3>
+<p><code>复正态分布随机向量</code>：</p>
+<p>我们记作 $ x \sim CN(\mu_x , \Gamma_x) $</p>
+<p><code>概率密度函数</code>：</p>
+<p>假设其各个变量统计独立，有</p>
+<p>$$ f(x) = \frac{1}{\pi^m \lvert \Gamma_x \rvert}    exp[-(x-\mu_x)^T \Gamma_x^{-1} (x-\mu_x) ] $$</p>
+<p><code>特征函数</code>：</p>
+<p>$$ \Phi_x(\omega) = exp[jRe(\omega^T\mu_x) - \frac{1}{4} \omega^T \Gamma_x \omega] $$</p>
+<p><label class = "label-warning"> 对于x的线性相关 $ y(\xi) = Ax(\xi) $ </label></p>
+<p>其实概率密度函数和复概率密度函数均和上面的<code>相同</code></p>
+
+            </div>
+
+            <!-- Post Comments -->
+            
+
+        </div>
+        <!-- Copyright 版权 start -->
+                <div id="copyright">
+            <ul>
+                <li>&copy;Powered By <a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/" style="border-bottom: none;">hexo</a></li>
+                <li>Design: <a target="_blank" rel="noopener" href="http://miccall.tech " style="border-bottom: none;">miccall</a></li>
+            </ul>
+        </div>
+    </div>
+    <script src="/js/prism.js"></script><!-- hexo-inject:begin --><!-- Begin: Injected MathJax -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({{ JSON.stringify(config) }});
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+      all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+</script>
+
+<script type="text/javascript" src="{{ src }}">
+</script>
+<!-- End: Injected MathJax -->
+<!-- hexo-inject:end -->
+</body>
+
+
+
+ 	
+</html>

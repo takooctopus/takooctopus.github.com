@@ -1,0 +1,357 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<!-- hexo-inject:begin --><!-- hexo-inject:end --><link rel="bookmark"  type="image/x-icon"  href="/img/logo_tako.jpg"/>
+	<link rel="shortcut icon" href="/img/logo_tako.jpg">
+	
+			    <title>
+    TAKONOHEYA
+    </title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="/css/mic_main.css" />
+    <link rel="stylesheet" href="/css/dropdownMenu.css" />
+    <meta name="keywords" content="takooctopus takonoheya" />
+    <noscript>
+        <link rel="stylesheet" href="/css/noscript.css" />
+    </noscript>
+    <style type="text/css">
+        body:before {
+          content: ' ';
+          position: fixed;
+          top: 0;
+          background: url('/img/bg.jpg') center 0 no-repeat;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          background-size: cover; 
+        }
+    </style>
+
+			    
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+          processEscapes: true
+        },
+        TeX: {
+          equationNumbers: {
+            autoNumber: "AMS"
+          }
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    
+    <script async type="text/javascript" src="https://cdn.bootcss.com/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+  
+
+ 
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/jquery.scrollex.min.js"></script>
+    <script src="/js/jquery.scrolly.min.js"></script>
+    <script src="/js/skel.min.js"></script>
+    <script src="/js/util.js"></script>
+    <script src="/js/main.js"></script>
+	
+<meta name="generator" content="Hexo 5.4.0"><!-- hexo-inject:begin --><!-- hexo-inject:end --></head>
+    
+		
+<!-- Layouts -->
+
+
+<link rel="stylesheet" href="/css/prism_okaidia.css" />
+
+<link rel="stylesheet" href="/css/typo.css" />
+
+<!-- 文章页 -->
+<body class="is-loading">
+    <!-- hexo-inject:begin --><!-- hexo-inject:end --><!-- Wrapper 外包 s-->
+    <div id="wrapper" class="fade-in">
+        <!-- Intro 头部显示 s -->
+        <!-- Intro 头部显示 e -->
+        <!-- Header 头部logo start -->
+        <header id="header">
+    <a href="/" class="logo">TAKOOCTOPUS</a>
+</header>
+        <!-- Nav 导航条 start -->
+        <nav id="nav" class="special" >
+            <ul class="menu links" >
+			<!-- Homepage  主页  --> 
+			<li >
+	            <a href="/" rel="nofollow">主页</a>
+	        </li>
+			<!-- categories_name  分类   --> 
+	        
+	        <!-- archives  归档   --> 
+	        
+	        
+		        <!-- Pages 自定义   -->
+		        
+		        <li>
+		            <a href="/about/" title="简介">
+		                简介
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/group/" title="团队">
+		                团队
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/series/" title="系列">
+		                系列
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/gallery/" title="图库">
+		                图库
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/tag/" title="标签">
+		                标签
+		            </a>
+		        </li>
+		        
+
+
+            </ul>
+            <!-- icons 图标   -->
+			<ul class="icons">
+                    
+                    <li>
+                        <a title="github" href="https://github.com/takooctopus" target="_blank" rel="noopener">
+                            <i class="icon fa fa-github"></i>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a title="tv" href="https://space.bilibili.com/499056" target="_blank" rel="noopener">
+                            <i class="icon fa fa-tv"></i>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a title="home" href="https://takooctopus.github.io" target="_blank" rel="noopener">
+                            <i class="icon fa fa-home"></i>
+                        </a>
+                    </li>
+                    
+			</ul>
+</nav>
+
+        <div id="main" >
+            <div class ="post_page_title_img" style="height: 25rem;background-image: url(/assets/img/posts/Math/matrix.jpg);background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;overflow:hidden;" >
+                <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2 >矩阵分析与应用（四）：内积和范数</h2></a>
+            </div>
+            <!-- Post -->
+            <div class="typo" style="padding: 3rem;">
+                <h1 id="内积和范数"><a class="markdownIt-Anchor" href="#内积和范数"></a> 内积和范数</h1>
+<h2 id="向量的内积和范数"><a class="markdownIt-Anchor" href="#向量的内积和范数"></a> 向量的内积和范数</h2>
+<p>我们令 $ V $ 是复向量空间</p>
+<p><code>内积公理</code>：</p>
+<p>函数 $ V \times V \mapsto C $ 称为内积</p>
+<ul>
+<li>$ \langle x , x \rangle \geq 0 $ (非负性)</li>
+<li>$ \langle x , x \rangle = 0 $ 仅当 $ x = 0 $ (正性)</li>
+<li>$ \langle x + y , z \rangle = \langle x , z \rangle + \langle y , z \rangle $ (可加性)</li>
+<li>$ \langle cx , y \rangle = c^{\ast} \langle x , y \rangle $ (齐次性)</li>
+<li>$ \langle x , y \rangle = \langle y , x \rangle ^{\ast} $ (Hermitian性)</li>
+</ul>
+<p><code>范数公理</code>：</p>
+<p>同理的，范数 $ \lVert X \rVert : V \mapsto R $ 称为向量x的范数</p>
+<ul>
+<li>$ \lVert x \rVert \geq 0 $ (非负性)</li>
+<li>$ \lVert x \rVert = 0 $ 仅当 $ x = 0 $ (正性)</li>
+<li>$ \lVert cx \rVert = \lvert c \rvert \lVert x \rVert $ (齐次性)</li>
+<li>$ \lVert x + y \rVert \leq \lVert X \rVert + \lVert y \rVert $ (三角不等式)</li>
+</ul>
+<h3 id="常数向量的内积和范数"><a class="markdownIt-Anchor" href="#常数向量的内积和范数"></a> 常数向量的内积和范数</h3>
+<p><code>内积的定义</code>：</p>
+<p>$$ \langle x,y \rangle = x^Hy = \sum^{m}_{i=1}x_i^{\ast}y_i $$</p>
+<p>我们就很容易用上面的来定义两个向量之间的<code>夹角</code>:</p>
+<p>$$ cos \theta \overset{def}{=} \frac{\langle x,y \rangle}{\langle x,x \rangle \langle y,y \rangle}  = \frac{x^Hy}{\lVert x \rVert \lVert y \rVert } $$</p>
+<ul>
+<li>$ l_1 $ 范数  <p> $$ \lVert x \rVert _1 \overset{def}{=} \lvert \sum^{m}_{i=1} x_i \rvert = \lvert x_1 \rvert + \lvert x_2 \rvert + \cdots + \lvert x_m \rvert $$ </p>
+</li>
+<li>$ l_2 $ 范数  <p> $$ \lVert x \rVert _2 \overset{def}{=} ( \lvert x_1 \rvert ^2 + \lvert x_2 \rvert ^2 + \cdots + \lvert x_m \rvert ^2 )^{1/2} $$ </p>
+</li>
+<li>$ l_{\infty} $ (无穷)范数  <p>$$ \lVert x \rVert _{\infty} \overset{def}{=} max( \lvert x_1 \rvert , \lvert x_2 \rvert , \cdots , \lvert x_m \rvert ) $$</p>
+</li>
+<li>$ l_p (H\ddot{o}lder) $ 范数  <p>$$ \lVert x \rVert _{p} \overset{def}{=} (\sum^{m}_{i=1} \lvert x_i \rvert ^p) ^{1/p} \qquad p \geq 1 $$</p>
+</li>
+</ul>
+<p>明显的，无穷范数是 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>H</mi><mover accent="true"><mrow><mi>o</mi></mrow><mo>¨</mo></mover><mi>l</mi><mi>d</mi><mi>e</mi><mi>r</mi></mrow><annotation encoding="application/x-tex">H\ddot{o}lder</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.69444em;"></span><span class="strut bottom" style="height:0.69444em;vertical-align:0em;"></span><span class="base"><span class="mord mathit" style="margin-right:0.08125em;">H</span><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.66786em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathit">o</span></span></span><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.19444em;">¨</span></span></span></span></span></span><span class="mord mathit" style="margin-right:0.01968em;">l</span><span class="mord mathit">d</span><span class="mord mathit">e</span><span class="mord mathit" style="margin-right:0.02778em;">r</span></span></span></span>范数的极限形式</p>
+<h3 id="酉不变"><a class="markdownIt-Anchor" href="#酉不变"></a> 酉不变</h3>
+<p><code>酉不变</code>：</p>
+<p>范数 $ \lVert x \rVert $ 是如满足：$ \forall x \in C^m , U \in C^{m \times m} $ 有 $ \lVert Ux \rVert = \lVert x \rVert $  则称其为酉不变。此时 $ U $ 称为<code>酉矩阵</code></p>
+<h3 id="函数向量的内积和范数"><a class="markdownIt-Anchor" href="#函数向量的内积和范数"></a> 函数向量的内积和范数</h3>
+<p>与常数向量相似，函数向量的内积我们可以定义为一个累次积分：</p>
+<p><code>内积</code>：</p>
+<p>$$ \langle x(t),y(t) \rangle \overset{def}{=} \int^{b}_{a} x^H(t)y(t) dt $$</p>
+<p><code>夹角</code>;</p>
+<p>$$ cos \theta \overset{def}{=} \frac{\int^{b}_{a} x^H(t)y(t) dt}{\lVert x(t) \rVert \lVert y(t) \rVert } $$</p>
+<p><code>范数</code>:</p>
+<p>$$ \lVert x(t) \rVert = ( \int^{b}_{a} x^H(t)x(t) dt )^{1/2} $$</p>
+<h3 id="随机向量的内积和范数"><a class="markdownIt-Anchor" href="#随机向量的内积和范数"></a> 随机向量的内积和范数</h3>
+<p>与上面相似，但这次 $ x(\xi) , y(\xi) $ 是样本变量 $ \xi $ 的随机向量</p>
+<p><code>内积</code>：</p>
+<p>$$ \langle x(\xi),y(\xi) \rangle \overset{def}{=} E \lbrace x^H(\xi)y(\xi) \rbrace $$</p>
+<p><code>范数</code>：</p>
+<p>$$ \lVert x(\xi) \rVert _{2} \overset{def}{=} E \lbrace x^H(\xi)x(\xi) \rbrace $$</p>
+<p><label class = 'label-warning'> 关于正交： </label></p>
+<p>两个$ m \times 1, n \times 1 $维列随机向量要正交，需要他们的任意元素相互正交，即其互相关矩阵为零矩阵：</p>
+<p>$$ E \lbrace x(\xi)y^H(\xi) \rbrace = O_{m \times n}$$</p>
+<p><code>Pythagorean</code>定理：</p>
+<p>若 $ x \perp y $，则有 $ \lVert x+y \rVert ^2 =  \lVert x \rVert ^2 + \lVert y \rVert ^2 $ 成立</p>
+<p><code>Cauchy-Schwarts</code>(柯西-施瓦茨)不等式：</p>
+<p> $$ \lVert \langle x,y \rangle \rVert \leq \lVert x \rVert \lVert y \rVert  $$ </p>
+<p><code>平行四边形</code>法则：</p>
+<p>$$ \lVert x+y \rVert ^2 + \lVert x-y \rVert ^2 = 2 \lVert x \rVert ^2 + 2 \lVert y \rVert ^2$$</p>
+<hr />
+<h2 id="向量的相似度"><a class="markdownIt-Anchor" href="#向量的相似度"></a> 向量的相似度</h2>
+<p><code>类型定义</code>：</p>
+<p>M个类型的模式，记作 $ \omega_1 , \omega_2 , \cdots , \omega_M $</p>
+<p>通过已知的类型属性的观测样本，抽出M个样本模式向量： $ s_1, s_2 ,\cdots, s_M $</p>
+<p>未知模式向量 $ x $</p>
+<p><code>更相似</code>：</p>
+<p>如果我们定义 $ (x,s_i) $ 是模式向量x与 $ s_i $ 之间相似关系的符号(notation)，当有</p>
+<p>$$ (x,s_i) \leq (x,s_j) $$</p>
+<p>我们称未知模式向量 $ x $ 与样本模式向量 $ s_i $ 更相似</p>
+<p>为此我们定义了<code>相似度</code>(similarity)和<code>相异度</code>(dissimilarity)</p>
+<h3 id="相似度和相异度"><a class="markdownIt-Anchor" href="#相似度和相异度"></a> 相似度和相异度</h3>
+<p><code>Euclidean</code>(欧几里德)距离</p>
+<p>明显的，欧式距离就是其直线距离，也是欧几里德范数，我们记作 $ \sqrt{(x-s_i)^T(x-s_i)} $</p>
+<p><code>Mahalanobis</code>(马哈拉诺比斯)距离</p>
+<p>马氏距离更加的表现了数据的协方差距离，其考虑了各种特性之间的联系，且其实尺度无关(scale-invariant)的</p>
+<p>我们很容易就能得到其中里面几个参数：</p>
+<p>均值向量： $ m = \frac{1}{N} \sum^{N}_{k=1}s_i $</p>
+<p>协方差矩阵： $ C = \frac{1}{N} \sum^{N}_{k=1} (s_i-m)(s_i-m)^T $</p>
+<p>马氏距离： $ D(m,x) = (x-m)^TC(x-m) $</p>
+<p>这样我们只需要找到和 $ D(m,x) $ 值最相近的 $ D(m,s_i) $ 即可</p>
+<p><code>角度的使用</code>：</p>
+<p>余弦值的使用: $ S(s_i,x) = cos(\theta_i) = \frac{x^Ts_i}{\lVert x \rVert _2 \lVert s_i \rVert _2} $</p>
+<p><code>Tanimoto</code>测量：</p>
+<p>Tanimoto测量系数： $ S(s_i,x) = \frac{x^T s_i}{x^T x+s_i^T s_i + x^T s_i} $</p>
+<p><label class="label-theorem">雅卡尔指数</label></p>
+<p>这个是另一个<code>Jaccard index</code>(雅卡尔指数)，即交并比的引申：</p>
+<p>原本的定义是： $ J(A,B) = \frac{\lvert A \cap B \rvert}{\lvert A \cup B \rvert} = \frac{\lvert A \cap B \rvert}{\lvert A \rvert + \lvert B \rvert - \lvert A \cap B \rvert} $</p>
+<hr />
+<h2 id="向量范数与lyapunov函数"><a class="markdownIt-Anchor" href="#向量范数与lyapunov函数"></a> 向量范数与Lyapunov函数</h2>
+<p><code>Lyapunov</code>稳定性原理：</p>
+<p>若对于连续系统 $ \dot{x} = f(x) $ 或者离散系统 $ x_{k+1} = f(x_R) $ 存在一个函数 $ V(x) $ 具有平衡点 $ x = 0 $ ，且 $ V $ 在整个 $ R^n $<br />
+内满足条件：</p>
+<ul>
+<li>
+<p>$ V $ 是正定和径向无界函数</p>
+</li>
+<li>
+<p>对于 $ x \neq 0 $</p>
+</li>
+</ul>
+<p>$$ DV =  \lim_{\triangle t \to 0} \sup \frac{V(x(t+ \triangle t))- V(x(t))}{\triangle t} < 0 \qquad \text{连续系统} $$</p> 
+<p>$$ \triangle V = V(x_{k+1}) - V(x_k) < 0 \qquad 离散系统 $$</p>
+<p>则平衡点 $ x = 0 $ 是全局渐进稳定的</p>
+<p>在n维向量空间，我们考虑使用向量范数 $ V(x) = \lVert W_x \rVert $</p>
+<p>其中：$ W = [\omega_1, \omega_2, \cdots , \omega_n ] $ 是 $ m \times n $ 矩阵，且 $ m &gt; n $ 及 $ rank(W) = n $</p>
+<h3 id="l_p-范数作用"><a class="markdownIt-Anchor" href="#l_p-范数作用"></a> $ l_p $ 范数作用</h3>
+<p>$ l_p $ 范数在其中构成了一类特殊的向量范数：</p>
+<p><code>Euclidean</code>范数：</p>
+<p>$$ V(x) = \lVert Wx \rVert _2 = ( \sum_{i} \lvert w_i^Tx \rvert ^2 )^{1/2} $$</p>
+<p><code>无穷</code>范数：</p>
+<p>$$ V(x) = \lVert Wx \rVert _{\infty} = \lim_{p \to \infty} (\sum_{i} \lvert w_i^Tx \rvert ^p) ^{1/p} = \max_{i} \lbrace w_i^Tx \rbrace  $$</p>
+<p><label class="label-theorem"> 充要条件 </label></p>
+<p><code>Lyapunov函数</code>：</p>
+<p>函数 $ V(x) = \lVert Wx \rVert $ 是系统 $ \dot{x} = Ax $ 的<code>Lyapunov函数</code>，当且仅当矩阵 $ W $ 是下式的解：</p>
+<p>$$ WA-QW = O $$</p>
+<p>且 $ \mu (Q) &lt; 0 $</p>
+<p><code>对数矩阵范数</code> $ \mu (Q) $ :</p>
+<p>$$ \mu (Q) = \lim_{\triangle t \to 0^+} \frac{\lVert I + \triangle t Q \rVert - 1}{\triangle t} $$</p>
+<p><label class="label-warning"> 注意： </label></p>
+<p>对数矩阵范数可以是负数，这一点可能与实际的矩阵范数非负性相<code>违背</code></p>
+<p><code>平方性质</code>：</p>
+<p>如果函数是Lyapunov函数，则它的平方：</p>
+<p>$$ V^2(x) = \lVert Wx \rVert _2 ^2 = \sum_{i=1}^{n} (\omega_i^T x)^2 = x^T W^T Wx $$</p>
+<p>我们可以看见这函数是一个二次型 $ x^T W^T Wx $</p>
+<p>我们令 $ R = W^T W $ ，我们要使 $ V^2(x) $ 这个式子是 $ \dot{x} = Ax $ 的Lyapunov函数，需要满足：</p>
+<p>$$ A^TR+RA = -\tilde{Q} $$</p>
+<p>这个方程的解 $ \tilde{Q} $ 是一个正定对称矩阵</p>
+<p><label class="label-theorem"> 等价定理 </label></p>
+<p>我们知道下面两个集合<code>等价</code>:</p>
+<p>$$ L_1 = \lbrace R \in R^{n \times n} | A^TR + RA = - \tilde{Q} ,其中 \tilde{Q},R > 0, \tilde{Q} 对称 \rbrace $$</p>
+<p>$$ L_2 = \lbrace R \in R^{n \times n} | R = W^TW, WA-QW = O ,其中 \mu _2 (Q) < 0, rank(W) = n \rbrace $$</p>
+<hr />
+<h2 id="矩阵的范数与内积"><a class="markdownIt-Anchor" href="#矩阵的范数与内积"></a> 矩阵的范数与内积</h2>
+<p>矩阵的范数仍旧符合开始的几个性质，即<code>非负性</code>，<code>正定性</code>，<code>三角不等式</code>和<code>柯西-施瓦茨不等式</code>。</p>
+<h3 id="典型的矩阵范数"><a class="markdownIt-Anchor" href="#典型的矩阵范数"></a> 典型的矩阵范数</h3>
+<p><code>Frobenius</code>范数：</p>
+<p>$$ \lVert A \rVert _F \overset{def}{=} (\sum^{m}_{i=1} \sum^{n}_{j=1} \lvert a_{ij} \rvert)^{1/2} $$</p>
+<p>相当于将整个矩阵的元素排到一行中</p>
+<p><code>Minkowski</code> $ l_p $ 范数：</p>
+<p>$$ \lVert A \rVert _p \overset{def}{=}  \max_{x \neq 0} \frac{\lVert Ax \rVert _p}{\lVert x \rVert _p} $$</p>
+<p><code>行和</code>(row-sum)范数：</p>
+<p>$$ \lVert A \rVert_{row} = \max_{1 \leq i \leq m} \lbrace \sum^{n}_{j=1} \lvert a_{ij} \rvert \rbrace $$</p>
+<p><code>列和</code>(colum-sum)范数：</p>
+<p>$$ \lVert A \rVert_{col} = \max_{1 \leq j \leq n} \lbrace \sum^{m}_{i=1} \lvert a_{ij} \rvert \rbrace $$</p>
+<p><code>谱</code>(spectrum)范数「最大奇异值、算子」范数：</p>
+<p>$$ \lVert A \rVert_{spectrum} = \sigma_{max} = \sqrt{\lambda_{max}} $$</p>
+<p>这其中，$ \sigma_{max} $ 称为矩阵 $ A $ 的最大奇异值</p>
+<p><code>Mahalanobis</code>范数：</p>
+<p>$$ \lVert A \rVert_{\Omega} = \sqrt{tr(A^H \Omega A)} $$</p>
+<p>且 $ \Omega $ 是正定矩阵</p>
+
+            </div>
+
+            <!-- Post Comments -->
+            
+
+        </div>
+        <!-- Copyright 版权 start -->
+                <div id="copyright">
+            <ul>
+                <li>&copy;Powered By <a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/" style="border-bottom: none;">hexo</a></li>
+                <li>Design: <a target="_blank" rel="noopener" href="http://miccall.tech " style="border-bottom: none;">miccall</a></li>
+            </ul>
+        </div>
+    </div>
+    <script src="/js/prism.js"></script><!-- hexo-inject:begin --><!-- Begin: Injected MathJax -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({{ JSON.stringify(config) }});
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+      all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+</script>
+
+<script type="text/javascript" src="{{ src }}">
+</script>
+<!-- End: Injected MathJax -->
+<!-- hexo-inject:end -->
+</body>
+
+
+
+ 	
+</html>

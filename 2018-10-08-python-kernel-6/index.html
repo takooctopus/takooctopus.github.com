@@ -1,0 +1,291 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<!-- hexo-inject:begin --><!-- hexo-inject:end --><link rel="bookmark"  type="image/x-icon"  href="/img/logo_tako.jpg"/>
+	<link rel="shortcut icon" href="/img/logo_tako.jpg">
+	
+			    <title>
+    TAKONOHEYA
+    </title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="/css/mic_main.css" />
+    <link rel="stylesheet" href="/css/dropdownMenu.css" />
+    <meta name="keywords" content="takooctopus takonoheya" />
+    <noscript>
+        <link rel="stylesheet" href="/css/noscript.css" />
+    </noscript>
+    <style type="text/css">
+        body:before {
+          content: ' ';
+          position: fixed;
+          top: 0;
+          background: url('/img/bg.jpg') center 0 no-repeat;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          background-size: cover; 
+        }
+    </style>
+
+			    
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+          processEscapes: true
+        },
+        TeX: {
+          equationNumbers: {
+            autoNumber: "AMS"
+          }
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    
+    <script async type="text/javascript" src="https://cdn.bootcss.com/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+  
+
+ 
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/jquery.scrollex.min.js"></script>
+    <script src="/js/jquery.scrolly.min.js"></script>
+    <script src="/js/skel.min.js"></script>
+    <script src="/js/util.js"></script>
+    <script src="/js/main.js"></script>
+	
+<meta name="generator" content="Hexo 5.4.0"><!-- hexo-inject:begin --><link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/themes/prism.min.css'><link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/plugins/line-numbers/prism-line-numbers.min.css'><!-- hexo-inject:end --></head>
+    
+		
+<!-- Layouts -->
+
+
+<link rel="stylesheet" href="/css/prism_okaidia.css" />
+
+<link rel="stylesheet" href="/css/typo.css" />
+
+<!-- 文章页 -->
+<body class="is-loading">
+    <!-- hexo-inject:begin --><!-- hexo-inject:end --><!-- Wrapper 外包 s-->
+    <div id="wrapper" class="fade-in">
+        <!-- Intro 头部显示 s -->
+        <!-- Intro 头部显示 e -->
+        <!-- Header 头部logo start -->
+        <header id="header">
+    <a href="/" class="logo">TAKOOCTOPUS</a>
+</header>
+        <!-- Nav 导航条 start -->
+        <nav id="nav" class="special" >
+            <ul class="menu links" >
+			<!-- Homepage  主页  --> 
+			<li >
+	            <a href="/" rel="nofollow">主页</a>
+	        </li>
+			<!-- categories_name  分类   --> 
+	        
+	        <!-- archives  归档   --> 
+	        
+	        
+		        <!-- Pages 自定义   -->
+		        
+		        <li>
+		            <a href="/about/" title="简介">
+		                简介
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/group/" title="团队">
+		                团队
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/series/" title="系列">
+		                系列
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/gallery/" title="图库">
+		                图库
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/tag/" title="标签">
+		                标签
+		            </a>
+		        </li>
+		        
+
+
+            </ul>
+            <!-- icons 图标   -->
+			<ul class="icons">
+                    
+                    <li>
+                        <a title="github" href="https://github.com/takooctopus" target="_blank" rel="noopener">
+                            <i class="icon fa fa-github"></i>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a title="tv" href="https://space.bilibili.com/499056" target="_blank" rel="noopener">
+                            <i class="icon fa fa-tv"></i>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a title="home" href="https://takooctopus.github.io" target="_blank" rel="noopener">
+                            <i class="icon fa fa-home"></i>
+                        </a>
+                    </li>
+                    
+			</ul>
+</nav>
+
+        <div id="main" >
+            <div class ="post_page_title_img" style="height: 25rem;background-image: url(/assets/img/posts/CS/PythonKernel.jpg);background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;overflow:hidden;" >
+                <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2 >python 内核分析（六）：List类型对象</h2></a>
+            </div>
+            <!-- Post -->
+            <div class="typo" style="padding: 3rem;">
+                <blockquote>
+<p>本系列作为<a href="https://takooctopus.github.io/" title="TAKONOHEYA">本人@takooctopus</a>深入学习python机制的记录，这个博客遵照着<a target="_blank" rel="noopener" href="https://www.hongweipeng.com/" title="栖迟于一丘">栖迟于一丘</a>的博客上面的流程进行的，也包含我在实际查看源码时的感想，特此列出，表示感谢。</p>
+</blockquote>
+<h1 id="关于list对象"><a class="markdownIt-Anchor" href="#关于list对象"></a> 关于List对象</h1>
+<p>我们首先去<code>[Include/listobject.h]</code>中去寻找列表对象的定义:</p>
+
+<!-- Has Prism -->
+<pre class="{{ pre_class }}" style="{{ pre_style }}" {{ data_attr }}><code class="language-&#123;&#123; lang &#125;&#125;">
+&#123;&#123;- code -&#125;&#125;
+</code></pre>
+<p>其中有三个属性，<code>PyObject_VAR_HEAD</code>是指向了一个list元素,以及一个二级指针<code>**ob_item</code>储存了这个指针的地址。还有一个<code>allocated</code>储存分配的内存大小。</p>
+
+<!-- Has Prism -->
+<pre class="{{ pre_class }}" style="{{ pre_style }}" {{ data_attr }}><code class="language-&#123;&#123; lang &#125;&#125;">
+&#123;&#123;- code -&#125;&#125;
+</code></pre>
+<p>我们可以看见<code>PyObject_VAR_HEAD</code>指向了一个<code>PyVarObject</code>，即其指向了这个元素的第一个，我们通俗地看就是<code>list[0]</code>就是<code>ob_item[0]</code>。</p>
+<p>我们看指向的<code>PyVarObject</code>，其中的属性<code>ob_size</code>就代表了当前列表的个数<code>len(list)</code>。</p>
+<p>我们要注意的是，其会申请一块较大的内存，及我们有<code>0 &lt;= ob_size &lt;= allocated</code>关系。</p>
+<p>但当列表元素为<code>NULL</code>时，整个内存分配会直接降为<code>0</code>，此时有，<code>ob_size == allocated == 0</code></p>
+<h1 id="pylistobject-方法"><a class="markdownIt-Anchor" href="#pylistobject-方法"></a> PyListObject 方法</h1>
+<p>我们可以看见在这个<code>Object</code>类中的方法:</p>
+
+<!-- Has Prism -->
+<pre class="{{ pre_class }}" style="{{ pre_style }}" {{ data_attr }}><code class="language-&#123;&#123; lang &#125;&#125;">
+&#123;&#123;- code -&#125;&#125;
+</code></pre>
+<h1 id="pylistobject的创建"><a class="markdownIt-Anchor" href="#pylistobject的创建"></a> PyListObject的创建</h1>
+<p>列表的创建我们使用的是<code>PyList_New()</code>：</p>
+
+<!-- Has Prism -->
+<pre class="{{ pre_class }}" style="{{ pre_style }}" {{ data_attr }}><code class="language-&#123;&#123; lang &#125;&#125;">
+&#123;&#123;- code -&#125;&#125;
+</code></pre>
+<p>我们在这里看见了<code>numfree</code>这个属性，返回去看，发现其与一个列表<code>free_list[]</code>有关，称其为<code>freelist</code>，也可以叫其为缓冲池。其常量定义在最前面：</p>
+
+<!-- Has Prism -->
+<pre class="{{ pre_class }}" style="{{ pre_style }}" {{ data_attr }}><code class="language-&#123;&#123; lang &#125;&#125;">
+&#123;&#123;- code -&#125;&#125;
+</code></pre>
+<p>在缓冲池有剩余时，新建一个<code>list</code>对象，会直接从缓冲区<code>freelist[]</code>中直接初始化，缓冲池不可用的时候，就会调用<code>PyObject_GC_New()</code>直接新建。</p>
+<p>默认情况下，缓冲区最大有<code>PyList_MAXFREELIST = 80</code>个对象。</p>
+<p><code>PyObject_GC_New()</code>是<code>_PyObject_GC_New()</code>的别名：</p>
+
+<!-- Has Prism -->
+<pre class="{{ pre_class }}" style="{{ pre_style }}" {{ data_attr }}><code class="language-&#123;&#123; lang &#125;&#125;">
+&#123;&#123;- code -&#125;&#125;
+</code></pre>
+<p>其为这个对象类型分配内存。</p>
+<p>而关于缓冲区<code>freelist[]</code>的函数其实只有三个，另外俩一个是<code>PyList_ClearFreeList()</code>，用以清除所有的缓冲区；还有一个是<code>list_dealloc()</code>，其作用是<code>PyListType</code>对象的析构操作。</p>
+<p>奇怪的是，其会在释放掉<code>PyListObject *op</code>中维护的所有对象后，视情况将其放入缓冲区或者直接释放掉。这应该是为了保证缓冲区在结束后有足够的大小。</p>
+<h1 id="pylistobject的元素设置"><a class="markdownIt-Anchor" href="#pylistobject的元素设置"></a> PyListObject的元素设置</h1>
+
+<!-- Has Prism -->
+<pre class="{{ pre_class }}" style="{{ pre_style }}" {{ data_attr }}><code class="language-&#123;&#123; lang &#125;&#125;">
+&#123;&#123;- code -&#125;&#125;
+</code></pre>
+<p>在进行了类型和越界检查后，平移指针找到需要替换的位置，替换为新的对象。在<code>Py_XSERREF()</code>中我们能看见其将原本对象的引用进行检查，必要时施行销毁操作。</p>
+<h1 id="pylistobject获取元素"><a class="markdownIt-Anchor" href="#pylistobject获取元素"></a> PyListObject获取元素</h1>
+
+<!-- Has Prism -->
+<pre class="{{ pre_class }}" style="{{ pre_style }}" {{ data_attr }}><code class="language-&#123;&#123; lang &#125;&#125;">
+&#123;&#123;- code -&#125;&#125;
+</code></pre>
+<h1 id="pylistobject的插入操作"><a class="markdownIt-Anchor" href="#pylistobject的插入操作"></a> PyListObject的插入操作</h1>
+
+<!-- Has Prism -->
+<pre class="{{ pre_class }}" style="{{ pre_style }}" {{ data_attr }}><code class="language-&#123;&#123; lang &#125;&#125;">
+&#123;&#123;- code -&#125;&#125;
+</code></pre>
+<p>简单地处理了插入时的越界和负索引「如果负索引过小于<code>-n</code>会直接置零」后，确定插入位置，后面的元素统一后移一个位置。</p>
+<h1 id="pylistobject的附加操作"><a class="markdownIt-Anchor" href="#pylistobject的附加操作"></a> PyListObject的附加操作</h1>
+
+<!-- Has Prism -->
+<pre class="{{ pre_class }}" style="{{ pre_style }}" {{ data_attr }}><code class="language-&#123;&#123; lang &#125;&#125;">
+&#123;&#123;- code -&#125;&#125;
+</code></pre>
+<p>和上面的添加操作差不多</p>
+<h1 id="pylistobject的删除操作"><a class="markdownIt-Anchor" href="#pylistobject的删除操作"></a> PyListObject的删除操作</h1>
+
+<!-- Has Prism -->
+<pre class="{{ pre_class }}" style="{{ pre_style }}" {{ data_attr }}><code class="language-&#123;&#123; lang &#125;&#125;">
+&#123;&#123;- code -&#125;&#125;
+</code></pre>
+<p>python会在遍历列表后删除找到第一个匹配的元素，并在找不到时返回异常。</p>
+<h1 id="其他操作"><a class="markdownIt-Anchor" href="#其他操作"></a> 其他操作</h1>
+<p>此外PyListObject还有很多方法，比如<code>merge</code>相关，<code>reverse</code>相关和<code>sort</code>相关等等，这些在以后再写。</p>
+
+            </div>
+
+            <!-- Post Comments -->
+            
+
+        </div>
+        <!-- Copyright 版权 start -->
+                <div id="copyright">
+            <ul>
+                <li>&copy;Powered By <a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/" style="border-bottom: none;">hexo</a></li>
+                <li>Design: <a target="_blank" rel="noopener" href="http://miccall.tech " style="border-bottom: none;">miccall</a></li>
+            </ul>
+        </div>
+    </div>
+    <script src="/js/prism.js"></script><!-- hexo-inject:begin --><!-- Begin: Injected MathJax -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({{ JSON.stringify(config) }});
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+      all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+</script>
+
+<script type="text/javascript" src="{{ src }}">
+</script>
+<!-- End: Injected MathJax -->
+<script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/prism.min.js'></script><script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/plugins/line-numbers/prism-line-numbers.min.js'></script><script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/plugins/normalize-whitespace/prism-normalize-whitespace.min.js'></script><!-- hexo-inject:end -->
+</body>
+
+
+
+ 	
+</html>

@@ -1,0 +1,340 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<!-- hexo-inject:begin --><!-- hexo-inject:end --><link rel="bookmark"  type="image/x-icon"  href="/img/logo_tako.jpg"/>
+	<link rel="shortcut icon" href="/img/logo_tako.jpg">
+	
+			    <title>
+    TAKONOHEYA
+    </title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="/css/mic_main.css" />
+    <link rel="stylesheet" href="/css/dropdownMenu.css" />
+    <meta name="keywords" content="takooctopus takonoheya" />
+    <noscript>
+        <link rel="stylesheet" href="/css/noscript.css" />
+    </noscript>
+    <style type="text/css">
+        body:before {
+          content: ' ';
+          position: fixed;
+          top: 0;
+          background: url('/img/bg.jpg') center 0 no-repeat;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          background-size: cover; 
+        }
+    </style>
+
+			    
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+          processEscapes: true
+        },
+        TeX: {
+          equationNumbers: {
+            autoNumber: "AMS"
+          }
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    
+    <script async type="text/javascript" src="https://cdn.bootcss.com/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+  
+
+ 
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/jquery.scrollex.min.js"></script>
+    <script src="/js/jquery.scrolly.min.js"></script>
+    <script src="/js/skel.min.js"></script>
+    <script src="/js/util.js"></script>
+    <script src="/js/main.js"></script>
+	
+<meta name="generator" content="Hexo 5.4.0"><!-- hexo-inject:begin --><link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/themes/prism.min.css'><link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/plugins/line-numbers/prism-line-numbers.min.css'><!-- hexo-inject:end --></head>
+    
+		
+<!-- Layouts -->
+
+
+<link rel="stylesheet" href="/css/prism_okaidia.css" />
+
+<link rel="stylesheet" href="/css/typo.css" />
+
+<!-- 文章页 -->
+<body class="is-loading">
+    <!-- hexo-inject:begin --><!-- hexo-inject:end --><!-- Wrapper 外包 s-->
+    <div id="wrapper" class="fade-in">
+        <!-- Intro 头部显示 s -->
+        <!-- Intro 头部显示 e -->
+        <!-- Header 头部logo start -->
+        <header id="header">
+    <a href="/" class="logo">TAKOOCTOPUS</a>
+</header>
+        <!-- Nav 导航条 start -->
+        <nav id="nav" class="special" >
+            <ul class="menu links" >
+			<!-- Homepage  主页  --> 
+			<li >
+	            <a href="/" rel="nofollow">主页</a>
+	        </li>
+			<!-- categories_name  分类   --> 
+	        
+	        <!-- archives  归档   --> 
+	        
+	        
+		        <!-- Pages 自定义   -->
+		        
+		        <li>
+		            <a href="/about/" title="简介">
+		                简介
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/group/" title="团队">
+		                团队
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/series/" title="系列">
+		                系列
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/gallery/" title="图库">
+		                图库
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/tag/" title="标签">
+		                标签
+		            </a>
+		        </li>
+		        
+
+
+            </ul>
+            <!-- icons 图标   -->
+			<ul class="icons">
+                    
+                    <li>
+                        <a title="github" href="https://github.com/takooctopus" target="_blank" rel="noopener">
+                            <i class="icon fa fa-github"></i>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a title="tv" href="https://space.bilibili.com/499056" target="_blank" rel="noopener">
+                            <i class="icon fa fa-tv"></i>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a title="home" href="https://takooctopus.github.io" target="_blank" rel="noopener">
+                            <i class="icon fa fa-home"></i>
+                        </a>
+                    </li>
+                    
+			</ul>
+</nav>
+
+        <div id="main" >
+            <div class ="post_page_title_img" style="height: 25rem;background-image: url(/assets/img/posts/CS/PythonKernel.jpg);background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;overflow:hidden;" >
+                <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2 >python 内核分析（十）：Python 虚拟机</h2></a>
+            </div>
+            <!-- Post -->
+            <div class="typo" style="padding: 3rem;">
+                <blockquote>
+<p>本系列作为<a href="https://takooctopus.github.io/" title="TAKONOHEYA">本人@takooctopus</a>深入学习python机制的记录，这个博客遵照着<a target="_blank" rel="noopener" href="https://www.hongweipeng.com/" title="栖迟于一丘">栖迟于一丘</a>的博客上面的流程进行的，也包含我在实际查看源码时的感想，特此列出，表示感谢。</p>
+</blockquote>
+<h1 id="python虚拟机"><a class="markdownIt-Anchor" href="#python虚拟机"></a> Python虚拟机</h1>
+<p>之前生成的python字节码是无法直接运行的，这个时候我们需要使用python虚拟机，将编译得到的字节码进行执行。</p>
+<p>而python虚拟机的实现，是以一种近似于CPU的操作方式——栈帧。</p>
+<p>我们虚拟机其实在执行的时候，面对的是<code>PyFrameObject</code>，我们将其想象成一个空间就好</p>
+<p>我们看其在[Include/frameobject.h]中的定义</p>
+
+<!-- Has Prism -->
+<pre class="{{ pre_class }}" style="{{ pre_style }}" {{ data_attr }}><code class="language-&#123;&#123; lang &#125;&#125;">
+&#123;&#123;- code -&#125;&#125;
+</code></pre>
+<p>明显的，这个能够形成一个链表，通过<code>*f_back</code>能够找到之前的栈帧。在执行完当前栈帧后能够返回之前的栈帧中。</p>
+<p><code>*f_code</code>就是<code>PyCodeObject</code>对象</p>
+<p><code>*f_builtins</code>, <code>*f_globals</code> 和 <code>*f_locals</code>作为命名空间，维护了变量名和变量值之间的关系，而他们都是<code>PyDictObject</code></p>
+<p><code>**f_valuestack</code>和<code>**f_stacktop</code>记录了栈底和栈顶的地址</p>
+<p>由于每次创建栈帧对象时，<code>PyCodeObject</code>的大小都可能不同，最终其大小也可能不同，占的大小装在<code>PyCodeObject</code>中的<code>co_stacksize</code>中</p>
+<hr />
+<h1 id="pyframeobject的创建"><a class="markdownIt-Anchor" href="#pyframeobject的创建"></a> PyFrameObject的创建</h1>
+<p>首先，我们看栈帧的创建</p>
+
+<!-- Has Prism -->
+<pre class="{{ pre_class }}" style="{{ pre_style }}" {{ data_attr }}><code class="language-&#123;&#123; lang &#125;&#125;">
+&#123;&#123;- code -&#125;&#125;
+</code></pre>
+<p>在这之中其调用了一个私有方法<code>_PyFrame_New_NoTrack()</code></p>
+
+<!-- Has Prism -->
+<pre class="{{ pre_class }}" style="{{ pre_style }}" {{ data_attr }}><code class="language-&#123;&#123; lang &#125;&#125;">
+&#123;&#123;- code -&#125;&#125;
+</code></pre>
+<p>从<code>extras = code-&gt;co_stacksize + code-&gt;co_nlocals + ncells + nfrees;</code> 中能看到栈帧的动态内存区由四个部分组成</p>
+<p>而<code>ncells = PyTuple_GET_SIZE(code-&gt;co_cellvars);</code>，<code>nfrees = PyTuple_GET_SIZE(code-&gt;co_freevars);</code>我们知道额外的部分除了给<code>PyCodeObject</code>之外，还有给<code>co_cellvars</code>和<code>co_freevars</code>。</p>
+<p>而其<code>f_valuestack</code>和<code>f_stacktop</code>分别表示栈底和栈顶</p>
+<hr />
+<h1 id="pyframeobject-的访问"><a class="markdownIt-Anchor" href="#pyframeobject-的访问"></a> PyFrameObject 的访问</h1>
+<p>我们可以很简单地通过 <code>sys.getframe()</code> 函数获取当前所运行的栈帧对象</p>
+<hr />
+<h1 id="pyframeobject-的-namespace"><a class="markdownIt-Anchor" href="#pyframeobject-的-namespace"></a> PyFrameObject 的 NAMESPACE</h1>
+<p>我们在<code>PyFrameObject</code>中能够看见的三个属性<code>*f_builtins</code>,<code>*f_globals</code>和<code>f_locals</code>分别代表了三个独立的命名空间NAMESPACE</p>
+<p>在一般的python文件结构中，每个<code>.py</code>文件被视作一个module，我们把一个文件夹的所有<code>.py</code>文件看作一个模块，这个模块中有一个是主module，以<code>python main.py</code>进行加载，其余的用<code>import</code>引入。</p>
+<p>而在<code>.py</code>文件里写的<code>import foo foo.bar</code>，<code>foo.bar</code>作为属性引用，使用了另外一个NAMESPACE中的名字</p>
+<p>这种名字的查找是有规律的，Python遵照了<a href="">LEGB原则</a>，即<code>locals -&gt; enclosing function -&gt; globals -&gt; __builtins__</code>原则，以以下顺序依次查询</p>
+<ul>
+<li>locals 是函数内的名字空间，包括局部变量和形参</li>
+<li>enclosing 外部嵌套函数的名字空间（闭包中常见）</li>
+<li>globals 全局变量，函数定义所在模块的名字空间</li>
+<li>builtins 内置模块的名字空间</li>
+</ul>
+<hr />
+<h1 id="虚拟机运行框架"><a class="markdownIt-Anchor" href="#虚拟机运行框架"></a> 虚拟机运行框架</h1>
+<p>我们假设初始化已经完成，而现在第一个就是<code>PyEval_EvalFrameEx()</code></p>
+
+<!-- Has Prism -->
+<pre class="{{ pre_class }}" style="{{ pre_style }}" {{ data_attr }}><code class="language-&#123;&#123; lang &#125;&#125;">
+&#123;&#123;- code -&#125;&#125;
+</code></pre>
+<p>在这里面调用了<code>eval_frame()</code>,我们看它定义的宏</p>
+
+<!-- Has Prism -->
+<pre class="{{ pre_class }}" style="{{ pre_style }}" {{ data_attr }}><code class="language-&#123;&#123; lang &#125;&#125;">
+&#123;&#123;- code -&#125;&#125;
+</code></pre>
+<p>知道其是通过<code>PyEval_EvalFrameDefault()</code>函数调用的</p>
+<p>但<code>PyEval_EvalFrameDefault()</code>的实现内容极多，一共几千行吧 😦</p>
+
+<!-- Has Prism -->
+<pre class="{{ pre_class }}" style="{{ pre_style }}" {{ data_attr }}><code class="language-&#123;&#123; lang &#125;&#125;">
+&#123;&#123;- code -&#125;&#125;
+</code></pre>
+<p>虚拟机从头开始遍历整个<code>co_code</code>，<code>first_instr</code> 永远指向字节码指令序列的开始位置, <code>next_instr</code> 永远指向下一条待执行的字节码指令的位置, <code>f_lasti</code> 指向上一条已经执行过的字节码指令的位置</p>
+<p>而整个架构就是<code>switch (opcode) &#123;&#125;</code>的<code>sitch/TARGET</code>结构</p>
+<p>在函数最开始的时候还方便的设置了几个关于<code>tuple</code>获取和<code>code</code>移动的宏</p>
+
+<!-- Has Prism -->
+<pre class="{{ pre_class }}" style="{{ pre_style }}" {{ data_attr }}><code class="language-&#123;&#123; lang &#125;&#125;">
+&#123;&#123;- code -&#125;&#125;
+</code></pre>
+<p>这里<code>NEXTOPARG()</code>中是用于读取下一条的，其读取操作码和参数</p>
+
+<!-- Has Prism -->
+<pre class="{{ pre_class }}" style="{{ pre_style }}" {{ data_attr }}><code class="language-&#123;&#123; lang &#125;&#125;">
+&#123;&#123;- code -&#125;&#125;
+</code></pre>
+<p>而关于其判断参数多少，在<code>switch(opcode)</code>之前有一个宏</p>
+
+<!-- Has Prism -->
+<pre class="{{ pre_class }}" style="{{ pre_style }}" {{ data_attr }}><code class="language-&#123;&#123; lang &#125;&#125;">
+&#123;&#123;- code -&#125;&#125;
+</code></pre>
+<p>这里<code>HAS_ARG()</code>的宏定义在<code>[Include/opcode.h]</code>中，在我们上次讲到了，是一个判断操作数是否大于这个阈值的数值判断。</p>
+<hr />
+<h2 id="关于why"><a class="markdownIt-Anchor" href="#关于why"></a> 关于Why</h2>
+<p>在进入<code>switch(opcode)</code>选择后，每个选项中都有一个<code>why</code>变量，其实用于指示退出python引擎的状态因为有可能出错，下面是初始化函数<code>PyEval_EvalFrameDefault()</code>对于错误<code>why</code>的一些处理</p>
+
+<!-- Has Prism -->
+<pre class="{{ pre_class }}" style="{{ pre_style }}" {{ data_attr }}><code class="language-&#123;&#123; lang &#125;&#125;">
+&#123;&#123;- code -&#125;&#125;
+</code></pre>
+<p>我们可以看出来<code>why</code>会有不同的状态返回，而具体的状态码，也在<code>[Python/ceval.c]</code>中定义了</p>
+
+<!-- Has Prism -->
+<pre class="{{ pre_class }}" style="{{ pre_style }}" {{ data_attr }}><code class="language-&#123;&#123; lang &#125;&#125;">
+&#123;&#123;- code -&#125;&#125;
+</code></pre>
+<p>python框架总的流程就是，执行一个无尽的<code>for</code>循环，取出第一条字节码之后, 判断指令后执行, 然后一条接一条的从字节流中获取。</p>
+<p>进行完异常检查后，最后进行出栈操作：</p>
+
+<!-- Has Prism -->
+<pre class="{{ pre_class }}" style="{{ pre_style }}" {{ data_attr }}><code class="language-&#123;&#123; lang &#125;&#125;">
+&#123;&#123;- code -&#125;&#125;
+</code></pre>
+<h1 id="python的线程"><a class="markdownIt-Anchor" href="#python的线程"></a> Python的线程</h1>
+<p>可执行文件除开栈帧，还有很重要的：<code>进程</code>和<code>线程</code></p>
+<p>对于一个单进程多线程的可执行文件，操作系统会创建一个进程和多个线程，但线程键共享<code>global</code>变量，切换线程需要保存工作环境以便恢复。</p>
+<p>python实现了对多线程的支持, 而且python中的线程就是操作系统上的一个原生线程。 python虚拟机是对CPU的抽象, 在切换线程之前同样需要保存关于当前线程的信息。</p>
+<p>python是使用<code>PyThreadState</code>对象对线程信息进行抽象。</p>
+<ul>
+<li>线程的抽象并非原始线程，python仍旧使用操作系统的原生线程</li>
+<li>而对于线程抽象的操作，使用<code>PyInterpreterState</code>来操作</li>
+<li>python一般只维护一个<code>PyInterpreterState</code>，其中维护多个<code>PyThreadState</code>对象</li>
+</ul>
+<p>而线程同步，少不了的就是锁机制「lock」，他们通过一个全局解释器锁 Global Interpreter Lock (GIL) 实现。</p>
+<p>我们看<code>PyInterpreterState</code>和<code>PyThreadState</code>的实现：</p>
+
+<!-- Has Prism -->
+<pre class="{{ pre_class }}" style="{{ pre_style }}" {{ data_attr }}><code class="language-&#123;&#123; lang &#125;&#125;">
+&#123;&#123;- code -&#125;&#125;
+</code></pre>
+
+<!-- Has Prism -->
+<pre class="{{ pre_class }}" style="{{ pre_style }}" {{ data_attr }}><code class="language-&#123;&#123; lang &#125;&#125;">
+&#123;&#123;- code -&#125;&#125;
+</code></pre>
+<p>明显的，每个进程下属一个解释器，下属一个线程池，进程间和线程间都有<code>next</code>属性通向下一个，而线程下维护一个栈帧表。</p>
+
+            </div>
+
+            <!-- Post Comments -->
+            
+
+        </div>
+        <!-- Copyright 版权 start -->
+                <div id="copyright">
+            <ul>
+                <li>&copy;Powered By <a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/" style="border-bottom: none;">hexo</a></li>
+                <li>Design: <a target="_blank" rel="noopener" href="http://miccall.tech " style="border-bottom: none;">miccall</a></li>
+            </ul>
+        </div>
+    </div>
+    <script src="/js/prism.js"></script><!-- hexo-inject:begin --><!-- Begin: Injected MathJax -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({{ JSON.stringify(config) }});
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+      all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+</script>
+
+<script type="text/javascript" src="{{ src }}">
+</script>
+<!-- End: Injected MathJax -->
+<script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/prism.min.js'></script><script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/plugins/line-numbers/prism-line-numbers.min.js'></script><script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/plugins/normalize-whitespace/prism-normalize-whitespace.min.js'></script><!-- hexo-inject:end -->
+</body>
+
+
+
+ 	
+</html>

@@ -1,0 +1,287 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<!-- hexo-inject:begin --><!-- hexo-inject:end --><link rel="bookmark"  type="image/x-icon"  href="/img/logo_tako.jpg"/>
+	<link rel="shortcut icon" href="/img/logo_tako.jpg">
+	
+			    <title>
+    TAKONOHEYA
+    </title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="/css/mic_main.css" />
+    <link rel="stylesheet" href="/css/dropdownMenu.css" />
+    <meta name="keywords" content="takooctopus takonoheya" />
+    <noscript>
+        <link rel="stylesheet" href="/css/noscript.css" />
+    </noscript>
+    <style type="text/css">
+        body:before {
+          content: ' ';
+          position: fixed;
+          top: 0;
+          background: url('/img/bg.jpg') center 0 no-repeat;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          background-size: cover; 
+        }
+    </style>
+
+			    
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+          processEscapes: true
+        },
+        TeX: {
+          equationNumbers: {
+            autoNumber: "AMS"
+          }
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    
+    <script async type="text/javascript" src="https://cdn.bootcss.com/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+  
+
+ 
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/jquery.scrollex.min.js"></script>
+    <script src="/js/jquery.scrolly.min.js"></script>
+    <script src="/js/skel.min.js"></script>
+    <script src="/js/util.js"></script>
+    <script src="/js/main.js"></script>
+	
+<meta name="generator" content="Hexo 5.4.0"><!-- hexo-inject:begin --><!-- hexo-inject:end --></head>
+    
+		
+<!-- Layouts -->
+
+
+<link rel="stylesheet" href="/css/prism_okaidia.css" />
+
+<link rel="stylesheet" href="/css/typo.css" />
+
+<!-- 文章页 -->
+<body class="is-loading">
+    <!-- hexo-inject:begin --><!-- hexo-inject:end --><!-- Wrapper 外包 s-->
+    <div id="wrapper" class="fade-in">
+        <!-- Intro 头部显示 s -->
+        <!-- Intro 头部显示 e -->
+        <!-- Header 头部logo start -->
+        <header id="header">
+    <a href="/" class="logo">TAKOOCTOPUS</a>
+</header>
+        <!-- Nav 导航条 start -->
+        <nav id="nav" class="special" >
+            <ul class="menu links" >
+			<!-- Homepage  主页  --> 
+			<li >
+	            <a href="/" rel="nofollow">主页</a>
+	        </li>
+			<!-- categories_name  分类   --> 
+	        
+	        <!-- archives  归档   --> 
+	        
+	        
+		        <!-- Pages 自定义   -->
+		        
+		        <li>
+		            <a href="/about/" title="简介">
+		                简介
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/group/" title="团队">
+		                团队
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/series/" title="系列">
+		                系列
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/gallery/" title="图库">
+		                图库
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/tag/" title="标签">
+		                标签
+		            </a>
+		        </li>
+		        
+
+
+            </ul>
+            <!-- icons 图标   -->
+			<ul class="icons">
+                    
+                    <li>
+                        <a title="github" href="https://github.com/takooctopus" target="_blank" rel="noopener">
+                            <i class="icon fa fa-github"></i>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a title="tv" href="https://space.bilibili.com/499056" target="_blank" rel="noopener">
+                            <i class="icon fa fa-tv"></i>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a title="home" href="https://takooctopus.github.io" target="_blank" rel="noopener">
+                            <i class="icon fa fa-home"></i>
+                        </a>
+                    </li>
+                    
+			</ul>
+</nav>
+
+        <div id="main" >
+            <div class ="post_page_title_img" style="height: 25rem;background-image: url(/assets/img/posts/Math/matrix.jpg);background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;overflow:hidden;" >
+                <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2 >矩阵分析与应用（十）：Moore-Penrose 逆矩阵的计算</h2></a>
+            </div>
+            <!-- Post -->
+            <div class="typo" style="padding: 3rem;">
+                <h1 id="moore-penrose-逆矩阵的计算"><a class="markdownIt-Anchor" href="#moore-penrose-逆矩阵的计算"></a> Moore-Penrose 逆矩阵的计算</h1>
+<p>假设 $ A_{m \times n} $ 秩为 $ r $ ，且 $ r \leq \min(m,n) $ ，我们在此介绍矩阵 $ A^{\dagger} $ 求解的四种方法</p>
+<hr />
+<h2 id="方程求解法"><a class="markdownIt-Anchor" href="#方程求解法"></a> 方程求解法</h2>
+<p>首先求解矩阵方程</p>
+<p>
+$$
+\begin{split}
+    AA^H X^H &= A \\
+    A^HAY &= A^H \\
+\end{split}
+$$
+</p>
+<p>我们得到了 $ X^H $ 和 $ Y $</p>
+<p>然后我们就能计算出广义逆矩阵 $ A^{\dagger} = XAY $</p>
+<p>若我们知道这个是一个Hermitian矩阵，则我们可以将上面的方程简化为一个：</p>
+<p>
+$$
+A^2 X^H = A
+$$
+</p>
+<p>而此时的Moore-Penrose矩阵化为： $ A ^{\dagger} = XAX^H $</p>
+<p>我们由此可以得到两种解法：</p>
+<h3 id="解法一"><a class="markdownIt-Anchor" href="#解法一"></a> 解法一</h3>
+<ul>
+<li>计算矩阵 $ B = AA^H $</li>
+<li>求解矩阵方程 $ B^2 X^H = B $</li>
+<li>计算B的Moore-Penrose逆矩阵 $ B^{\dagger} = (AA^H) ^{\dagger} = XBX^H $</li>
+<li>计算矩阵A的Moore-Penrose逆矩阵 $ A^{\dagger} = A^H (AA^H) ^{\dagger} = A^H B^{\dagger} $</li>
+</ul>
+<h3 id="解法二"><a class="markdownIt-Anchor" href="#解法二"></a> 解法二</h3>
+<ul>
+<li>计算矩阵 $ B = A^HA $</li>
+<li>求解矩阵方程 $ B^2 X^H = B $</li>
+<li>计算B的Moore-Penrose逆矩阵 $ B^{\dagger} = (A^HA) ^{\dagger} = XBX^H $</li>
+<li>计算矩阵A的Moore-Penrose逆矩阵 $ A^{\dagger} = (A^HA) ^{\dagger} A^H = B^{\dagger} A^H $</li>
+</ul>
+<p>具体选哪个看 $ AA^H $ 和  $ A^HA $ 两个哪一个的维数更小，选小的那个</p>
+<p><label class="label-example"> 方程求解法实例 </label></p>
+<h2 id="kl分解法"><a class="markdownIt-Anchor" href="#kl分解法"></a> KL分解法</h2>
+<p>我们在前面的<a href="/2019-01-17-math-matrix-8/#%E5%8D%95%E8%BE%B9%E9%80%86%E7%9F%A9%E9%98%B5%E7%9A%84%E5%94%AF%E4%B8%80%E8%A7%A3">广义逆矩阵中单边逆矩阵的唯一解一节</a>中提到了矩阵满秩分解的命题：</p>
+<p>若 $ A = KL $ 是矩阵 $ A_{m \times n} $ 的满秩分解，则：</p>
+<p>
+$$
+G = L^H (K^H A L^H) ^{-1} K^H
+$$
+</p>
+<p>满足Moore-Penrose逆矩阵的四个条件，为 $ A_{m \times n} $ 的Moore-Penrose逆矩阵</p>
+<h2 id="递推法"><a class="markdownIt-Anchor" href="#递推法"></a> 递推法</h2>
+<p>对矩阵 $ A_{m \times n} $ 的前k列进行分块， $ A_{k} = [A_{k-1}, a_k] $ ，我们可以通过这个依次递推 $ A_{k-1}^{\dagger}, \quad A_{k}^{\dagger} $ 。</p>
+<p>我们将其称为<code>Greville</code>算法：</p>
+<p><code>初始值</code>： $ A_{1}^{\dagger} = a_{1}^{\dagger} = (a_1^H a_1)^{-1} a_1^H $</p>
+<p><code>递推</code>: 令 $ k = 2,3,\cdots , n $ ，有以下：</p>
+<p>
+$$
+\begin{split}
+    d_k &= A_{k-1}^{\dagger} a_k \\
+    b_k &= 
+    \begin{aligned}
+        \left\{
+        \begin{array}{l}
+        (1+d_k^H d_k)^{-1} d_k^H A_{k-1}^{\dagger} , \quad d_k^Hd_k \neq -1 \\
+        (a_k-A_{k-1}d_k) ^{\dagger} d_k^Hd_k = -1\\
+        \end{array}
+        \right.
+    \end{aligned} \\
+    A_k^{\dagger} &= 
+    \begin{bmatrix}
+        A_{k-1}^{\dagger} - d_k b_k \\
+        b_k \\
+    \end{bmatrix} 
+\end{split}
+$$
+</p>
+<p><label class="label-example"> 递推法实例 </label></p>
+<h2 id="迹方法"><a class="markdownIt-Anchor" href="#迹方法"></a> 迹方法</h2>
+<p>我们已知矩阵 $ A_{m \times n} $ 的秩为 $ r $ ，我们有下列的求Moore-Penrose逆矩阵的<code>迹方法</code>：</p>
+<ul>
+<li>计算 $ B = AA^T $</li>
+<li>令 $ C_1 = I $</li>
+<li>计算 $ C_{i+1} = \frac{1}{i} tr(C_i,B)I-C_iB , \qquad i = 1,2,\cdots,r-1 $</li>
+<li>计算 $ A^{\dagger} = \frac{r}{tr(C_iB)} C_iA^T $ 「注意此时有 $ C_{i+1}B = O 且 tr(C_iB) \neq 0 $ 」</li>
+</ul>
+
+            </div>
+
+            <!-- Post Comments -->
+            
+
+        </div>
+        <!-- Copyright 版权 start -->
+                <div id="copyright">
+            <ul>
+                <li>&copy;Powered By <a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/" style="border-bottom: none;">hexo</a></li>
+                <li>Design: <a target="_blank" rel="noopener" href="http://miccall.tech " style="border-bottom: none;">miccall</a></li>
+            </ul>
+        </div>
+    </div>
+    <script src="/js/prism.js"></script><!-- hexo-inject:begin --><!-- Begin: Injected MathJax -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({{ JSON.stringify(config) }});
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+      all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+</script>
+
+<script type="text/javascript" src="{{ src }}">
+</script>
+<!-- End: Injected MathJax -->
+<!-- hexo-inject:end -->
+</body>
+
+
+
+ 	
+</html>

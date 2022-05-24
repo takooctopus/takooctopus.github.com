@@ -1,0 +1,361 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<!-- hexo-inject:begin --><!-- hexo-inject:end --><link rel="bookmark"  type="image/x-icon"  href="/img/logo_tako.jpg"/>
+	<link rel="shortcut icon" href="/img/logo_tako.jpg">
+	
+			    <title>
+    TAKONOHEYA
+    </title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="/css/mic_main.css" />
+    <link rel="stylesheet" href="/css/dropdownMenu.css" />
+    <meta name="keywords" content="takooctopus takonoheya" />
+    <noscript>
+        <link rel="stylesheet" href="/css/noscript.css" />
+    </noscript>
+    <style type="text/css">
+        body:before {
+          content: ' ';
+          position: fixed;
+          top: 0;
+          background: url('/img/bg.jpg') center 0 no-repeat;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          background-size: cover; 
+        }
+    </style>
+
+			    
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+          processEscapes: true
+        },
+        TeX: {
+          equationNumbers: {
+            autoNumber: "AMS"
+          }
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    
+    <script async type="text/javascript" src="https://cdn.bootcss.com/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+  
+
+ 
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/jquery.scrollex.min.js"></script>
+    <script src="/js/jquery.scrolly.min.js"></script>
+    <script src="/js/skel.min.js"></script>
+    <script src="/js/util.js"></script>
+    <script src="/js/main.js"></script>
+	
+<meta name="generator" content="Hexo 5.4.0"><!-- hexo-inject:begin --><link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/themes/prism.min.css'><link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/plugins/line-numbers/prism-line-numbers.min.css'><!-- hexo-inject:end --></head>
+    
+		
+<!-- Layouts -->
+
+
+<link rel="stylesheet" href="/css/prism_okaidia.css" />
+
+<link rel="stylesheet" href="/css/typo.css" />
+
+<!-- 文章页 -->
+<body class="is-loading">
+    <!-- hexo-inject:begin --><!-- hexo-inject:end --><!-- Wrapper 外包 s-->
+    <div id="wrapper" class="fade-in">
+        <!-- Intro 头部显示 s -->
+        <!-- Intro 头部显示 e -->
+        <!-- Header 头部logo start -->
+        <header id="header">
+    <a href="/" class="logo">TAKOOCTOPUS</a>
+</header>
+        <!-- Nav 导航条 start -->
+        <nav id="nav" class="special" >
+            <ul class="menu links" >
+			<!-- Homepage  主页  --> 
+			<li >
+	            <a href="/" rel="nofollow">主页</a>
+	        </li>
+			<!-- categories_name  分类   --> 
+	        
+	        <!-- archives  归档   --> 
+	        
+	        
+		        <!-- Pages 自定义   -->
+		        
+		        <li>
+		            <a href="/about/" title="简介">
+		                简介
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/group/" title="团队">
+		                团队
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/series/" title="系列">
+		                系列
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/gallery/" title="图库">
+		                图库
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/tag/" title="标签">
+		                标签
+		            </a>
+		        </li>
+		        
+
+
+            </ul>
+            <!-- icons 图标   -->
+			<ul class="icons">
+                    
+                    <li>
+                        <a title="github" href="https://github.com/takooctopus" target="_blank" rel="noopener">
+                            <i class="icon fa fa-github"></i>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a title="tv" href="https://space.bilibili.com/499056" target="_blank" rel="noopener">
+                            <i class="icon fa fa-tv"></i>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a title="home" href="https://takooctopus.github.io" target="_blank" rel="noopener">
+                            <i class="icon fa fa-home"></i>
+                        </a>
+                    </li>
+                    
+			</ul>
+</nav>
+
+        <div id="main" >
+            <div class ="post_page_title_img" style="height: 25rem;background-image: url(/assets/img/posts/CS/PythonKernel.jpg);background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;overflow:hidden;" >
+                <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2 >python 内核分析（四）：Python 整数类型对象</h2></a>
+            </div>
+            <!-- Post -->
+            <div class="typo" style="padding: 3rem;">
+                <blockquote>
+<p>本系列作为<a href="https://takooctopus.github.io/" title="TAKONOHEYA">本人@takooctopus</a>深入学习python机制的记录，这个博客遵照着<a target="_blank" rel="noopener" href="https://www.hongweipeng.com/" title="栖迟于一丘">栖迟于一丘</a>的博客上面的流程进行的，也包含我在实际查看源码时的感想，特此列出，表示感谢。</p>
+</blockquote>
+<h1 id="关于python2-和-python3"><a class="markdownIt-Anchor" href="#关于python2-和-python3"></a> 关于Python2 和 Python3</h1>
+<p>由于python2考虑了32位数，其分为了int和long，其中int会考虑溢出问题。我们在python3中对这个问题进行了修正，全部都使用了长整型。</p>
+<p>我们来看一看这个类的实现:</p>
+
+<!-- Has Prism -->
+<pre class="{{ pre_class }}" style="{{ pre_style }}" {{ data_attr }}><code class="language-&#123;&#123; lang &#125;&#125;">
+&#123;&#123;- code -&#125;&#125;
+</code></pre>
+<p>我们将其中的属性做个表格</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">属性元信息</th>
+<th style="text-align:left">解释</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">long_dealloc</td>
+<td style="text-align:left">对象的析构操作</td>
+</tr>
+<tr>
+<td style="text-align:left">PyObject_Del</td>
+<td style="text-align:left">对象的释放操作</td>
+</tr>
+<tr>
+<td style="text-align:left">long_to_demical_string</td>
+<td style="text-align:left">转化为PyString对象</td>
+</tr>
+<tr>
+<td style="text-align:left">long_hash</td>
+<td style="text-align:left">获取hash值</td>
+</tr>
+<tr>
+<td style="text-align:left">long_richcompare</td>
+<td style="text-align:left">比较</td>
+</tr>
+<tr>
+<td style="text-align:left">long_as_number</td>
+<td style="text-align:left">数值比较</td>
+</tr>
+<tr>
+<td style="text-align:left">long_methods</td>
+<td style="text-align:left">成员函数</td>
+</tr>
+</tbody>
+</table>
+<p>就在同一个文件<code>[longobject.c]</code>中，我们可以看见对其属性的具体定义，以属性比较<code>long_richcompare()</code>为例：</p>
+
+<!-- Has Prism -->
+<pre class="{{ pre_class }}" style="{{ pre_style }}" {{ data_attr }}><code class="language-&#123;&#123; lang &#125;&#125;">
+&#123;&#123;- code -&#125;&#125;
+</code></pre>
+<p>我们可以看见其比较两个整型对象大小直接使用了<code>==</code>运算符，当两个直接引用的同一个对象可以快速的判断。而在其他的情况下会引用<code>long_compare()</code>函数。</p>
+<p><code>long_compare()</code>函数也定义在<code>[longobject.c]</code>中</p>
+
+<!-- Has Prism -->
+<pre class="{{ pre_class }}" style="{{ pre_style }}" {{ data_attr }}><code class="language-&#123;&#123; lang &#125;&#125;">
+&#123;&#123;- code -&#125;&#125;
+</code></pre>
+<p>这个比较第一步就是比较了两个<code>PyObject</code>的大小，最终通过<code>sigh</code>输出相对大小。<br />
+在位数相同时，依次比较各个位数。</p>
+<p>但我们要明确一点，就是长整型<code>long</code>在python中是以<code>int[]</code>的柔性数组实现的。，其数组名为<code>ob_digit[]</code>。</p>
+<p>我们回看<code>[Include/longintrepr.h]</code>中</p>
+
+<!-- Has Prism -->
+<pre class="{{ pre_class }}" style="{{ pre_style }}" {{ data_attr }}><code class="language-&#123;&#123; lang &#125;&#125;">
+&#123;&#123;- code -&#125;&#125;
+</code></pre>
+<p>我们看其注释：</p>
+<ul>
+<li>整数绝对值为<code>SUM(for i=0 through abs(ob_size)-1) ob_digit[i] * 2**(SHIFT*i)</code></li>
+<li>其正负用<code>ob_size</code>的正负表示</li>
+<li>0值使用<code>ob_size == 0</code></li>
+<li>正常的整数<code>ob_digit[abs(ob_size)-1]</code>不为0</li>
+<li>对于所有有效的<code>i</code>，其<code>ob_digit[i]</code>范围在<code>[0,MASK]</code>之间</li>
+</ul>
+<p>我们简单的表示一下,当<code>ob_size=3</code>,<code>ob_digit=[4,2,1]</code>,<code>SHIFT=30</code>,<code>MASK=2^30-1</code>时：</p>
+<p>\begin{align}<br />
+digit &amp;= 4*{( 2^{ 30 } )}^0 + 2*{( 2^{ 30 } )}^1 + 1*{( 2^{ 30 } )}^2 \\<br />
+&amp;= 1152921506754330628<br />
+\end{align}</p>
+<p>可以看出是一个进制转换过程。</p>
+<p>作为一个数值对象，我们首先得实现它的数值运算操作<code>long_as_number</code>：</p>
+
+<!-- Has Prism -->
+<pre class="{{ pre_class }}" style="{{ pre_style }}" {{ data_attr }}><code class="language-&#123;&#123; lang &#125;&#125;">
+&#123;&#123;- code -&#125;&#125;
+</code></pre>
+<h1 id="加法运算"><a class="markdownIt-Anchor" href="#加法运算"></a> 加法运算</h1>
+<p>我们不妨从最基础的加法看起：</p>
+
+<!-- Has Prism -->
+<pre class="{{ pre_class }}" style="{{ pre_style }}" {{ data_attr }}><code class="language-&#123;&#123; lang &#125;&#125;">
+&#123;&#123;- code -&#125;&#125;
+</code></pre>
+<p>更为具体的实现在<code>x_add()</code>和<code>x_sub()</code>中：</p>
+
+<!-- Has Prism -->
+<pre class="{{ pre_class }}" style="{{ pre_style }}" {{ data_attr }}><code class="language-&#123;&#123; lang &#125;&#125;">
+&#123;&#123;- code -&#125;&#125;
+</code></pre>
+<p>我们可以看见每步都使用了掩码，我们去找<code>PyLong_MASK</code>和<code>PyLong_SHIFT</code>的具体值。</p>
+
+<!-- Has Prism -->
+<pre class="{{ pre_class }}" style="{{ pre_style }}" {{ data_attr }}><code class="language-&#123;&#123; lang &#125;&#125;">
+&#123;&#123;- code -&#125;&#125;
+</code></pre>
+<p><code>PyLong_SHIFT</code>应该为5的倍数。<br />
+<code>PyLong_MASK</code>的值为<code>0b111111111111111111111111111111</code>「30个1」</p>
+<p>我们在此能看见python保存整型中，<code>ob_digit[]</code>中位数为30位，略小于理论上<code>int</code>的32位。「在有些版本是15位，不知道现在30位的好处在什么」</p>
+<p><code>carry</code>作为了一般的进位处理和中间结果。</p>
+<p><code>z</code>作为最终的结果变量，但最开始申请空间时默认比两个加数的空间大一，最终需要进行空间的整理<code>long_normalize()</code>：</p>
+
+<!-- Has Prism -->
+<pre class="{{ pre_class }}" style="{{ pre_style }}" {{ data_attr }}><code class="language-&#123;&#123; lang &#125;&#125;">
+&#123;&#123;- code -&#125;&#125;
+</code></pre>
+<p><code>Py_size</code>在<code>[Include/object.h]</code>中用宏定义</p>
+
+<!-- Has Prism -->
+<pre class="{{ pre_class }}" style="{{ pre_style }}" {{ data_attr }}><code class="language-&#123;&#123; lang &#125;&#125;">
+&#123;&#123;- code -&#125;&#125;
+</code></pre>
+<p>即通用地调整了数组的<code>ob_size</code>。</p>
+<h1 id="乘法运算"><a class="markdownIt-Anchor" href="#乘法运算"></a> 乘法运算</h1>
+<p>同样的，我们来看乘法相关运算:</p>
+<p>乘法运算同样定义在[Objects/longobject.c]</p>
+
+<!-- Has Prism -->
+<pre class="{{ pre_class }}" style="{{ pre_style }}" {{ data_attr }}><code class="language-&#123;&#123; lang &#125;&#125;">
+&#123;&#123;- code -&#125;&#125;
+</code></pre>
+<p>我们看当两个数的乘积能用<code>long long</code>类型保存时，即<code>ob_size</code>均小于1时，使用简单的两数相乘。再将其转化为<code>PyLong_Type</code>。如果整数过大，就使用<code>k_mul</code>计算，采用Karatsuba multiplication算法。</p>
+
+<!-- Has Prism -->
+<pre class="{{ pre_class }}" style="{{ pre_style }}" {{ data_attr }}><code class="language-&#123;&#123; lang &#125;&#125;">
+&#123;&#123;- code -&#125;&#125;
+</code></pre>
+<p>上面是简单的实现，具体的可以看<a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Karatsuba_algorithm" title="Karatsuba algorithm">wikipedia的介绍</a>或者<a href="">我相关的博文</a></p>
+<h1 id="小整数"><a class="markdownIt-Anchor" href="#小整数"></a> 小整数</h1>
+<p>特别的，在整数范围内，有一些整数被视为小整数<code>NSMALLINTS</code>，其范围在<code>[-5,257)</code>中，保存于<code>small_ints[]</code>这个数组中。</p>
+<p>其最主要的是，在小整数池中的数，都会给出同一个引用。</p>
+
+<!-- Has Prism -->
+<pre class="{{ pre_class }}" style="{{ pre_style }}" {{ data_attr }}><code class="language-&#123;&#123; lang &#125;&#125;">
+&#123;&#123;- code -&#125;&#125;
+</code></pre>
+<p>特别的，对象池初始化在<code>_PyLong_Init()</code>函数中：</p>
+
+<!-- Has Prism -->
+<pre class="{{ pre_class }}" style="{{ pre_style }}" {{ data_attr }}><code class="language-&#123;&#123; lang &#125;&#125;">
+&#123;&#123;- code -&#125;&#125;
+</code></pre>
+
+            </div>
+
+            <!-- Post Comments -->
+            
+
+        </div>
+        <!-- Copyright 版权 start -->
+                <div id="copyright">
+            <ul>
+                <li>&copy;Powered By <a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/" style="border-bottom: none;">hexo</a></li>
+                <li>Design: <a target="_blank" rel="noopener" href="http://miccall.tech " style="border-bottom: none;">miccall</a></li>
+            </ul>
+        </div>
+    </div>
+    <script src="/js/prism.js"></script><!-- hexo-inject:begin --><!-- Begin: Injected MathJax -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({{ JSON.stringify(config) }});
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+      all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+</script>
+
+<script type="text/javascript" src="{{ src }}">
+</script>
+<!-- End: Injected MathJax -->
+<script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/prism.min.js'></script><script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/plugins/line-numbers/prism-line-numbers.min.js'></script><script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/plugins/normalize-whitespace/prism-normalize-whitespace.min.js'></script><!-- hexo-inject:end -->
+</body>
+
+
+
+ 	
+</html>

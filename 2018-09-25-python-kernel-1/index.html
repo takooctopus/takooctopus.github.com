@@ -1,0 +1,326 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<!-- hexo-inject:begin --><!-- hexo-inject:end --><link rel="bookmark"  type="image/x-icon"  href="/img/logo_tako.jpg"/>
+	<link rel="shortcut icon" href="/img/logo_tako.jpg">
+	
+			    <title>
+    TAKONOHEYA
+    </title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="/css/mic_main.css" />
+    <link rel="stylesheet" href="/css/dropdownMenu.css" />
+    <meta name="keywords" content="takooctopus takonoheya" />
+    <noscript>
+        <link rel="stylesheet" href="/css/noscript.css" />
+    </noscript>
+    <style type="text/css">
+        body:before {
+          content: ' ';
+          position: fixed;
+          top: 0;
+          background: url('/img/bg.jpg') center 0 no-repeat;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          background-size: cover; 
+        }
+    </style>
+
+			    
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+          processEscapes: true
+        },
+        TeX: {
+          equationNumbers: {
+            autoNumber: "AMS"
+          }
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    
+    <script async type="text/javascript" src="https://cdn.bootcss.com/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+  
+
+ 
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/jquery.scrollex.min.js"></script>
+    <script src="/js/jquery.scrolly.min.js"></script>
+    <script src="/js/skel.min.js"></script>
+    <script src="/js/util.js"></script>
+    <script src="/js/main.js"></script>
+	
+<meta name="generator" content="Hexo 5.4.0"><!-- hexo-inject:begin --><link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/themes/prism.min.css'><link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/plugins/line-numbers/prism-line-numbers.min.css'><!-- hexo-inject:end --></head>
+    
+		
+<!-- Layouts -->
+
+
+<link rel="stylesheet" href="/css/prism_okaidia.css" />
+
+<link rel="stylesheet" href="/css/typo.css" />
+
+<!-- 文章页 -->
+<body class="is-loading">
+    <!-- hexo-inject:begin --><!-- hexo-inject:end --><!-- Wrapper 外包 s-->
+    <div id="wrapper" class="fade-in">
+        <!-- Intro 头部显示 s -->
+        <!-- Intro 头部显示 e -->
+        <!-- Header 头部logo start -->
+        <header id="header">
+    <a href="/" class="logo">TAKOOCTOPUS</a>
+</header>
+        <!-- Nav 导航条 start -->
+        <nav id="nav" class="special" >
+            <ul class="menu links" >
+			<!-- Homepage  主页  --> 
+			<li >
+	            <a href="/" rel="nofollow">主页</a>
+	        </li>
+			<!-- categories_name  分类   --> 
+	        
+	        <!-- archives  归档   --> 
+	        
+	        
+		        <!-- Pages 自定义   -->
+		        
+		        <li>
+		            <a href="/about/" title="简介">
+		                简介
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/group/" title="团队">
+		                团队
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/series/" title="系列">
+		                系列
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/gallery/" title="图库">
+		                图库
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/tag/" title="标签">
+		                标签
+		            </a>
+		        </li>
+		        
+
+
+            </ul>
+            <!-- icons 图标   -->
+			<ul class="icons">
+                    
+                    <li>
+                        <a title="github" href="https://github.com/takooctopus" target="_blank" rel="noopener">
+                            <i class="icon fa fa-github"></i>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a title="tv" href="https://space.bilibili.com/499056" target="_blank" rel="noopener">
+                            <i class="icon fa fa-tv"></i>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a title="home" href="https://takooctopus.github.io" target="_blank" rel="noopener">
+                            <i class="icon fa fa-home"></i>
+                        </a>
+                    </li>
+                    
+			</ul>
+</nav>
+
+        <div id="main" >
+            <div class ="post_page_title_img" style="height: 25rem;background-image: url(/assets/img/posts/CS/PythonKernel.jpg);background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;overflow:hidden;" >
+                <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2 >python 内核分析（一）：Python源码获取与基本情况</h2></a>
+            </div>
+            <!-- Post -->
+            <div class="typo" style="padding: 3rem;">
+                <blockquote>
+<p>本系列作为<a href="https://takooctopus.github.io/" title="TAKONOHEYA">本人@takooctopus</a>深入学习python机制的记录，这个博客遵照着<a target="_blank" rel="noopener" href="https://www.hongweipeng.com/" title="栖迟于一丘">栖迟于一丘</a>的博客上面的流程进行的，也包含我在实际查看源码时的感想，特此列出，表示感谢。</p>
+</blockquote>
+<h1 id="python源码获取与基本情况"><a class="markdownIt-Anchor" href="#python源码获取与基本情况"></a> Python源码获取与基本情况</h1>
+<h2 id="源码获取"><a class="markdownIt-Anchor" href="#源码获取"></a> 源码获取</h2>
+
+<!-- Has Prism -->
+<pre class="{{ pre_class }}" style="{{ pre_style }}" {{ data_attr }}><code class="language-&#123;&#123; lang &#125;&#125;">
+&#123;&#123;- code -&#125;&#125;
+</code></pre>
+<h2 id="版本选择与切换"><a class="markdownIt-Anchor" href="#版本选择与切换"></a> 版本选择与切换</h2>
+
+<!-- Has Prism -->
+<pre class="{{ pre_class }}" style="{{ pre_style }}" {{ data_attr }}><code class="language-&#123;&#123; lang &#125;&#125;">
+&#123;&#123;- code -&#125;&#125;
+</code></pre>
+<p>此时我们能够看到所有的版本</p>
+
+<!-- Has Prism -->
+<pre class="{{ pre_class }}" style="{{ pre_style }}" {{ data_attr }}><code class="language-&#123;&#123; lang &#125;&#125;">
+&#123;&#123;- code -&#125;&#125;
+</code></pre>
+<p>我们看到最新的稳定版是3.7，我们选择将版本选择到最新的稳定版</p>
+ 
+<!-- Has Prism -->
+<pre class="{{ pre_class }}" style="{{ pre_style }}" {{ data_attr }}><code class="language-&#123;&#123; lang &#125;&#125;">
+&#123;&#123;- code -&#125;&#125;
+</code></pre>
+<h2 id="目录结构"><a class="markdownIt-Anchor" href="#目录结构"></a> 目录结构</h2>
+<p>首先我们看到的是目录结构:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Folder</th>
+<th style="text-align:left">description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Include</td>
+<td style="text-align:left">包括了Python提供的所有头文件，用于使用C或者C++来编写Python的自定义模块</td>
+</tr>
+<tr>
+<td style="text-align:left">Lib</td>
+<td style="text-align:left">Python的标准库，全部由Python编写</td>
+</tr>
+<tr>
+<td style="text-align:left">Module</td>
+<td style="text-align:left">包含用C语言编写的模块，比如常用的<code>random</code>以及<code>stringIO</code>等</td>
+</tr>
+<tr>
+<td style="text-align:left">Parses</td>
+<td style="text-align:left">包含了python解释器中的scanner和parser部分,也就是词法分析和语法分析部分,一个类似yacc一样根据规则自动生成</td>
+</tr>
+<tr>
+<td style="text-align:left">Object</td>
+<td style="text-align:left">包含所有Python的内置对象,整数, list, dict等.也包含了运行时python需要的所有内部使用的对象的实现</td>
+</tr>
+<tr>
+<td style="text-align:left">Python</td>
+<td style="text-align:left">包含了python解释器中Compiler和执行引擎部分,是python运行的核心所在</td>
+</tr>
+<tr>
+<td style="text-align:left">PCBuild</td>
+<td style="text-align:left">包含了vs工程文件</td>
+</tr>
+</tbody>
+</table>
+<p>此外还有几个文件夹:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Folder</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Doc</td>
+</tr>
+<tr>
+<td style="text-align:left">Grammar</td>
+</tr>
+<tr>
+<td style="text-align:left">m4</td>
+</tr>
+<tr>
+<td style="text-align:left">Mac</td>
+</tr>
+<tr>
+<td style="text-align:left">Misc</td>
+</tr>
+<tr>
+<td style="text-align:left">PC</td>
+</tr>
+<tr>
+<td style="text-align:left">Programs</td>
+</tr>
+<tr>
+<td style="text-align:left">Tools</td>
+</tr>
+</tbody>
+</table>
+<h2 id="总体架构"><a class="markdownIt-Anchor" href="#总体架构"></a> 总体架构</h2>
+<p>Python整体分成了3个模块:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Module</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">内建模块</td>
+</tr>
+<tr>
+<td style="text-align:left">Python内核</td>
+</tr>
+<tr>
+<td style="text-align:left">Python虚拟机</td>
+</tr>
+</tbody>
+</table>
+
+            </div>
+
+            <!-- Post Comments -->
+            
+
+        </div>
+        <!-- Copyright 版权 start -->
+                <div id="copyright">
+            <ul>
+                <li>&copy;Powered By <a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/" style="border-bottom: none;">hexo</a></li>
+                <li>Design: <a target="_blank" rel="noopener" href="http://miccall.tech " style="border-bottom: none;">miccall</a></li>
+            </ul>
+        </div>
+    </div>
+    <script src="/js/prism.js"></script><!-- hexo-inject:begin --><!-- Begin: Injected MathJax -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({{ JSON.stringify(config) }});
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+      all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+</script>
+
+<script type="text/javascript" src="{{ src }}">
+</script>
+<!-- End: Injected MathJax -->
+<script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/prism.min.js'></script><script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/plugins/line-numbers/prism-line-numbers.min.js'></script><script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/plugins/normalize-whitespace/prism-normalize-whitespace.min.js'></script><!-- hexo-inject:end -->
+</body>
+
+
+
+ 	
+</html>

@@ -1,0 +1,267 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<!-- hexo-inject:begin --><!-- hexo-inject:end --><link rel="bookmark"  type="image/x-icon"  href="/img/logo_tako.jpg"/>
+	<link rel="shortcut icon" href="/img/logo_tako.jpg">
+	
+			    <title>
+    TAKONOHEYA
+    </title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="/css/mic_main.css" />
+    <link rel="stylesheet" href="/css/dropdownMenu.css" />
+    <meta name="keywords" content="takooctopus takonoheya" />
+    <noscript>
+        <link rel="stylesheet" href="/css/noscript.css" />
+    </noscript>
+    <style type="text/css">
+        body:before {
+          content: ' ';
+          position: fixed;
+          top: 0;
+          background: url('/img/bg.jpg') center 0 no-repeat;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          background-size: cover; 
+        }
+    </style>
+
+			    
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+          processEscapes: true
+        },
+        TeX: {
+          equationNumbers: {
+            autoNumber: "AMS"
+          }
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    
+    <script async type="text/javascript" src="https://cdn.bootcss.com/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+  
+
+ 
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/jquery.scrollex.min.js"></script>
+    <script src="/js/jquery.scrolly.min.js"></script>
+    <script src="/js/skel.min.js"></script>
+    <script src="/js/util.js"></script>
+    <script src="/js/main.js"></script>
+	
+<meta name="generator" content="Hexo 5.4.0"><!-- hexo-inject:begin --><link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/themes/prism.min.css'><link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/plugins/line-numbers/prism-line-numbers.min.css'><!-- hexo-inject:end --></head>
+    
+		
+<!-- Layouts -->
+
+
+<link rel="stylesheet" href="/css/prism_okaidia.css" />
+
+<link rel="stylesheet" href="/css/typo.css" />
+
+<!-- 文章页 -->
+<body class="is-loading">
+    <!-- hexo-inject:begin --><!-- hexo-inject:end --><!-- Wrapper 外包 s-->
+    <div id="wrapper" class="fade-in">
+        <!-- Intro 头部显示 s -->
+        <!-- Intro 头部显示 e -->
+        <!-- Header 头部logo start -->
+        <header id="header">
+    <a href="/" class="logo">TAKOOCTOPUS</a>
+</header>
+        <!-- Nav 导航条 start -->
+        <nav id="nav" class="special" >
+            <ul class="menu links" >
+			<!-- Homepage  主页  --> 
+			<li >
+	            <a href="/" rel="nofollow">主页</a>
+	        </li>
+			<!-- categories_name  分类   --> 
+	        
+	        <!-- archives  归档   --> 
+	        
+	        
+		        <!-- Pages 自定义   -->
+		        
+		        <li>
+		            <a href="/about/" title="简介">
+		                简介
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/group/" title="团队">
+		                团队
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/series/" title="系列">
+		                系列
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/gallery/" title="图库">
+		                图库
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/tag/" title="标签">
+		                标签
+		            </a>
+		        </li>
+		        
+
+
+            </ul>
+            <!-- icons 图标   -->
+			<ul class="icons">
+                    
+                    <li>
+                        <a title="github" href="https://github.com/takooctopus" target="_blank" rel="noopener">
+                            <i class="icon fa fa-github"></i>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a title="tv" href="https://space.bilibili.com/499056" target="_blank" rel="noopener">
+                            <i class="icon fa fa-tv"></i>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a title="home" href="https://takooctopus.github.io" target="_blank" rel="noopener">
+                            <i class="icon fa fa-home"></i>
+                        </a>
+                    </li>
+                    
+			</ul>
+</nav>
+
+        <div id="main" >
+            <div class ="post_page_title_img" style="height: 25rem;background-image: url(/assets/img/posts/CS/PythonKernel.jpg);background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;overflow:hidden;" >
+                <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2 >python 内核分析（八）：Pyc与PyCodeObject</h2></a>
+            </div>
+            <!-- Post -->
+            <div class="typo" style="padding: 3rem;">
+                <blockquote>
+<p>本系列作为<a href="https://takooctopus.github.io/" title="TAKONOHEYA">本人@takooctopus</a>深入学习python机制的记录，这个博客遵照着<a target="_blank" rel="noopener" href="https://www.hongweipeng.com/" title="栖迟于一丘">栖迟于一丘</a>的博客上面的流程进行的，也包含我在实际查看源码时的感想，特此列出，表示感谢。</p>
+</blockquote>
+<h1 id="关于pyc文件"><a class="markdownIt-Anchor" href="#关于pyc文件"></a> 关于pyc文件</h1>
+<p>在python运行源程序时，首先要经过编译，其会变为字节码文件，即我们所说的<code>.pyc</code>文件。但其中主要的是<code>PyCodeObject</code>。</p>
+
+<!-- Has Prism -->
+<pre class="{{ pre_class }}" style="{{ pre_style }}" {{ data_attr }}><code class="language-&#123;&#123; lang &#125;&#125;">
+&#123;&#123;- code -&#125;&#125;
+</code></pre>
+<p>编译器对源码进行编译时，对于每个代码域，都会创建一个<code>PyCodeObject</code>与之对应，即文件、类或者函数。</p>
+<p>在你运行python，使用编译语句的时候，返回的对象能直接通过这些属性访问</p>
+
+<!-- Has Prism -->
+<pre class="{{ pre_class }}" style="{{ pre_style }}" {{ data_attr }}><code class="language-&#123;&#123; lang &#125;&#125;">
+&#123;&#123;- code -&#125;&#125;
+</code></pre>
+<p>这里面我们就能直接得到code的属性</p>
+<p>你要将Object写入文件，就需要</p>
+
+<!-- Has Prism -->
+<pre class="{{ pre_class }}" style="{{ pre_style }}" {{ data_attr }}><code class="language-&#123;&#123; lang &#125;&#125;">
+&#123;&#123;- code -&#125;&#125;
+</code></pre>
+<p>其中<code>WFILE</code>结构体定义</p>
+
+<!-- Has Prism -->
+<pre class="{{ pre_class }}" style="{{ pre_style }}" {{ data_attr }}><code class="language-&#123;&#123; lang &#125;&#125;">
+&#123;&#123;- code -&#125;&#125;
+</code></pre>
+<p>其中<code>fp</code>指向了最后要写入的文件。</p>
+<p>在确定了写入的文件后，就需要向文件中写入对象：</p>
+
+<!-- Has Prism -->
+<pre class="{{ pre_class }}" style="{{ pre_style }}" {{ data_attr }}><code class="language-&#123;&#123; lang &#125;&#125;">
+&#123;&#123;- code -&#125;&#125;
+</code></pre>
+<p>一般的，调用了<code>w_byte()</code>函数进行写入缓冲区，<code>w_flush()</code>将缓冲区<code>p-&gt;buf</code>写入文件</p>
+
+<!-- Has Prism -->
+<pre class="{{ pre_class }}" style="{{ pre_style }}" {{ data_attr }}><code class="language-&#123;&#123; lang &#125;&#125;">
+&#123;&#123;- code -&#125;&#125;
+</code></pre>
+<p>特别的，我们在调用<code>w_byte()</code>时，需要传入数据类型。</p>
+
+<!-- Has Prism -->
+<pre class="{{ pre_class }}" style="{{ pre_style }}" {{ data_attr }}><code class="language-&#123;&#123; lang &#125;&#125;">
+&#123;&#123;- code -&#125;&#125;
+</code></pre>
+<p>因为写入文件时，所有数据都变为了字节流，我们通过开始时的这个标志，能得知一个新的对象的开始。</p>
+<h1 id="pycodeobject的加载"><a class="markdownIt-Anchor" href="#pycodeobject的加载"></a> PyCodeObject的加载</h1>
+<p>其加载过程开始在<code>PyMarshal_ReadObjectFromFile()</code>函数：</p>
+
+<!-- Has Prism -->
+<pre class="{{ pre_class }}" style="{{ pre_style }}" {{ data_attr }}><code class="language-&#123;&#123; lang &#125;&#125;">
+&#123;&#123;- code -&#125;&#125;
+</code></pre>
+<p>实际的读入在<code>r_object()</code>函数中：</p>
+
+<!-- Has Prism -->
+<pre class="{{ pre_class }}" style="{{ pre_style }}" {{ data_attr }}><code class="language-&#123;&#123; lang &#125;&#125;">
+&#123;&#123;- code -&#125;&#125;
+</code></pre>
+
+            </div>
+
+            <!-- Post Comments -->
+            
+
+        </div>
+        <!-- Copyright 版权 start -->
+                <div id="copyright">
+            <ul>
+                <li>&copy;Powered By <a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/" style="border-bottom: none;">hexo</a></li>
+                <li>Design: <a target="_blank" rel="noopener" href="http://miccall.tech " style="border-bottom: none;">miccall</a></li>
+            </ul>
+        </div>
+    </div>
+    <script src="/js/prism.js"></script><!-- hexo-inject:begin --><!-- Begin: Injected MathJax -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({{ JSON.stringify(config) }});
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+      all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+</script>
+
+<script type="text/javascript" src="{{ src }}">
+</script>
+<!-- End: Injected MathJax -->
+<script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/prism.min.js'></script><script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/plugins/line-numbers/prism-line-numbers.min.js'></script><script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/plugins/normalize-whitespace/prism-normalize-whitespace.min.js'></script><!-- hexo-inject:end -->
+</body>
+
+
+
+ 	
+</html>

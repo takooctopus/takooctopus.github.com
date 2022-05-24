@@ -1,0 +1,316 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<!-- hexo-inject:begin --><!-- hexo-inject:end --><link rel="bookmark"  type="image/x-icon"  href="/img/logo_tako.jpg"/>
+	<link rel="shortcut icon" href="/img/logo_tako.jpg">
+	
+			    <title>
+    TAKONOHEYA
+    </title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="/css/mic_main.css" />
+    <link rel="stylesheet" href="/css/dropdownMenu.css" />
+    <meta name="keywords" content="takooctopus takonoheya" />
+    <noscript>
+        <link rel="stylesheet" href="/css/noscript.css" />
+    </noscript>
+    <style type="text/css">
+        body:before {
+          content: ' ';
+          position: fixed;
+          top: 0;
+          background: url('/img/bg.jpg') center 0 no-repeat;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          background-size: cover; 
+        }
+    </style>
+
+			    
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+          processEscapes: true
+        },
+        TeX: {
+          equationNumbers: {
+            autoNumber: "AMS"
+          }
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    
+    <script async type="text/javascript" src="https://cdn.bootcss.com/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+  
+
+ 
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/jquery.scrollex.min.js"></script>
+    <script src="/js/jquery.scrolly.min.js"></script>
+    <script src="/js/skel.min.js"></script>
+    <script src="/js/util.js"></script>
+    <script src="/js/main.js"></script>
+	
+<meta name="generator" content="Hexo 5.4.0"><!-- hexo-inject:begin --><link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/themes/prism.min.css'><link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/plugins/line-numbers/prism-line-numbers.min.css'><!-- hexo-inject:end --></head>
+    
+		
+<!-- Layouts -->
+
+
+<link rel="stylesheet" href="/css/prism_okaidia.css" />
+
+<link rel="stylesheet" href="/css/typo.css" />
+
+<!-- 文章页 -->
+<body class="is-loading">
+    <!-- hexo-inject:begin --><!-- hexo-inject:end --><!-- Wrapper 外包 s-->
+    <div id="wrapper" class="fade-in">
+        <!-- Intro 头部显示 s -->
+        <!-- Intro 头部显示 e -->
+        <!-- Header 头部logo start -->
+        <header id="header">
+    <a href="/" class="logo">TAKOOCTOPUS</a>
+</header>
+        <!-- Nav 导航条 start -->
+        <nav id="nav" class="special" >
+            <ul class="menu links" >
+			<!-- Homepage  主页  --> 
+			<li >
+	            <a href="/" rel="nofollow">主页</a>
+	        </li>
+			<!-- categories_name  分类   --> 
+	        
+	        <!-- archives  归档   --> 
+	        
+	        
+		        <!-- Pages 自定义   -->
+		        
+		        <li>
+		            <a href="/about/" title="简介">
+		                简介
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/group/" title="团队">
+		                团队
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/series/" title="系列">
+		                系列
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/gallery/" title="图库">
+		                图库
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/tag/" title="标签">
+		                标签
+		            </a>
+		        </li>
+		        
+
+
+            </ul>
+            <!-- icons 图标   -->
+			<ul class="icons">
+                    
+                    <li>
+                        <a title="github" href="https://github.com/takooctopus" target="_blank" rel="noopener">
+                            <i class="icon fa fa-github"></i>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a title="tv" href="https://space.bilibili.com/499056" target="_blank" rel="noopener">
+                            <i class="icon fa fa-tv"></i>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a title="home" href="https://takooctopus.github.io" target="_blank" rel="noopener">
+                            <i class="icon fa fa-home"></i>
+                        </a>
+                    </li>
+                    
+			</ul>
+</nav>
+
+        <div id="main" >
+            <div class ="post_page_title_img" style="height: 25rem;background-image: url(/assets/img/posts/CS/PythonKernel.jpg);background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;overflow:hidden;" >
+                <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2 >python 内核分析（三）：对象的创建</h2></a>
+            </div>
+            <!-- Post -->
+            <div class="typo" style="padding: 3rem;">
+                <blockquote>
+<p>本系列作为<a href="https://takooctopus.github.io/" title="TAKONOHEYA">本人@takooctopus</a>深入学习python机制的记录，这个博客遵照着<a target="_blank" rel="noopener" href="https://www.hongweipeng.com/" title="栖迟于一丘">栖迟于一丘</a>的博客上面的流程进行的，也包含我在实际查看源码时的感想，特此列出，表示感谢。</p>
+</blockquote>
+<h1 id="对象的创建"><a class="markdownIt-Anchor" href="#对象的创建"></a> 对象的创建</h1>
+<p>Python在关于对象的创建上，提供了两种方式：</p>
+<ul>
+<li>1.C Api</li>
+<li>2.通过类型创建，比如<code>PyLong_Type</code>「Objects/longobject.c」</li>
+</ul>
+<p>而在<code>C Api</code>中提供了两类：</p>
+<ul>
+<li>1.一种是泛型的Api，形式如同<code>PyObject_Xxx</code>「Include/object.h」，其能够应用在任何Python对象上。</li>
+<li>2.另一种是与数据类型相关的Api：</li>
+</ul>
+
+<!-- Has Prism -->
+<pre class="{{ pre_class }}" style="{{ pre_style }}" {{ data_attr }}><code class="language-&#123;&#123; lang &#125;&#125;">
+&#123;&#123;- code -&#125;&#125;
+</code></pre>
+<p>不管使用哪种模块，最终都是直接分配相应的内存。</p>
+<h2 id="对象的行为"><a class="markdownIt-Anchor" href="#对象的行为"></a> 对象的行为</h2>
+<p>我们继续去看<code>PyTypeObject</code>的定义，在「Include/object.h」中我们能够看见一个关于<code>PyTypeObject</code>的定义结构体：</p>
+
+<!-- Has Prism -->
+<pre class="{{ pre_class }}" style="{{ pre_style }}" {{ data_attr }}><code class="language-&#123;&#123; lang &#125;&#125;">
+&#123;&#123;- code -&#125;&#125;
+</code></pre>
+<p>在这整个结构体中，定义了许多函数指针，其指向了某个函数或者<code>NULL</code>，这些函数指针定义了Python类型对象的操作，其会在对象运行的状态而表现出不同的行为。</p>
+<p>我们以上面11行的代码为例：</p>
+
+<!-- Has Prism -->
+<pre class="{{ pre_class }}" style="{{ pre_style }}" {{ data_attr }}><code class="language-&#123;&#123; lang &#125;&#125;">
+&#123;&#123;- code -&#125;&#125;
+</code></pre>
+<p>我们继续追踪，能在前面发现定义:</p>
+
+<!-- Has Prism -->
+<pre class="{{ pre_class }}" style="{{ pre_style }}" {{ data_attr }}><code class="language-&#123;&#123; lang &#125;&#125;">
+&#123;&#123;- code -&#125;&#125;
+</code></pre>
+<p>明显的，这个属性最终给出了一个函数指针。</p>
+<h2 id="对象流程"><a class="markdownIt-Anchor" href="#对象流程"></a> 对象流程</h2>
+<p>明显的<code>tp_new</code>与<code>tp_init</code>定义了对象的创建于初始化操作。</p>
+<p>而对于标准类有几个重要的方法：<code>tp_as_number</code>、<code>tp_as_sequence</code>和<code>tp_as_mapping</code></p>
+<blockquote>
+<p>我们以第一个属性为例，追踪找到其表示的类<code>PyNumberMethods</code>：</p>
+</blockquote>
+
+<!-- Has Prism -->
+<pre class="{{ pre_class }}" style="{{ pre_style }}" {{ data_attr }}><code class="language-&#123;&#123; lang &#125;&#125;">
+&#123;&#123;- code -&#125;&#125;
+</code></pre>
+<p>这一个结构体定义了当类型对象「PyTypeObject」被作为一个数值对象时所能够做的操作。</p>
+<p>明显的<code>nb_add</code>代表了数值加法操作。</p>
+<blockquote>
+<p>顺便的，我们可以得到另外两种类型的主要类型</p>
+</blockquote>
+<ul>
+<li><code>tp_as_sequence</code>对应<code>list</code></li>
+<li><code>tp_as_mapping</code>对应<code>dict</code></li>
+</ul>
+<h2 id="类型对象的类型"><a class="markdownIt-Anchor" href="#类型对象的类型"></a> 类型对象的类型</h2>
+<p>我们可以看见类型对象「PyTypeObject」的第一个属性就是<code>PyObject_VAR_HEAD</code>，这代表了这个Python对象的类型同时也是一个对象。</p>
+<p>对其进行追踪后，我们发现其在「Include/object.h」中最开始定义了这个宏：</p>
+
+<!-- Has Prism -->
+<pre class="{{ pre_class }}" style="{{ pre_style }}" {{ data_attr }}><code class="language-&#123;&#123; lang &#125;&#125;">
+&#123;&#123;- code -&#125;&#125;
+</code></pre>
+<p>分别对应了一个可变对象以及基本对象「在上一篇中我们提到了基本对象」</p>
+<p>而类型对象的类型就是它自己。</p>
+<h2 id="对象的多态性"><a class="markdownIt-Anchor" href="#对象的多态性"></a> 对象的多态性</h2>
+<p>对于一个Python对象来说，特别的对于Python基础对象「_object」「PyObject」来说，其有一个<code>ob_type</code>属性，其中包括了Python对象的类型信息。</p>
+<p>这里的<code>ob_type</code>就是一个<code>PyTypeObject</code>即我们上面讨论的类型对象。</p>
+<p>我们的Python对象能够直接使用箭头调用即<code>object-&gt;ob_type-&gt;</code>形式继续调用里面的属性</p>
+<p>而函数之间一般通过泛型指针<code>PyObject*</code>来传递</p>
+<p>我们回头看其中的某个属性，就拿<code>C API</code>中的所列出来的一样：</p>
+
+<!-- Has Prism -->
+<pre class="{{ pre_class }}" style="{{ pre_style }}" {{ data_attr }}><code class="language-&#123;&#123; lang &#125;&#125;">
+&#123;&#123;- code -&#125;&#125;
+</code></pre>
+<p>我们可以看到这个函数中进行了多态的判断。</p>
+<h2 id="对象的引用计数"><a class="markdownIt-Anchor" href="#对象的引用计数"></a> 对象的引用计数</h2>
+<p>在类似于C和C++以及Rust的语言中，程序员有极大的自由，能够任意的申请内存，<a href="/2018-09-27-Program-Tips-2/" title="其中的小问题可以看看这篇文章">其中的小问题可以看看这篇文章</a>，但编程人员需要负责内存的释放问题，这其中很容易导致内存泄漏和空指针的BUG。</p>
+<p>为了解决这些问题，现代高级语言大多采用了自己的内存管理和维护系统，像Java与C#均有其自己的垃圾回收机制。</p>
+<p>同样的，Python也建立了其自己的垃圾回收机制。</p>
+<p>最为明显的就是它的引用计数：</p>
+<p>我们回去看与<code>ob_refcnt</code>的值变化有关的函数，可以在下面发现<code>Py_INCREF(op)</code>与<code>Py_DECREF(op)</code></p>
+
+<!-- Has Prism -->
+<pre class="{{ pre_class }}" style="{{ pre_style }}" {{ data_attr }}><code class="language-&#123;&#123; lang &#125;&#125;">
+&#123;&#123;- code -&#125;&#125;
+</code></pre>
+<p>我们可以看见当<code>ob_refcnt</code>这个引用计数减少到0时，<code>Py_DECREF(op)</code>就会调用析构函数<code>_Py_Dealloc(_py_decref_tmp)</code>进行内存的释放工作</p>
+
+<!-- Has Prism -->
+<pre class="{{ pre_class }}" style="{{ pre_style }}" {{ data_attr }}><code class="language-&#123;&#123; lang &#125;&#125;">
+&#123;&#123;- code -&#125;&#125;
+</code></pre>
+<p>一般来说如果<code>Py_LIMITED_API</code>没有被定义时，<code>_Py_Dealloc(op)</code>的触发会销毁对象，释放内存。</p>
+<blockquote>
+<p>类型对象是超越引用计数规则的, 它永远不会被析构.并且类型对象是共享的, 多个int类型变量的类型对象指针都是指向同一个, 且不会被视为是类型对象的引用.</p>
+</blockquote>
+<p>我们可以简单地验证一下</p>
+
+<!-- Has Prism -->
+<pre class="{{ pre_class }}" style="{{ pre_style }}" {{ data_attr }}><code class="language-&#123;&#123; lang &#125;&#125;">
+&#123;&#123;- code -&#125;&#125;
+</code></pre>
+<p>上面这段程序输出为<code>True</code>和<code>True</code>。</p>
+<p>我们再看它们的<code>id(x)</code>和<code>id(y</code>)，在我的电脑上它们id均为<code>22941395520</code>，id是他们的身份唯一指定，我们也很容易看出其指向了同一个int对象。</p>
+
+            </div>
+
+            <!-- Post Comments -->
+            
+
+        </div>
+        <!-- Copyright 版权 start -->
+                <div id="copyright">
+            <ul>
+                <li>&copy;Powered By <a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/" style="border-bottom: none;">hexo</a></li>
+                <li>Design: <a target="_blank" rel="noopener" href="http://miccall.tech " style="border-bottom: none;">miccall</a></li>
+            </ul>
+        </div>
+    </div>
+    <script src="/js/prism.js"></script><!-- hexo-inject:begin --><!-- Begin: Injected MathJax -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({{ JSON.stringify(config) }});
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+      all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+</script>
+
+<script type="text/javascript" src="{{ src }}">
+</script>
+<!-- End: Injected MathJax -->
+<script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/prism.min.js'></script><script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/plugins/line-numbers/prism-line-numbers.min.js'></script><script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/plugins/normalize-whitespace/prism-normalize-whitespace.min.js'></script><!-- hexo-inject:end -->
+</body>
+
+
+
+ 	
+</html>

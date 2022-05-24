@@ -1,0 +1,223 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<!-- hexo-inject:begin --><!-- hexo-inject:end --><link rel="bookmark"  type="image/x-icon"  href="/img/logo_tako.jpg"/>
+	<link rel="shortcut icon" href="/img/logo_tako.jpg">
+	
+			    <title>
+    TAKONOHEYA
+    </title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="/css/mic_main.css" />
+    <link rel="stylesheet" href="/css/dropdownMenu.css" />
+    <meta name="keywords" content="takooctopus takonoheya" />
+    <noscript>
+        <link rel="stylesheet" href="/css/noscript.css" />
+    </noscript>
+    <style type="text/css">
+        body:before {
+          content: ' ';
+          position: fixed;
+          top: 0;
+          background: url('/img/bg.jpg') center 0 no-repeat;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          background-size: cover; 
+        }
+    </style>
+
+			    
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+          processEscapes: true
+        },
+        TeX: {
+          equationNumbers: {
+            autoNumber: "AMS"
+          }
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    
+    <script async type="text/javascript" src="https://cdn.bootcss.com/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+  
+
+ 
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/jquery.scrollex.min.js"></script>
+    <script src="/js/jquery.scrolly.min.js"></script>
+    <script src="/js/skel.min.js"></script>
+    <script src="/js/util.js"></script>
+    <script src="/js/main.js"></script>
+	
+<meta name="generator" content="Hexo 5.4.0"><!-- hexo-inject:begin --><!-- hexo-inject:end --></head>
+    
+		
+<!-- Layouts -->
+
+
+<link rel="stylesheet" href="/css/prism_okaidia.css" />
+
+<link rel="stylesheet" href="/css/typo.css" />
+
+<!-- 文章页 -->
+<body class="is-loading">
+    <!-- hexo-inject:begin --><!-- hexo-inject:end --><!-- Wrapper 外包 s-->
+    <div id="wrapper" class="fade-in">
+        <!-- Intro 头部显示 s -->
+        <!-- Intro 头部显示 e -->
+        <!-- Header 头部logo start -->
+        <header id="header">
+    <a href="/" class="logo">TAKOOCTOPUS</a>
+</header>
+        <!-- Nav 导航条 start -->
+        <nav id="nav" class="special" >
+            <ul class="menu links" >
+			<!-- Homepage  主页  --> 
+			<li >
+	            <a href="/" rel="nofollow">主页</a>
+	        </li>
+			<!-- categories_name  分类   --> 
+	        
+	        <!-- archives  归档   --> 
+	        
+	        
+		        <!-- Pages 自定义   -->
+		        
+		        <li>
+		            <a href="/about/" title="简介">
+		                简介
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/group/" title="团队">
+		                团队
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/series/" title="系列">
+		                系列
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/gallery/" title="图库">
+		                图库
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/tag/" title="标签">
+		                标签
+		            </a>
+		        </li>
+		        
+
+
+            </ul>
+            <!-- icons 图标   -->
+			<ul class="icons">
+                    
+                    <li>
+                        <a title="github" href="https://github.com/takooctopus" target="_blank" rel="noopener">
+                            <i class="icon fa fa-github"></i>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a title="tv" href="https://space.bilibili.com/499056" target="_blank" rel="noopener">
+                            <i class="icon fa fa-tv"></i>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a title="home" href="https://takooctopus.github.io" target="_blank" rel="noopener">
+                            <i class="icon fa fa-home"></i>
+                        </a>
+                    </li>
+                    
+			</ul>
+</nav>
+
+        <div id="main" >
+            <div class ="post_page_title_img" style="height: 25rem;background-image: url(/assets/img/posts/Math/matrix.jpg);background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;overflow:hidden;" >
+                <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2 >矩阵分析与应用（十一）：Moore-Penrose 逆矩阵中关于欠定和超定方程</h2></a>
+            </div>
+            <!-- Post -->
+            <div class="typo" style="padding: 3rem;">
+                <h1 id="moore-penrose-逆矩阵中关于欠定和超定方程"><a class="markdownIt-Anchor" href="#moore-penrose-逆矩阵中关于欠定和超定方程"></a> Moore-Penrose 逆矩阵中关于欠定和超定方程</h1>
+<p>之前我们看到了在一致性方程中如何去解Moore-Penrose逆矩阵的四种方法，但除此之外，我们还有很多非一致性方程的情形，这要求我们得去做讨论。</p>
+<h2 id="非一致方程的最小范数最小二乘解"><a class="markdownIt-Anchor" href="#非一致方程的最小范数最小二乘解"></a> 非一致方程的最小范数最小二乘解</h2>
+<p>我们在之前广义逆矩阵一节中讲到了<a href="/2019-01-17-math-matrix-8/#%E4%B8%80%E8%87%B4%E6%96%B9%E7%A8%8B%E7%9A%84%E6%9C%80%E5%B0%8F%E8%8C%83%E6%95%B0%E8%A7%A3">一致方程的最小范数解</a> 和<a href="/2019-01-17-math-matrix-8/#%E9%9D%9E%E4%B8%80%E8%87%B4%E6%96%B9%E7%A8%8B%E7%9A%84%E6%9C%80%E5%B0%8F%E4%BA%8C%E4%B9%98%E8%A7%A3">非一致方程的最小二乘解</a>。<br />
+但是我们要注意，最小二乘解非唯一，我们要在其中找到一个范数最小的解，我们将其称为<code>非一致方程的最小范数最小二乘解(minimun norm least squares solution)</code>，我们也称其为<code>半范数(seminorm)最小二乘解</code></p>
+<h3 id="定义"><a class="markdownIt-Anchor" href="#定义"></a> 定义</h3>
+<p>对于非一致方程 $ A_{m \times n} x_{n \times 1} = y_{m \times 1} $  ，如果矩阵 $ G $ 满足条件：</p>
+<p>
+$$
+\lVert Gy \rVert _n \leq \lVert \hat{x} \rVert _n   ,其中 \forall \hat{x} \in \lbrace \hat{x}: \lVert A\hat{x}-y \rVert _m \leq \lVert Az-y \rVert _m  \quad \forall y \in R^m, z \in R \rbrace
+$$
+</p>
+<p>则称矩阵 $ G $ 为 $ A $ 的最小范数最小二乘广义逆矩阵</p>
+<p>「注意」</p>
+<ul>
+<li>在上式中我们将 $ \lVert \cdot \rVert _n $ 和 $ \lVert \cdot \rVert _m $ 称为在 $ R^n $ 和 $ R_m $ 上的范数（半范数）；</li>
+<li>而花括号 $ \lbrace \cdot \rbrace $ 表示一致方程 $ Ax = y $ 的最小二乘解。</li>
+<li>而 $ \lVert Gy \rVert _n \leq \lVert \hat{x} \rVert _n $ 表示 $ Gy $ 是在所有最小二乘解中范数最小的那个解。</li>
+</ul>
+
+            </div>
+
+            <!-- Post Comments -->
+            
+
+        </div>
+        <!-- Copyright 版权 start -->
+                <div id="copyright">
+            <ul>
+                <li>&copy;Powered By <a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/" style="border-bottom: none;">hexo</a></li>
+                <li>Design: <a target="_blank" rel="noopener" href="http://miccall.tech " style="border-bottom: none;">miccall</a></li>
+            </ul>
+        </div>
+    </div>
+    <script src="/js/prism.js"></script><!-- hexo-inject:begin --><!-- Begin: Injected MathJax -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({{ JSON.stringify(config) }});
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+      all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+</script>
+
+<script type="text/javascript" src="{{ src }}">
+</script>
+<!-- End: Injected MathJax -->
+<!-- hexo-inject:end -->
+</body>
+
+
+
+ 	
+</html>

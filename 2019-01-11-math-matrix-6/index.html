@@ -1,0 +1,470 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<!-- hexo-inject:begin --><!-- hexo-inject:end --><link rel="bookmark"  type="image/x-icon"  href="/img/logo_tako.jpg"/>
+	<link rel="shortcut icon" href="/img/logo_tako.jpg">
+	
+			    <title>
+    TAKONOHEYA
+    </title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="/css/mic_main.css" />
+    <link rel="stylesheet" href="/css/dropdownMenu.css" />
+    <meta name="keywords" content="takooctopus takonoheya" />
+    <noscript>
+        <link rel="stylesheet" href="/css/noscript.css" />
+    </noscript>
+    <style type="text/css">
+        body:before {
+          content: ' ';
+          position: fixed;
+          top: 0;
+          background: url('/img/bg.jpg') center 0 no-repeat;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          background-size: cover; 
+        }
+    </style>
+
+			    
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+          processEscapes: true
+        },
+        TeX: {
+          equationNumbers: {
+            autoNumber: "AMS"
+          }
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    
+    <script async type="text/javascript" src="https://cdn.bootcss.com/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+  
+
+ 
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/jquery.scrollex.min.js"></script>
+    <script src="/js/jquery.scrolly.min.js"></script>
+    <script src="/js/skel.min.js"></script>
+    <script src="/js/util.js"></script>
+    <script src="/js/main.js"></script>
+	
+<meta name="generator" content="Hexo 5.4.0"><!-- hexo-inject:begin --><!-- hexo-inject:end --></head>
+    
+		
+<!-- Layouts -->
+
+
+<link rel="stylesheet" href="/css/prism_okaidia.css" />
+
+<link rel="stylesheet" href="/css/typo.css" />
+
+<!-- 文章页 -->
+<body class="is-loading">
+    <!-- hexo-inject:begin --><!-- hexo-inject:end --><!-- Wrapper 外包 s-->
+    <div id="wrapper" class="fade-in">
+        <!-- Intro 头部显示 s -->
+        <!-- Intro 头部显示 e -->
+        <!-- Header 头部logo start -->
+        <header id="header">
+    <a href="/" class="logo">TAKOOCTOPUS</a>
+</header>
+        <!-- Nav 导航条 start -->
+        <nav id="nav" class="special" >
+            <ul class="menu links" >
+			<!-- Homepage  主页  --> 
+			<li >
+	            <a href="/" rel="nofollow">主页</a>
+	        </li>
+			<!-- categories_name  分类   --> 
+	        
+	        <!-- archives  归档   --> 
+	        
+	        
+		        <!-- Pages 自定义   -->
+		        
+		        <li>
+		            <a href="/about/" title="简介">
+		                简介
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/group/" title="团队">
+		                团队
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/series/" title="系列">
+		                系列
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/gallery/" title="图库">
+		                图库
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/tag/" title="标签">
+		                标签
+		            </a>
+		        </li>
+		        
+
+
+            </ul>
+            <!-- icons 图标   -->
+			<ul class="icons">
+                    
+                    <li>
+                        <a title="github" href="https://github.com/takooctopus" target="_blank" rel="noopener">
+                            <i class="icon fa fa-github"></i>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a title="tv" href="https://space.bilibili.com/499056" target="_blank" rel="noopener">
+                            <i class="icon fa fa-tv"></i>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a title="home" href="https://takooctopus.github.io" target="_blank" rel="noopener">
+                            <i class="icon fa fa-home"></i>
+                        </a>
+                    </li>
+                    
+			</ul>
+</nav>
+
+        <div id="main" >
+            <div class ="post_page_title_img" style="height: 25rem;background-image: url(/assets/img/posts/Math/matrix.jpg);background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;overflow:hidden;" >
+                <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2 >矩阵分析与应用（六）：矩阵的标量函数</h2></a>
+            </div>
+            <!-- Post -->
+            <div class="typo" style="padding: 3rem;">
+                <h1 id="矩阵的标量函数"><a class="markdownIt-Anchor" href="#矩阵的标量函数"></a> 矩阵的标量函数</h1>
+<h2 id="二次型"><a class="markdownIt-Anchor" href="#二次型"></a> 二次型</h2>
+<p><code>二次型</code>：</p>
+<p>对于任何正方矩阵 $ A $ ，其有二次型 $ x^H A x $ 是一个实标量，算其为x的二次型函数</p>
+<p>做出推广，对于 $ x = [x_1, x_2, \cdots, x_n]^T $ ，且 $ x \times n $ 矩阵A的元素为 $ a_{ij} $ ，则二次型为：</p>
+<p>
+$$
+\begin{split}
+    x^T A x  &= \sum^{n}_{i=1}\sum^{n}_{j=1} x_i x_j a_{ij}\\
+                            &= \sum^{n}_{i=1}a_{ii}x_i^2 + \sum^{n-1}_{i=1}\sum^{n}_{j=i+1} (a_{ij} + a_{ji})x_i x_j \\
+\end{split}
+$$
+</p>
+<p><label class="label-warning"> 警告：二次型的多样性</label></p>
+<p>对于一个二次型函数，可能存在多个矩阵 $ A $ ，使得他们拥有相同的二次型</p>
+<p>但是其中仅有唯一的一个<code>对称矩阵</code></p>
+<p><label class="label-theorem"> 我们在此假定A是实对称的或复对称的(Hermitian)</label></p>
+<p>我们在此还可以根据其二次型的正负定义其正定性：</p>
+<ul>
+<li>正定矩阵</li>
+<li>半正定矩阵</li>
+<li>负定矩阵</li>
+<li>半负定矩阵</li>
+<li>不定矩阵</li>
+</ul>
+<p><label class="label-warning"> 警告：正定矩阵和正矩阵</label></p>
+<p><code>正定矩阵</code>由其二次型的正负决定</p>
+<p><code>正矩阵</code>由其所有元素的正负决定</p>
+<h3 id="debreu-引理"><a class="markdownIt-Anchor" href="#debreu-引理"></a> Debreu 引理</h3>
+<p><code>Debreu 引理</code>：</p>
+<p>给定 $ m \times n $ 矩阵 $ J $ 和  $ n \times n $ 对称矩阵 $ H $</p>
+<p>且二次型 $ x^H H x &gt; 0 $ 对所有满足 $ Jx = 0 $ 的向量 $ x $ 成立</p>
+<p><code>Thus</code>：当且仅当存在一个有限大的数 $ \bar{\rho} \geq 0 $ ，使得 $ H + \rho J^T J $ 对所有的 $ \rho &gt; \bar{\rho} $ 都是正定的</p>
+<hr />
+<h2 id="矩阵的迹"><a class="markdownIt-Anchor" href="#矩阵的迹"></a> 矩阵的迹</h2>
+<p><code>矩阵的迹</code>：</p>
+<p>$ n \times n $ 矩阵A对角线元素之和称为A的迹(trace)，记作 $ tr(A) $ ，即：</p>
+<p>$$ tr(A) = \sum^{n}_{i=1} a_{ii} $$</p>
+<h3 id="迹的性质"><a class="markdownIt-Anchor" href="#迹的性质"></a> 迹的性质</h3>
+<p><code>迹的性质</code>：</p>
+<ul>
+<li>可脱性： $ tr(A \pm B) = tr(A) \pm tr(B) $</li>
+<li>标量乘法 ： $ tr(cA) = ctr(A) $</li>
+<li>标量乘法和可脱性结合</li>
+<li>转置、复数共轭和复共轭转置：</li>
+</ul>
+<p>
+$$
+\begin{split}
+    tr(A^T) &= tr(A) \\
+    tr(A^{\ast}) &= [tr(A)]^{\ast} \\
+    tr(A^H) &= [tr(A)]^{\ast}
+\end{split}
+$$
+</p>
+<ul>
+<li>迹是相似不变量： $ tr(A_{m \times n}B_{n \times m}) = tr(B_{n \times m}A_{m \times n}) $</li>
+<li>矩阵的相似等性质，若AB均为 $ m \times m $ 矩阵，且B非奇异的：</li>
+</ul>
+<p>$$ tr(B A B^{-1}) = tr(B^{-1} A B) = tr(A) $$</p>
+<ul>
+<li>零矩阵性质： $ tr(A^H_{m \times n} A = 0 \leftrightarrow A = O_{m \times n}) $</li>
+<li>$ X^H A x = tr(Axx^H) ,\qquad y^H x = tr(xy^H) $</li>
+<li>分块矩阵的迹：</li>
+</ul>
+<p>
+    $$
+    tr
+    \begin{bmatrix}
+        A & B \\
+        C & D \\
+    \end{bmatrix}
+    = tr(A) + tr(D)
+    $$
+</p>
+<ul>
+<li>复共轭转置的相乘 $ tr(A^H A) = tr(A A^H) = \sum_{i=1}^{n} \sum_{j=1}^{n} a_{ij}^{\ast} a_{ji} $</li>
+<li>迹等于特征值之和：</li>
+</ul>
+<p>$$ tr(A) = \lambda_{1} + \lambda_{2} + \cdots + \lambda_{n} $$</p>
+<ul>
+<li>k次矩：</li>
+</ul>
+<p>$$ tr(A^k) = \sum^{n}_{i=1} \lambda^k_i $$</p>
+<h3 id="迹的不等式"><a class="markdownIt-Anchor" href="#迹的不等式"></a> 迹的不等式</h3>
+<p><code>迹的不等式</code>：</p>
+<ul>
+<li>明显的，由于复转置矩阵性质有： $ tr(A^H A) = tr(A A^H) \geq 0 $</li>
+<li>若对A,B两 $ m \times n $ 阶矩阵：</li>
+</ul>
+<p>
+$$
+\begin{split}
+    tr[(A^T B)^2] &\leq tr(A^T A) tr(B^T B) \qquad (Cauchy-Schwartz不等式)\\
+    tr[(A^T B)^2] &\leq tr(A^T A B^T B) \\
+    tr[(A^T B)^2] &\leq tr(A A^T B B^T) \\
+\end{split}
+$$
+</p>
+<ul>
+<li>Schur不等式： $ tr(A^2) \leq tr(A^T A) $</li>
+<li>$ tr[ (A+B) (A+B)^T ] \leq 2[tr(A A^T) + tr(B B^T)] $</li>
+<li>若A和B为 $ m \times m $ 对称矩阵，则有：$ tr(AB) \leq \frac{1}{2}tr(A^2 + B^2) $</li>
+</ul>
+<p>我们由此可以使用矩阵的迹去定义 $ m \times m $ 矩阵的的<a href="/2019-01-08-math-matrix-4/#%E5%85%B8%E5%9E%8B%E7%9A%84%E7%9F%A9%E9%98%B5%E8%8C%83%E6%95%B0">Frobenius范数</a>：</p>
+<p>$$ \lVert x \rVert _F = \sqrt{tr(A^T A)} = \sqrt{tr(A A^T)} $$</p>
+<hr />
+<h2 id="行列式"><a class="markdownIt-Anchor" href="#行列式"></a> 行列式</h2>
+<p><code>行列式</code>：</p>
+<p>大家也很熟悉了，行列式定义：</p>
+<p>
+$$
+    det(A) = \lvert A \rvert = 
+    \begin{vmatrix}
+    a_{11}&a_{12}&\cdots&a_{1n}\\
+    a_{21}&a_{22}&\cdots&a_{2n}\\
+    \vdots&\vdots&&\vdots\\
+    a_{m1}&a_{m2}&\cdots&a_{mn}\\
+    \end{vmatrix}
+$$
+</p>
+<p><code>余子式(cofactor)</code>：</p>
+<p>$$ M_{ij} $$</p>
+<p><code>代数余子式</code>：</p>
+<p>$$ A_{ij} = (-1)^{i+j}det(A_{(ij)}) $$</p>
+<p><code>非奇异矩阵</code>：</p>
+<p>行列式不为0的矩阵</p>
+<h3 id="行列式性质"><a class="markdownIt-Anchor" href="#行列式性质"></a> 行列式性质</h3>
+<p><code>行列式性质</code>：</p>
+<ul>
+<li>行(列)互换，不影响行列式的值</li>
+<li>如果某行(列)是其他行(列)的线性组合，则行列式的值为0</li>
+<li>任意方阵A的行列式和他转置的行列式相同</li>
+<li>单位矩阵的行列式为1： $ dat(I) = 1 $</li>
+<li>一个Hermitian矩阵的行列式为实数：</li>
+</ul>
+<p>$$ det(A) = det(A^H) = det(A^T) \Rightarrow det(A) = det(A^{\ast}) = \lvert det(A) \rvert ^{\ast} $$</p>
+<ul>
+<li>两个矩阵乘积的行列式为他们行列式的乘积</li>
+</ul>
+<p>$$ det(AB) = det(A) det(B) \qquad A,B \in C^{m,n} $$</p>
+<ul>
+<li>对于三角矩阵，其行列式等于主对角线所有元素的乘积</li>
+<li>对于任意常数(可以是复数) $ c $ ，有 $ det(cA) = c^n det(A) $</li>
+<li>如果A是非奇异的，则 $ det(A^{-1}) = (det(A))^{-1} $</li>
+<li>对于矩阵 $ A_{m \times m}, B_{m \times n}, C_{n \times m}, D_{n \times n} $ ，我们有：</li>
+</ul>
+<p>
+$$
+A非奇异 \Leftrightarrow det 
+\begin{vmatrix}
+A & B \\
+C & D \\
+\end{vmatrix} 
+= det(A) det(D-CA^{-1}B) \\\\
+D非奇异 \Leftrightarrow det 
+\begin{vmatrix}
+A & B \\
+C & D \\
+\end{vmatrix} 
+= det(D) det(A-BD^{-1}C) \\
+$$ 
+</p>
+<h3 id="行列式不等式"><a class="markdownIt-Anchor" href="#行列式不等式"></a> 行列式不等式</h3>
+<p><code>行列式不等式</code>：</p>
+<ul>
+<li>Cauchy-Schwartz不等式：</li>
+</ul>
+<p>$$ \lvert det(A^HB) \rvert ^2 \leq det(A^HA)det(B^HB) $$</p>
+<ul>
+<li>Hadamard不等式：对于 $ m \times m $ 矩阵A：</li>
+</ul>
+<p>$$ det(A) \leq \prod_{i=1}^{m}(\sum_{j=1}^{n} \lvert a_{ij} \rvert ^2) ^{1/2} $$</p>
+<ul>
+<li>Fischer不等式：</li>
+</ul>
+<p>
+$$
+det(
+\begin{bmatrix}
+A & B \\
+B^H & C \\
+\end{bmatrix} 
+) \leq det(A)det(C)
+$$ 
+</p>
+<ul>
+<li>Minkowski 不等式：如果 $ A_{m \times m},B_{m \times m} \neq O_{m \times m} $ 且是半正定的，有：</li>
+</ul>
+<p>$$ \sqrt[m]{det(A+B)} \geq \sqrt[m]{det(A)} + \sqrt[m]{det(B)} $$</p> 
+<ul>
+<li>正定矩阵A的行列式大于0</li>
+<li>半正定矩阵A的行列式大于或等于0</li>
+<li>若 $ m \times m $ 矩阵A半正定，则</li>
+</ul>
+<p>$$ (det(A))^{1/m} \leq \frac{1}{m}det(A) $$</p>
+<ul>
+<li>若 $ A_{m \times m}, B_{m \times m} $ 均半正定</li>
+</ul>
+<p>$$ det(A+B) \geq det(A) + det(B) $$</p>
+<ul>
+<li>若 $ A_{m \times m} $ 正定， $ B_{m \times m} $ 半正定</li>
+</ul>
+<p>$$ det(A+B) \geq det(A) $$</p>
+<ul>
+<li>若 $ A_{m \times m} $ 正定， $ B_{m \times m} $ 半负定</li>
+</ul>
+<p>$$ det(A+B) \leq det(A) $$</p>
+<hr />
+<h2 id="矩阵的秩"><a class="markdownIt-Anchor" href="#矩阵的秩"></a> 矩阵的秩</h2>
+<p><code>矩阵的秩</code>：</p>
+<p>矩阵 $ A_{m \times n} $ 的秩定义为该矩阵中线性无关的行(或列)的数目「行列是相等的」</p>
+<p>对于矩阵方程 $ A_{m \times n}x_{n \times 1} = b_{m \times 1} $ ，我们根据m,n的大小，可以分为三类：</p>
+<p><code>适定方程</code>(well-determinded)：</p>
+<p>$ m = n $ 且 $ rank(A) = n $ ，此时方程的解是唯一的，唯一解由 $ x = A^{-1}b $ 给出</p>
+<p><code>欠定方程</code>(under-determinded)：</p>
+<p>$ m &lt; rank(A) $ ，此时独立方程的个数小于独立的未知参数个数，即这样的方程组存在无穷多解</p>
+<p><code>超定方程</code>(over-determinded)：</p>
+<p>$ m &gt; rank(A) $ ，方程过剩，此时没有使得方程组严格满足的精确解 $ x $</p>
+<p><label class="label-theorem">秩的定义:</label></p>
+<p>矩阵 $ A_{m \times n} $ 的列空间 $ R(A) $ 的维数是该矩阵的秩：</p>
+<p>$$ r_A = dim[R(A)] $$</p>
+<p>由此我们可以得到几组等价的叙述：</p>
+<ul>
+<li>$ rank(A) = k $</li>
+<li>存在A的k列且不多于k列组成的一线性无关组</li>
+<li>存在A的k行且不多于k行组成的一线性无关组</li>
+<li>存在A的一个 $ k \times k $ 子矩阵具有非零行列式，且所有 $ (k+1) \times (k+1) $ 子矩阵都有零行列式</li>
+<li>列空间 $ R(A) $ 的维数为A</li>
+<li>$ k = n - dim[ Null(A) ] $ 其中 $ Null(A) $ 代表矩阵A的零空间</li>
+</ul>
+<h3 id="秩的几条定理"><a class="markdownIt-Anchor" href="#秩的几条定理"></a> 秩的几条定理</h3>
+<p>$$ r(A) + r(B) -n  \leq r_{AB} \leq \min{\lbrace r_A,r_B \rbrace} $$</p>
+<p>$$ rank(A+B) \leq rank[A,B]  \leq rank(A)+rank(B) $$</p>
+<p>$$ rank(PA) = rank(AQ) = rank(A) ,\qquad 其中P满列秩,Q满行秩 $$</p>
+<h3 id="秩的性质"><a class="markdownIt-Anchor" href="#秩的性质"></a> 秩的性质</h3>
+<p><code>秩的性质</code>：</p>
+<ul>
+<li>秩是一个正整数</li>
+<li>秩等于或小于行数(或列数)</li>
+<li>满秩(full rank)</li>
+<li>秩亏缺(rank deficient)，此时为奇异矩阵</li>
+<li>满行秩 (full row rank)</li>
+<li>满列秩 (full column rank)</li>
+<li>任何矩阵A左乘满列秩矩阵或右乘满行秩矩阵不改变其秩</li>
+<li>对于 $ rank(A) = r $ 即我们存在一个 $ r \times r $ 的矩阵满秩</li>
+</ul>
+<h3 id="矩阵的等式"><a class="markdownIt-Anchor" href="#矩阵的等式"></a> 矩阵的等式</h3>
+<p><code>矩阵的等式</code>：</p>
+<ul>
+<li>$ rank(A) = rank(A^H) = rank(A^T) = rank(A^{\ast}) $</li>
+<li>$ rank(cA) = rank(A) $</li>
+<li>如果两方阵AC非奇异，则对于任意矩阵 $ B_{m \times n} $ 有 $ rank(AB) = rank(BC) = rank(ABC) = rank(B) $</li>
+<li>如果两个同型矩阵有相同的秩，则存在两方阵 $ XY $ ，使得 $ B = XAY $</li>
+<li>$ rank(AA^T) = rank(A^TA) = rank(AA^H) = rank(A^HA) = rank(A) $</li>
+<li>方阵A有 $ rank(A) = m \Leftrightarrow det(A) \neq 0 $</li>
+<li>$ rank \begin{bmatrix} A &amp; B \\ C &amp; D \end{bmatrix} = m \Leftrightarrow D = CA^{-1}B $</li>
+</ul>
+<h3 id="秩的不等式"><a class="markdownIt-Anchor" href="#秩的不等式"></a> 秩的不等式</h3>
+<p><code>秩的不等式</code>：</p>
+<ul>
+<li>$ rank(A) \leq \min{\lbrace m,n \rbrace} $</li>
+<li>$ rank(A+B) \leq rank(A) + rank(B) $</li>
+<li>$ rank(A) + rank(B) -n  \leq rank(AB) \leq \min{\lbrace rank(A),rank(B) \rbrace} $</li>
+<li>子矩阵的秩不大于原矩阵的秩</li>
+</ul>
+
+            </div>
+
+            <!-- Post Comments -->
+            
+
+        </div>
+        <!-- Copyright 版权 start -->
+                <div id="copyright">
+            <ul>
+                <li>&copy;Powered By <a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/" style="border-bottom: none;">hexo</a></li>
+                <li>Design: <a target="_blank" rel="noopener" href="http://miccall.tech " style="border-bottom: none;">miccall</a></li>
+            </ul>
+        </div>
+    </div>
+    <script src="/js/prism.js"></script><!-- hexo-inject:begin --><!-- Begin: Injected MathJax -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({{ JSON.stringify(config) }});
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+      all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+</script>
+
+<script type="text/javascript" src="{{ src }}">
+</script>
+<!-- End: Injected MathJax -->
+<!-- hexo-inject:end -->
+</body>
+
+
+
+ 	
+</html>

@@ -1,0 +1,268 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<!-- hexo-inject:begin --><!-- hexo-inject:end --><link rel="bookmark"  type="image/x-icon"  href="/img/logo_tako.jpg"/>
+	<link rel="shortcut icon" href="/img/logo_tako.jpg">
+	
+			    <title>
+    TAKONOHEYA
+    </title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="/css/mic_main.css" />
+    <link rel="stylesheet" href="/css/dropdownMenu.css" />
+    <meta name="keywords" content="takooctopus takonoheya" />
+    <noscript>
+        <link rel="stylesheet" href="/css/noscript.css" />
+    </noscript>
+    <style type="text/css">
+        body:before {
+          content: ' ';
+          position: fixed;
+          top: 0;
+          background: url('/img/bg.jpg') center 0 no-repeat;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          background-size: cover; 
+        }
+    </style>
+
+			    
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+          processEscapes: true
+        },
+        TeX: {
+          equationNumbers: {
+            autoNumber: "AMS"
+          }
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    
+    <script async type="text/javascript" src="https://cdn.bootcss.com/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+  
+
+ 
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/jquery.scrollex.min.js"></script>
+    <script src="/js/jquery.scrolly.min.js"></script>
+    <script src="/js/skel.min.js"></script>
+    <script src="/js/util.js"></script>
+    <script src="/js/main.js"></script>
+	
+<meta name="generator" content="Hexo 5.4.0"><!-- hexo-inject:begin --><link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/themes/prism.min.css'><link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/plugins/line-numbers/prism-line-numbers.min.css'><!-- hexo-inject:end --></head>
+    
+		
+<!-- Layouts -->
+
+
+<link rel="stylesheet" href="/css/prism_okaidia.css" />
+
+<link rel="stylesheet" href="/css/typo.css" />
+
+<!-- 文章页 -->
+<body class="is-loading">
+    <!-- hexo-inject:begin --><!-- hexo-inject:end --><!-- Wrapper 外包 s-->
+    <div id="wrapper" class="fade-in">
+        <!-- Intro 头部显示 s -->
+        <!-- Intro 头部显示 e -->
+        <!-- Header 头部logo start -->
+        <header id="header">
+    <a href="/" class="logo">TAKOOCTOPUS</a>
+</header>
+        <!-- Nav 导航条 start -->
+        <nav id="nav" class="special" >
+            <ul class="menu links" >
+			<!-- Homepage  主页  --> 
+			<li >
+	            <a href="/" rel="nofollow">主页</a>
+	        </li>
+			<!-- categories_name  分类   --> 
+	        
+	        <!-- archives  归档   --> 
+	        
+	        
+		        <!-- Pages 自定义   -->
+		        
+		        <li>
+		            <a href="/about/" title="简介">
+		                简介
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/group/" title="团队">
+		                团队
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/series/" title="系列">
+		                系列
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/gallery/" title="图库">
+		                图库
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/tag/" title="标签">
+		                标签
+		            </a>
+		        </li>
+		        
+
+
+            </ul>
+            <!-- icons 图标   -->
+			<ul class="icons">
+                    
+                    <li>
+                        <a title="github" href="https://github.com/takooctopus" target="_blank" rel="noopener">
+                            <i class="icon fa fa-github"></i>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a title="tv" href="https://space.bilibili.com/499056" target="_blank" rel="noopener">
+                            <i class="icon fa fa-tv"></i>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a title="home" href="https://takooctopus.github.io" target="_blank" rel="noopener">
+                            <i class="icon fa fa-home"></i>
+                        </a>
+                    </li>
+                    
+			</ul>
+</nav>
+
+        <div id="main" >
+            <div class ="post_page_title_img" style="height: 25rem;background-image: url(/assets/img/posts/Article/default.jpg);background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;overflow:hidden;" >
+                <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2 >文献解读（一）：在LLVM中协调高级优化以及低级代码</h2></a>
+            </div>
+            <!-- Post -->
+            <div class="typo" style="padding: 3rem;">
+                <blockquote>
+<p>本文由<a href="https://takooctopus.github.io" title="たこ焼きのGITHUB">本人@takooctopus</a>看文献时的感想，并在此附上原文地址<br />
+<a target="_blank" rel="noopener" href="http://www.cs.utah.edu/~regehr/oopsla18.pdf" title="Reconciling High-Level Optimizations and Low-Level Code in LLVM">Reconciling High-Level Optimizations and Low-Level Code in LLVM</a><br />
+由于翻译实在太过于耗费时间，有些地方可能我会加以省略或者以自己理解进行阐述</p>
+</blockquote>
+<h1 id="在llvm中协调高级优化以及低级代码"><a class="markdownIt-Anchor" href="#在llvm中协调高级优化以及低级代码"></a> 在LLVM中协调高级优化以及低级代码</h1>
+<p>LLVM会在Rust使用行指针或是C与C++中进行整型和指针的转换这种低级语言特性的时候会出现编译错误。问题在于对于编译器来说，在保证遵照编程语言对于低层次程序的规范上去实现有侵略性，高层次的内存优化是很困难的。一个更大的困难就是LLVM的内存模型的中间表示IR「intermediate representation」是非正式的并且编译器的开发者并不是总清楚角落案例的语义。</p>
+<p>我们针对LLVM的IR开发了一种新颖的内存模型并将其形式化了。这个新的模型需要删除一些其中有问题的IR层级的优化，但其也同时支持一些以前是非法的新的优化方法。我们已经实现了这个新的模型，并且其修复了一些已知的依赖于内存模型的编译错误，且不影响最终生成的代码质量。</p>
+<p>CCS 概念：软件及其工程 -&gt; 语义学；编译器</p>
+<p>额外的关键字及短语： IR内存模型，LLVM</p>
+<p>ACM引用格式：<br />
+Juneyoung Lee, Chung-Kil Hur, Ralf Jung, Zhengyang Liu, John Regehr, and Nuno P. Lopes. 2018. Reconciling<br />
+High-Level Optimizations and Low-Level Code in LLVM. Proc. ACM Program. Lang. 2, OOPSLA, Article 125<br />
+(November 2018), 28 pages. <a target="_blank" rel="noopener" href="https://doi.org/10.1145/3276495">https://doi.org/10.1145/3276495</a></p>
+<h1 id="1-简介"><a class="markdownIt-Anchor" href="#1-简介"></a> 1 简介</h1>
+<p>一个程序语言的内存模型定义了这门程序是被允许如何去观察和影响储存的。举个例子，在Java中的引用是类似于指针的，他们将对象特别地标记了出来。但程序并不被允许去从对象的中间以及从头去建立引用。总的来是，一个真的低级编程语言，比方说汇编，允许任意的内存空间被监测和操作，并且不论地址被怎样计算，上面的操作也不会受限。</p>
+<p>C和C<ins>都有一个有趣的壁龛，它们都倾向于去成为一门低级语言。系统语言——操作系统核心，虚拟机管理器，嵌入式固件以及编程语言运行——都倾向于被建立在一个或者其他的上面。为了制成这些应用，被指向对象的指针能通过指针算数来被创建，并且指针能转化为整数型，且整数型能被转化为指针。然而，除开他们的低级特性，C和C</ins>的内存模型也同时合并了高级特性。比方说，编译器被允许去假设「有一些限制」一个指向以分配内存的对象的指针不会被用于创建指向另一个对象的指针的根据。C和C++标准委员会倾向于在必要时让语言去提供低级语言特性的内存模型，但与此同时，保证其在高级语言特性下的大量优化代码的能力。这种在低级与高级语言特性之间的紧张关系很明显，并给编译器以及应用程序的开发人员带来了很多问题。</p>
+<p>这篇文章就是关于编译器中间表示「IRs」的顺序话内存模型。IR层很重要因为其是高级优化发生之地。GCC和LLVM都具有非正式指定的内存模型，其中包括了那些导致低级程序错误编译的端到端问题。<a href="#appendix-a">附录A</a>显示了一个C语言程序，其同时GCC与LLVM均编译错误。然而，我们所攻击的问题远远不止C和C++：<a href="#appendix-b">附录B</a>显示了一个低级「但是是安全的」Rust函数，其被LLVM错误的编译了。其罪魁祸首是我们在LLVM全局值编号「GVN」优化中所发现的新BUG。GVN由分支条件中传播指针「以及整型」的等价，使用值相等的去替换指针。这个会改变程序的行为，因为指针的相等并不是完全「必然」等同。这个编译错误我们追踪回去会发现第二个LLVM中的BUG——其错误的假设<code>(int*)(intptr_t)p</code>与p等价。</p>
+<p>修复这些现在IR语义的编译错误是可行的，但会禁用掉一些有用的优化。我们的主要贡献，其建立在「Kang et al. 2015」<sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup>上面，是一个新的，正式的LLVM的IR内存模型，且其与现今的设计有两点不同。首先，其使用延迟边界检查来放宽了对于越界指针创建的限制，以便正确地执行有用的代码优化，其次，它使用了双子内存分配，即指针的值必须被显式地观察到，它不能是被猜测的。双子内存分配支撑了基于LLVM的语言的低级语言代码特性的侵略性优化——比方说整型-指针转换。我们将LLVM进化到了新的语义下，以便显示其并不需要对编译器的大幅度改变，亦不会对生成的代码质量有所损失。</p>
+<h1 id="2-背景ir的内存模型"><a class="markdownIt-Anchor" href="#2-背景ir的内存模型"></a> 2 背景：IR的内存模型</h1>
+<p>在这个篇章里，我们描述为了低级语义内存模型的设及空间并接解释为什么其不足以管理低级模型和高级优化之间的紧张关系。然后在第3章里，我们描述了LLVM IR 的新的内存模型的基本，并在第4章立正式实现它。我们的例子写成C的形式以让其有较好的阅读性，即使我们本文的内容是编译器IR而不是C的指定内存模型。</p>
+<h2 id="21-平面内存模型"><a class="markdownIt-Anchor" href="#21-平面内存模型"></a> 2.1 平面内存模型</h2>
+<p>两个内存模型的主要问题：「1」一个读出的指令的实际返回值是什么？「2」什么情况下一个内存-获取指令是算被较好地定义了？一种回答是内存模型应该定义储存指令写入的内存位置。</p>
+<p>举个例子：下面的代码会打出什么？或者说<code>p[6] = 0</code>会改变q指向的对象的任何值嘛。</p>
+
+<!-- Has Prism -->
+<pre class="{{ pre_class }}" style="{{ pre_style }}" {{ data_attr }}><code class="language-&#123;&#123; lang &#125;&#125;">
+&#123;&#123;- code -&#125;&#125;
+</code></pre>
+<p>在一个平面内存模型中，这个程序会输出1，如果<code>q == p + 4</code>的话，其余情况会输出0。平面内存模型将指针看作整型，因此这个程序允许去猜测对象的位置，就像我们「图1」中所显示的。一些汇编语言有平面内存模型，而其他的比方说带有分段内存的机器，就没有。</p>
+<p>平面内存模型的概念是如此简单并且对于低级编程是十分适合的。但其阻碍了高级优化，而这些高级优化是现代编译中必不可少的。</p>
+<h2 id="22-数据流的源入口追踪"><a class="markdownIt-Anchor" href="#22-数据流的源入口追踪"></a> 2.2 数据流的源入口追踪</h2>
+<p>在过去的例子中，我们已经给出了那个程序可以根据内存块放的位置得出0或者1。这对分配器的运行时行为的过度依赖的约束了编译器，阻止了其继续重要优化——比如储存转发。举例来说，我们期望编译器能够<br />
+将存储<code>q[2] = 0</code>指令传至打印指令。因此，内存模型需要一个方法在我们无视p与q的最终指向哪里时又需要获取<code>q[2]</code>的值时去阻止向<code>p[6]</code>传值。<br />
+比方说，这个效应的规则已经从C89开始就是C的一部分了。</p>
+<p>数据流的源入口追踪提供了一个方法去阻止我们获取从一个无关对象所派生出的指针中获取对象。这个想法是每个指针都是一对值：其所指向的对象以及内存地址「或者说对象的偏移量」。获取这个对象的越界内存是一个未定义行为UB。这个语义就表明了编译器会得出<code>p[6]</code>是不能访问<code>q[2]</code>的，不管事实上在运行时它们会石佛偶会引用到同一片地址。</p>
+<p>数据流的源入口追踪的定义如下：</p>
+
+<!-- Has Prism -->
+<pre class="{{ pre_class }}" style="{{ pre_style }}" {{ data_attr }}><code class="language-&#123;&#123; lang &#125;&#125;">
+&#123;&#123;- code -&#125;&#125;
+</code></pre>
+<p>第一个通过<code>q2</code>的储存成功了，因为其在对象q的边界内。第二个，触发了UB，因为这个指针基于p，其越界了，及时程序成功的得到了有效对象的地址「如图二所显示的」。最终，因为这里在他们之间没有有效定义的存储指令，编译器能够安全地将存储<code>*q2 = 0</code>的指令传到打印指令中。</p>
+<h2 id="拓宽整型的来源"><a class="markdownIt-Anchor" href="#拓宽整型的来源"></a> 拓宽整型的来源</h2>
+<p>在上一节我们所表现出的并不支持低级语言特性——比方说整型-指针转换。为了支持这个功能，我们可以拓展来源信息：</p>
+
+<!-- Has Prism -->
+<pre class="{{ pre_class }}" style="{{ pre_style }}" {{ data_attr }}><code class="language-&#123;&#123; lang &#125;&#125;">
+&#123;&#123;- code -&#125;&#125;
+</code></pre>
+<h1 id="3"><a class="markdownIt-Anchor" href="#3"></a> 3</h1>
+<h1 id="4"><a class="markdownIt-Anchor" href="#4"></a> 4</h1>
+<h1 id="appendix-a"><a class="markdownIt-Anchor" href="#appendix-a"></a> Appendix-A</h1>
+<p>附录A code</p>
+<h1 id="appendix-b"><a class="markdownIt-Anchor" href="#appendix-b"></a> Appendix-B</h1>
+<p>附录B code</p>
+<h1 id="参考文献"><a class="markdownIt-Anchor" href="#参考文献"></a> 参考文献</h1>
+<hr class="footnotes-sep" />
+<section class="footnotes">
+<ol class="footnotes-list">
+<li id="fn1" class="footnote-item"><p>Jeehoon Kang, Chung-Kil Hur, William Mansky, Dmitri Garbuzov, Steve Zdancewic, and Viktor Vafeiadis. 2015. A Formal C Memory Model Supporting Integer-pointer Casts. In PLDI. <a target="_blank" rel="noopener" href="https://doi.org/10.1145/2737924.2738005">https://doi.org/10.1145/2737924.2738005</a> <a href="#fnref1" class="footnote-backref">↩︎</a></p>
+</li>
+</ol>
+</section>
+
+            </div>
+
+            <!-- Post Comments -->
+            
+
+        </div>
+        <!-- Copyright 版权 start -->
+                <div id="copyright">
+            <ul>
+                <li>&copy;Powered By <a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/" style="border-bottom: none;">hexo</a></li>
+                <li>Design: <a target="_blank" rel="noopener" href="http://miccall.tech " style="border-bottom: none;">miccall</a></li>
+            </ul>
+        </div>
+    </div>
+    <script src="/js/prism.js"></script><!-- hexo-inject:begin --><!-- Begin: Injected MathJax -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({{ JSON.stringify(config) }});
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+      all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+</script>
+
+<script type="text/javascript" src="{{ src }}">
+</script>
+<!-- End: Injected MathJax -->
+<script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/prism.min.js'></script><script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/plugins/line-numbers/prism-line-numbers.min.js'></script><script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/plugins/normalize-whitespace/prism-normalize-whitespace.min.js'></script><!-- hexo-inject:end -->
+</body>
+
+
+
+ 	
+</html>

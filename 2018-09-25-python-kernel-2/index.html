@@ -1,0 +1,330 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<!-- hexo-inject:begin --><!-- hexo-inject:end --><link rel="bookmark"  type="image/x-icon"  href="/img/logo_tako.jpg"/>
+	<link rel="shortcut icon" href="/img/logo_tako.jpg">
+	
+			    <title>
+    TAKONOHEYA
+    </title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="/css/mic_main.css" />
+    <link rel="stylesheet" href="/css/dropdownMenu.css" />
+    <meta name="keywords" content="takooctopus takonoheya" />
+    <noscript>
+        <link rel="stylesheet" href="/css/noscript.css" />
+    </noscript>
+    <style type="text/css">
+        body:before {
+          content: ' ';
+          position: fixed;
+          top: 0;
+          background: url('/img/bg.jpg') center 0 no-repeat;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          background-size: cover; 
+        }
+    </style>
+
+			    
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+          processEscapes: true
+        },
+        TeX: {
+          equationNumbers: {
+            autoNumber: "AMS"
+          }
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    
+    <script async type="text/javascript" src="https://cdn.bootcss.com/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+  
+
+ 
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/jquery.scrollex.min.js"></script>
+    <script src="/js/jquery.scrolly.min.js"></script>
+    <script src="/js/skel.min.js"></script>
+    <script src="/js/util.js"></script>
+    <script src="/js/main.js"></script>
+	
+<meta name="generator" content="Hexo 5.4.0"><!-- hexo-inject:begin --><link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/themes/prism.min.css'><link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/plugins/line-numbers/prism-line-numbers.min.css'><!-- hexo-inject:end --></head>
+    
+		
+<!-- Layouts -->
+
+
+<link rel="stylesheet" href="/css/prism_okaidia.css" />
+
+<link rel="stylesheet" href="/css/typo.css" />
+
+<!-- 文章页 -->
+<body class="is-loading">
+    <!-- hexo-inject:begin --><!-- hexo-inject:end --><!-- Wrapper 外包 s-->
+    <div id="wrapper" class="fade-in">
+        <!-- Intro 头部显示 s -->
+        <!-- Intro 头部显示 e -->
+        <!-- Header 头部logo start -->
+        <header id="header">
+    <a href="/" class="logo">TAKOOCTOPUS</a>
+</header>
+        <!-- Nav 导航条 start -->
+        <nav id="nav" class="special" >
+            <ul class="menu links" >
+			<!-- Homepage  主页  --> 
+			<li >
+	            <a href="/" rel="nofollow">主页</a>
+	        </li>
+			<!-- categories_name  分类   --> 
+	        
+	        <!-- archives  归档   --> 
+	        
+	        
+		        <!-- Pages 自定义   -->
+		        
+		        <li>
+		            <a href="/about/" title="简介">
+		                简介
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/group/" title="团队">
+		                团队
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/series/" title="系列">
+		                系列
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/gallery/" title="图库">
+		                图库
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/tag/" title="标签">
+		                标签
+		            </a>
+		        </li>
+		        
+
+
+            </ul>
+            <!-- icons 图标   -->
+			<ul class="icons">
+                    
+                    <li>
+                        <a title="github" href="https://github.com/takooctopus" target="_blank" rel="noopener">
+                            <i class="icon fa fa-github"></i>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a title="tv" href="https://space.bilibili.com/499056" target="_blank" rel="noopener">
+                            <i class="icon fa fa-tv"></i>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a title="home" href="https://takooctopus.github.io" target="_blank" rel="noopener">
+                            <i class="icon fa fa-home"></i>
+                        </a>
+                    </li>
+                    
+			</ul>
+</nav>
+
+        <div id="main" >
+            <div class ="post_page_title_img" style="height: 25rem;background-image: url(/assets/img/posts/CS/PythonKernel.jpg);background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;overflow:hidden;" >
+                <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2 >python 内核分析（二）：PyObject，对象的基础</h2></a>
+            </div>
+            <!-- Post -->
+            <div class="typo" style="padding: 3rem;">
+                <blockquote>
+<p>本系列作为<a href="https://takooctopus.github.io/" title="TAKONOHEYA">本人@takooctopus</a>深入学习python机制的记录，这个博客遵照着<a target="_blank" rel="noopener" href="https://www.hongweipeng.com/" title="栖迟于一丘">栖迟于一丘</a>的博客上面的流程进行的，也包含我在实际查看源码时的感想，特此列出，表示感谢。</p>
+</blockquote>
+<h1 id="pyobject对象的基础"><a class="markdownIt-Anchor" href="#pyobject对象的基础"></a> PyObject，对象的基础</h1>
+<h2 id="pyobject的定义"><a class="markdownIt-Anchor" href="#pyobject的定义"></a> PyObject的定义</h2>
+<p>我们就用官方里面的解释：<br />
+没有什么能被完全被声明为一个<code>PyObject</code>，但每一个指向<code>Python</code>的对象的指针均能够被视为一个<code>PyObject*</code> 指针。</p>
+
+<!-- Has Prism -->
+<pre class="{{ pre_class }}" style="{{ pre_style }}" {{ data_attr }}><code class="language-&#123;&#123; lang &#125;&#125;">
+&#123;&#123;- code -&#125;&#125;
+</code></pre>
+<h3 id="_pyobject_head_extra"><a class="markdownIt-Anchor" href="#_pyobject_head_extra"></a> _PyObject_HEAD_EXTRA</h3>
+<p>再接着我们看里面的第一个属性<code>_PyObject_HEAD_EXTRA</code>，追踪到<br />
+其也定义在object.h里面：</p>
+
+<!-- Has Prism -->
+<pre class="{{ pre_class }}" style="{{ pre_style }}" {{ data_attr }}><code class="language-&#123;&#123; lang &#125;&#125;">
+&#123;&#123;- code -&#125;&#125;
+</code></pre>
+<p>其表示我们如果定义了<code>Py_TRACE_REFS</code>的话，这个结构将可以支持双向列表，并且所有堆中的活动均在这个列表中</p>
+<blockquote>
+<p>因为在 <strong>release</strong> 下没有定义<code>Py_TRACE_REFS</code>，我们可以忽略这个宏</p>
+</blockquote>
+<h3 id="py_ssize_t"><a class="markdownIt-Anchor" href="#py_ssize_t"></a> Py_ssize_t</h3>
+<p>接着我们追踪<code>Py_ssize_t</code>这个属性</p>
+
+<!-- Has Prism -->
+<pre class="{{ pre_class }}" style="{{ pre_style }}" {{ data_attr }}><code class="language-&#123;&#123; lang &#125;&#125;">
+&#123;&#123;- code -&#125;&#125;
+</code></pre>
+<p>关于<code>HAVE_SSIZE_T</code><br />
+查到对于<code>HAVE_SSIZE_T</code>的默认定义为1，其定义在 <strong>pyconfig.h</strong> 中</p>
+<p>关于<code>ssize_t</code><br />
+即我们默认下，根据平台将<code>ssize_t</code>的类型设置为<code>__int64</code>或者<code>_W64</code></p>
+
+<!-- Has Prism -->
+<pre class="{{ pre_class }}" style="{{ pre_style }}" {{ data_attr }}><code class="language-&#123;&#123; lang &#125;&#125;">
+&#123;&#123;- code -&#125;&#125;
+</code></pre>
+<p>关于<code>Py_intptr_t</code><br />
+我们继续看<code>Py_intptr_t</code>其实是由<code>intptr_t</code>定义的</p>
+
+<!-- Has Prism -->
+<pre class="{{ pre_class }}" style="{{ pre_style }}" {{ data_attr }}><code class="language-&#123;&#123; lang &#125;&#125;">
+&#123;&#123;- code -&#125;&#125;
+</code></pre>
+<p>我们继续看<code>intptr_t</code><br />
+其又在 <strong>Include/vcstdint.h</strong> 中被定义了：</p>
+
+<!-- Has Prism -->
+<pre class="{{ pre_class }}" style="{{ pre_style }}" {{ data_attr }}><code class="language-&#123;&#123; lang &#125;&#125;">
+&#123;&#123;- code -&#125;&#125;
+</code></pre>
+<p>我们看到其在64位系统中是64位的int，而32位系统是_W64，我们可以看到<code>Py_ssize_t</code>的本质为一个int</p>
+<h3 id="此时我们就可以简化我们所看见的对象了"><a class="markdownIt-Anchor" href="#此时我们就可以简化我们所看见的对象了"></a> 此时，我们就可以简化我们所看见的对象了</h3>
+
+<!-- Has Prism -->
+<pre class="{{ pre_class }}" style="{{ pre_style }}" {{ data_attr }}><code class="language-&#123;&#123; lang &#125;&#125;">
+&#123;&#123;- code -&#125;&#125;
+</code></pre>
+<p>成员作用:</p>
+<ul>
+<li><code>ob_refcnt</code>：counter，对于变量引用次数进行计数，关于垃圾清理。</li>
+<li><code>ob_type</code>：type，储存了对象的类型信息，如<code>int</code>,<code>string</code>,或是<code>function</code>等</li>
+</ul>
+<p>除此之外，这个作为一个基本单元，在实际使用时还需要其他的内容</p>
+<p>我们以 <strong>PyLongObject</strong> 为例：</p>
+
+<!-- Has Prism -->
+<pre class="{{ pre_class }}" style="{{ pre_style }}" {{ data_attr }}><code class="language-&#123;&#123; lang &#125;&#125;">
+&#123;&#123;- code -&#125;&#125;
+</code></pre>
+<p>其第一个属性<code>PyObject_VAR_HEAD</code>由<code>PyVarObject</code>和<code>ob_base</code>组成<br />
+第二个属性由<code>digit</code>构成</p>
+<h2 id="变长对象和定长对象"><a class="markdownIt-Anchor" href="#变长对象和定长对象"></a> 变长对象和定长对象</h2>
+<p>在c语言中, 整型占用内存大小是固定的, 无论你保存1还是100. 而由于c没有字符串类型, 因此要表示字符串得用N个char组成数组. 在python中这样描述变长对象:</p>
+
+<!-- Has Prism -->
+<pre class="{{ pre_class }}" style="{{ pre_style }}" {{ data_attr }}><code class="language-&#123;&#123; lang &#125;&#125;">
+&#123;&#123;- code -&#125;&#125;
+</code></pre>
+<p><code>ob_size</code> 表示容纳元素的个数, 不是对象占用的内存字节数.</p>
+<table>
+<thead>
+<tr>
+<th>int</th>
+<th style="text-align:center">string</th>
+<th style="text-align:right">list</th>
+<th style="text-align:right">dict</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ob_refnt</td>
+<td style="text-align:center">ob_refnt</td>
+<td style="text-align:right">ob_refnt</td>
+<td style="text-align:right">ob_refnt</td>
+</tr>
+<tr>
+<td>ob_type</td>
+<td style="text-align:center">ob_type</td>
+<td style="text-align:right">ob_type</td>
+<td style="text-align:right">[others]</td>
+</tr>
+<tr>
+<td>[NULL]</td>
+<td style="text-align:center">[others]</td>
+<td style="text-align:right">[others]</td>
+<td style="text-align:right">[NULL]</td>
+</tr>
+</tbody>
+</table>
+<h2 id="类型对象"><a class="markdownIt-Anchor" href="#类型对象"></a> 类型对象</h2>
+
+<!-- Has Prism -->
+<pre class="{{ pre_class }}" style="{{ pre_style }}" {{ data_attr }}><code class="language-&#123;&#123; lang &#125;&#125;">
+&#123;&#123;- code -&#125;&#125;
+</code></pre>
+<p>在 <code>_typeobject</code> 中包含了很多信息,主要有:</p>
+<ul>
+<li>1.类型名，<code>tp_name</code>，格式为 <strong>&lt;module&gt;.&lt;name&gt;</strong> ，用于内部调用和方便调试</li>
+<li>2.创建对象时分配内存空间大小的变量，<code>tp_basicsize</code>和<code>tp_itemsize</code>，分别代表基本的大小和里面元素的大小</li>
+<li>3.与对象相关的操作，如<code>tp_print</code>这样的函数</li>
+<li>4.要描述的本类型的其他信息</li>
+</ul>
+
+            </div>
+
+            <!-- Post Comments -->
+            
+
+        </div>
+        <!-- Copyright 版权 start -->
+                <div id="copyright">
+            <ul>
+                <li>&copy;Powered By <a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/" style="border-bottom: none;">hexo</a></li>
+                <li>Design: <a target="_blank" rel="noopener" href="http://miccall.tech " style="border-bottom: none;">miccall</a></li>
+            </ul>
+        </div>
+    </div>
+    <script src="/js/prism.js"></script><!-- hexo-inject:begin --><!-- Begin: Injected MathJax -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({{ JSON.stringify(config) }});
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+      all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+</script>
+
+<script type="text/javascript" src="{{ src }}">
+</script>
+<!-- End: Injected MathJax -->
+<script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/prism.min.js'></script><script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/plugins/line-numbers/prism-line-numbers.min.js'></script><script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/plugins/normalize-whitespace/prism-normalize-whitespace.min.js'></script><!-- hexo-inject:end -->
+</body>
+
+
+
+ 	
+</html>

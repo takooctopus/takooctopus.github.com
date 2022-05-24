@@ -1,0 +1,436 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<!-- hexo-inject:begin --><!-- hexo-inject:end --><link rel="bookmark"  type="image/x-icon"  href="/img/logo_tako.jpg"/>
+	<link rel="shortcut icon" href="/img/logo_tako.jpg">
+	
+			    <title>
+    TAKONOHEYA
+    </title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="/css/mic_main.css" />
+    <link rel="stylesheet" href="/css/dropdownMenu.css" />
+    <meta name="keywords" content="takooctopus takonoheya" />
+    <noscript>
+        <link rel="stylesheet" href="/css/noscript.css" />
+    </noscript>
+    <style type="text/css">
+        body:before {
+          content: ' ';
+          position: fixed;
+          top: 0;
+          background: url('/img/bg.jpg') center 0 no-repeat;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          background-size: cover; 
+        }
+    </style>
+
+			    
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+          processEscapes: true
+        },
+        TeX: {
+          equationNumbers: {
+            autoNumber: "AMS"
+          }
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    
+    <script async type="text/javascript" src="https://cdn.bootcss.com/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+  
+
+ 
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/jquery.scrollex.min.js"></script>
+    <script src="/js/jquery.scrolly.min.js"></script>
+    <script src="/js/skel.min.js"></script>
+    <script src="/js/util.js"></script>
+    <script src="/js/main.js"></script>
+	
+<meta name="generator" content="Hexo 5.4.0"><!-- hexo-inject:begin --><!-- hexo-inject:end --></head>
+    
+		
+<!-- Layouts -->
+
+
+<link rel="stylesheet" href="/css/prism_okaidia.css" />
+
+<link rel="stylesheet" href="/css/typo.css" />
+
+<!-- 文章页 -->
+<body class="is-loading">
+    <!-- hexo-inject:begin --><!-- hexo-inject:end --><!-- Wrapper 外包 s-->
+    <div id="wrapper" class="fade-in">
+        <!-- Intro 头部显示 s -->
+        <!-- Intro 头部显示 e -->
+        <!-- Header 头部logo start -->
+        <header id="header">
+    <a href="/" class="logo">TAKOOCTOPUS</a>
+</header>
+        <!-- Nav 导航条 start -->
+        <nav id="nav" class="special" >
+            <ul class="menu links" >
+			<!-- Homepage  主页  --> 
+			<li >
+	            <a href="/" rel="nofollow">主页</a>
+	        </li>
+			<!-- categories_name  分类   --> 
+	        
+	        <!-- archives  归档   --> 
+	        
+	        
+		        <!-- Pages 自定义   -->
+		        
+		        <li>
+		            <a href="/about/" title="简介">
+		                简介
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/group/" title="团队">
+		                团队
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/series/" title="系列">
+		                系列
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/gallery/" title="图库">
+		                图库
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/tag/" title="标签">
+		                标签
+		            </a>
+		        </li>
+		        
+
+
+            </ul>
+            <!-- icons 图标   -->
+			<ul class="icons">
+                    
+                    <li>
+                        <a title="github" href="https://github.com/takooctopus" target="_blank" rel="noopener">
+                            <i class="icon fa fa-github"></i>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a title="tv" href="https://space.bilibili.com/499056" target="_blank" rel="noopener">
+                            <i class="icon fa fa-tv"></i>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a title="home" href="https://takooctopus.github.io" target="_blank" rel="noopener">
+                            <i class="icon fa fa-home"></i>
+                        </a>
+                    </li>
+                    
+			</ul>
+</nav>
+
+        <div id="main" >
+            <div class ="post_page_title_img" style="height: 25rem;background-image: url(/assets/img/posts/Math/matrix.jpg);background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;overflow:hidden;" >
+                <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2 >矩阵分析与应用（七）：逆矩阵</h2></a>
+            </div>
+            <!-- Post -->
+            <div class="typo" style="padding: 3rem;">
+                <h1 id="逆矩阵"><a class="markdownIt-Anchor" href="#逆矩阵"></a> 逆矩阵</h1>
+<p>对于一个 $ n \times n $ 的矩阵，只有当它同时具有n个线性无关的列向量和n个线性无关的行向量是，能称其为<code>非奇异</code>的。此时它只对零输入产生零输出。</p>
+<p>而一个非奇异矩阵，一定存在其<code>逆矩阵</code>，即当 $ AB = BA = I $ 时，称矩阵 $ B $ 是矩阵 $ A $ 的逆矩阵，记作 $ A^{-1} $</p>
+<p><code>伴随矩阵(adjoint matrix)</code>:</p>
+<p>将正方矩阵 $ A $ 的所有元素 $ a_{ij} $ 由它的<code>余子式</code> $ A_{ij} $ 代替，并<code>转置</code>，所得到的矩阵称为 $ A $ 的伴随矩阵：</p>
+<p>
+$$
+    adj(A) = 
+    \begin{bmatrix}
+    A_{11}&A_{21}&\cdots&A_{n1}\\
+    A_{12}&A_{22}&\cdots&A_{n2}\\
+    \vdots&\vdots&&\vdots\\
+    A_{1n}&A_{2n}&\cdots&A_{nn}\\
+    \end{bmatrix}
+$$
+</p>
+<p>若行列式 $ det(A) \neq 0 $ ，即存在唯一一个逆矩阵 $ A^{-1} $ ：</p>
+<p>
+$$
+    A^{-1}  = \frac{adj(A)}{det(A)} = 
+    \frac{1}{\lvert A \rvert}
+    \begin{bmatrix}
+    A_{11}&A_{21}&\cdots&A_{n1}\\
+    A_{12}&A_{22}&\cdots&A_{n2}\\
+    \vdots&\vdots&&\vdots\\
+    A_{1n}&A_{2n}&\cdots&A_{nn}\\
+    \end{bmatrix}
+$$
+</p>
+<h2 id="逆矩阵的性质"><a class="markdownIt-Anchor" href="#逆矩阵的性质"></a> 逆矩阵的性质</h2>
+<ul>
+<li>$ [adj(A)]^T = adj(A^T) $</li>
+<li>$ A^{-1}A = AA^{-1} = I $</li>
+<li>$ A^{-1} $ 唯一</li>
+<li>$ \lvert A^{-1} \rvert = \frac{1}{\lvert A \rvert} $</li>
+<li>逆矩阵非奇异</li>
+<li>$ (A^{-1}) ^{-1} = A $</li>
+<li>复共轭转置可写为 $ A^{-H} $</li>
+<li>如果 $ A^H = A $ ，则 $ (A^{-1}) ^H = A^{-1} $</li>
+<li>$ (A^{\ast}) ^{-1} = (A^{-1}) ^{\ast} $</li>
+<li>$ (AB)^{-1} = B^{-1} A^{-1} $</li>
+<li>对于对角矩阵 $ A = diag(a_1,a_2,\cdots,a_m) $ ，有逆矩阵:</li>
+</ul>
+<p>$$ A^{-1} = diag(a_1^{-1},a_2^{-1},\cdots,a_m^{-1}) $$</p>
+<ul>
+<li>若 $ A $ 为正交矩阵，有 $ A^{-1} = A^T $</li>
+<li>若 $ A $ 为<a href="/2019-01-08-math-matrix-4/#%E9%85%89%E4%B8%8D%E5%8F%98">酉矩阵</a>，有 $ A^{-1} = A^H $</li>
+</ul>
+<hr />
+<h2 id="矩阵的求逆引理"><a class="markdownIt-Anchor" href="#矩阵的求逆引理"></a> 矩阵的求逆引理</h2>
+<p><code>Sherman-Morrison公式</code>：</p>
+<p>令 $ A $ 是一个 $ n \times n $ 的可逆矩阵，并且 $ x $ 和 $ y $ 是两个 $ n \times 1 $ 向量，使得 $ (A+xy^H) $ 可逆，则有：</p>
+<p>$$ (A+xy^H)^{-1} = A^{-1} - \frac{A^{-1}xy^H A^{-1}}{1+y^H A^{-1} x} $$</p>
+<p>我们可以对其做一个简单的证明：</p>
+<p><label class="label-theorem">证明：</label></p>
+<p>由于：</p>
+<p>$$ (A+xy^H) = A(I+A^{-1}xy^H) $$</p>
+<p>对其同时求逆，有：</p>
+<p>$$ (A+xy^H)^{-1} = (I+A^{-1}xy^H) ^{-1} A^{-1} $$</p>
+<p>而我们知道 $ (I+B) $ 如果可逆，且 $ I \neq B $ 的话，我们可以表示为：</p>
+<p>$$ (I+B)^{-1} = I - B + B^2 - B^3 + \cdots $$</p>
+<p>带入原式，即有：</p>
+<p>$$ (I+A^{-1}xy^H) ^{-1} = I - A^{-1}xy^H + (A^{-1}xy^H)^2 -(A^{-1}xy^H)^3 + \cdots $$</p>
+<p>明显的，这是一个等比数列的求和问题，带回得到：</p>
+<p>
+$$
+\begin{split}
+(A+xy^H)^{-1}   &= A^{-1} - A^{-1}xy^HA^{-1} + A^{-1}x(y^HA^{-1}x)y^HA^{-1} - \cdots \\
+                &= A^{-1} - A^{-1}x (\sum^{i=0}_{\infty}y^HA^{-1}x) y^HA^{-1} \\
+                &= A^{-1} - \frac{A^{-1}xy^HA^{-1}}{1+y^HA^{-1}x}
+\end{split}
+$$
+</p>
+<p><label class="label-warning">我们还有更为一般的式子：</label></p>
+<p><code>Sherman–Morrison–Woodbury 公式</code></p>
+<p>对于 $ A \in K^{n \times n} $ 是域 $ K $ 上的非奇异矩阵，且 $ U,V \in K^{n \times k} $ ，且已知 $ A+UV^H $ 非奇异，则我们有<code>Sherman–Morrison–Woodbury 公式</code>：</p>
+<p>$$ (A+UV^H)^{-1} = A^{-1} - A^{-1}U(I_k + V^HA^{-1}U)^{-1}V^HA^{-1} $$</p>
+<h3 id="矩阵之和的求逆公式woodbury公式"><a class="markdownIt-Anchor" href="#矩阵之和的求逆公式woodbury公式"></a> 矩阵之和的求逆公式(Woodbury公式)：</h3>
+<p><code>Woodbury公式</code>：</p>
+<p>我们根据上面的矩阵求逆引理可以推广为矩阵之和的求逆公式：</p>
+<p>
+$$
+\begin{split}
+(A+UBV)^{-1}    &= A^{-1} - A^{-1}UB(B+BVA^{-1}UB)^{-1}BVA^{-1} \\
+                &= A^{-1} - A^{-1}U(I+BVA^{-1}U)^{-1}BVA^{-1} \\
+                &= A^{-1} - A^{-1}U(B^{-1}+VA^{-1}U)^{-1}VA^{-1}
+\end{split}
+$$
+</p>
+<p>换成加法也是相似的：</p>
+<p>$$ (A-UV)^{-1} = A^{-1} + A^{-1}U(I-VA^{-1}U)^{-1}VA^{-1} $$</p>
+<p>这其中的 $ I-VA^{-1}U $ 被称作<code>容量矩阵(capacitance matrix)</code></p>
+<p><label class="label-warning">矩阵之和的逆矩阵还有其他形式：</label></p>
+<p>其中的车别就是 $ UBV $ 中间取的断点不同而已</p>
+<hr />
+<h2 id="分块矩阵的求逆"><a class="markdownIt-Anchor" href="#分块矩阵的求逆"></a> 分块矩阵的求逆</h2>
+<p>其实这是延续于上面的矩阵和求逆公式的</p>
+<h3 id="当矩阵-ad-均可逆时"><a class="markdownIt-Anchor" href="#当矩阵-ad-均可逆时"></a> 当矩阵 $ A,D $ 均可逆时</h3>
+<p>
+$$
+\begin{bmatrix}
+    A & U \\
+    V & D \\
+\end{bmatrix}^{-1}
+=
+\begin{bmatrix}
+    (A-UD^{-1}V)^{-1} & -(V-DU^{-1}A)^{-1} \\
+    (U-AV^{-1}D)^{-1} & (D-VA^{-1}U)^{-1} \\
+\end{bmatrix}
+$$
+</p>
+<p>我们可以通过 $ A,U,V,D $ 的维数去记忆这个公式。</p>
+<p>此外，如果 $ D $ 不可逆，我们应该用通用的方式去表示 $  (A-UD^{-1}V) ^{-1} $ ，即：</p>
+<p>$$  (A-UD^{-1}V)^{-1} =  A^{-1} - A^{-1}U(D+VA^{-1}U)^{-1}VA^{-1} $$</p>
+<p><label class="label-warning">注意次对角线 $ U,V $：</label></p>
+<p>次对角线上的并非方阵，并不能带入<code>Sherman–Morrison公式</code>，但可以提取公因式。</p>
+<p>而分块矩阵的求逆操作在推导斜投影矩阵的过程中有重要作用。</p>
+<hr />
+<h2 id="woodbury公式的典型应用"><a class="markdownIt-Anchor" href="#woodbury公式的典型应用"></a> Woodbury公式的典型应用</h2>
+<p>假设 $ J_n $ 是一个n维全1方阵，且 $ V $ 为：</p>
+<p>
+$$
+V = 
+\begin{bmatrix}
+    a & b & \cdots & b \\
+    b & a & \cdots & b \\
+    \vdots & \vdots & \ddots & \cdots \\
+    b & b & \cdots & a \\
+\end{bmatrix}
+= [(a-b)I_n + bJ_n] = (a-b)(I_n+\frac{b}{a-b}J_n)
+$$
+</p>
+<p>这里我们用<code>Woodbury公式</code>，能够得到逆矩阵：</p>
+<p>$$ V^{-1} = \frac{1}{a-b}(I_n +\frac{b}{a-b}J_n) ^{-1} = \frac{1}{a-b}[I_n - \frac{b}{a+(n-1)b}J_n] $$</p>
+<h3 id="解方程式过程"><a class="markdownIt-Anchor" href="#解方程式过程"></a> 解方程式过程</h3>
+<p>假设 $ A,U,V $ 均为n阶方阵，我们要求解 $ (A-UV)x = b $ 的解：</p>
+<ul>
+<li>求解矩阵方程 $ Ay=b $ 得到 $ y $</li>
+<li>求解矩阵方程 $ Aw_i = u_i $ ，得到 $ w_i $ ，构造矩阵 $ W = [w_1, w_2, \cdots, w_n] $ ，即此时 $ W = A^{-1}U $</li>
+<li>构造矩阵 $ C = I - VW $ 和向量 $ Vy $ ，求解线性方程 $ Cz =Vy $ ，得到 $ z $</li>
+<li>矩阵方程 $ (A-UV)x = b $ 的解就是 $ x = y + Wz $</li>
+</ul>
+<hr />
+<h2 id="hermitian矩阵分块求逆引理"><a class="markdownIt-Anchor" href="#hermitian矩阵分块求逆引理"></a> Hermitian矩阵分块求逆引理</h2>
+<p><code>Hermitian矩阵分块求逆引理</code>：</p>
+<p>我们知道Hermitian矩阵的性质，即我们可以将其用分块矩阵的形式表示出来：</p>
+<p>
+$$
+R_{m+1} =  
+\begin{bmatrix}
+    R_m & r_m \\
+    r_m^H & \rho_m
+\end{bmatrix}
+$$
+</p>
+<p>我们可以从 $ R_m^{-1} $ 去推出 $ R_{m+1}^{-1} $</p>
+<p>先定义 $ Q_{m+1} $ ，有：</p>
+<p>
+$$
+Q_{m+1} =  
+\begin{bmatrix}
+    Q_m & q_m \\
+    q_m^H & \alpha_m
+\end{bmatrix}
+$$
+</p>
+<p>且 $ R_{m+1} $ 和 $ Q_{m+1} $ 有以下关系：</p>
+<p>
+$$
+R_{m+1}Q_{m+1} =  
+\begin{bmatrix}
+    R_m & r_m \\
+    r_m^H & \rho_m
+\end{bmatrix}
+\begin{bmatrix}
+    Q_m & q_m \\
+    q_m^H & \alpha_m
+\end{bmatrix}
+=
+\begin{bmatrix}
+    I_m & 0_m \\
+    0_m^H & 1
+\end{bmatrix}
+$$
+</p>
+<p>这样会出4个方程：</p>
+<p>
+$$
+\begin{split}
+R_mQ_m + r_mq_m^H = I_m \\
+r_m^HQ_m + \rho_mq_m^H = 0_m^H \\
+R_mq_m + r_m\alpha_m = 0_m \\ 
+r_m^Hq_m + \rho_m\alpha_m = 1 \\
+\end{split}
+$$
+</p>
+<p>从第三个方程可以得到 $ q_m $ 的表示：</p>
+<p>$$ q_m = -\alpha_m R_m^{-1} r_m $$</p>
+<p>再带入第4个方程得到：</p>
+<p>$$ \alpha_m = \frac{1}{\rho_m - r_m^{H}R_{m}^{-1}r_m } $$</p>
+<p>即我们可以知道 $ q_m $ 的真实表达：</p>
+<p>$$ q_m = \frac{-R_{m}^{-1}r_m}{\rho_m - r_m^{H}R_{m}^{-1}r_m } $$</p>
+<p>同理带回得到 $ Q_m $ :</p>
+<p>$$ Q_m = R_m^{-1} + \frac{R_{m}^{-1}r_m (R_{m}^{-1}r_m)^H}{\rho_m - r_m^{H}R_{m}^{-1}r_m } $$</p>
+<p><label class="label-theorem">简化操作</label></p>
+<p>为了简化，我们需要定义两个新的符号：</p>
+<p>$$ b_m \overset{def}{=} [b_0^{(m)},b_1^{(m)},\cdots,b_{m-1}^{(m)}]^T = - R_{m}^{-1}r_m $$</p>
+<p>$$ \beta_m = \rho_m - r_m^HR_m^{-1}r_m = \rho_m + r_m^Hb_m $$</p>
+<p>此后我们就将其简化为了：</p>
+<p>
+$$
+\alpha_m = \frac{1}{\beta_m} \\
+q_m = \frac{1}{\beta_m}b_m \\
+Q_m = R_m^{-1} + \frac{1}{\beta_m}b_mb_m^H \\
+$$
+</p>
+<p>即我们最终得到了 $ R_{m+1} $ 的逆矩阵：</p>
+<p>
+$$
+R_{m+1}^{-1} = Q_{m+1}
+\begin{bmatrix}
+    R_m^{-1} & 0_m \\
+    0_m^T & 0 \\
+\end{bmatrix}
++ \frac{1}{\beta_m}
+\begin{bmatrix}
+    b_mb_m^H & b_m \\
+    b_m^H & 1
+\end{bmatrix}
+$$
+</p>
+<p>这就是从 $ R_m $ 求 $ R_{m+1} $ 的秩1修正公式，即<code>Hermitian矩阵分块求逆引理</code>。</p>
+
+            </div>
+
+            <!-- Post Comments -->
+            
+
+        </div>
+        <!-- Copyright 版权 start -->
+                <div id="copyright">
+            <ul>
+                <li>&copy;Powered By <a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/" style="border-bottom: none;">hexo</a></li>
+                <li>Design: <a target="_blank" rel="noopener" href="http://miccall.tech " style="border-bottom: none;">miccall</a></li>
+            </ul>
+        </div>
+    </div>
+    <script src="/js/prism.js"></script><!-- hexo-inject:begin --><!-- Begin: Injected MathJax -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({{ JSON.stringify(config) }});
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+      all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+</script>
+
+<script type="text/javascript" src="{{ src }}">
+</script>
+<!-- End: Injected MathJax -->
+<!-- hexo-inject:end -->
+</body>
+
+
+
+ 	
+</html>

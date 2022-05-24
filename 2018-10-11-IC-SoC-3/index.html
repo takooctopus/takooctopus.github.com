@@ -1,0 +1,364 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<!-- hexo-inject:begin --><!-- hexo-inject:end --><link rel="bookmark"  type="image/x-icon"  href="/img/logo_tako.jpg"/>
+	<link rel="shortcut icon" href="/img/logo_tako.jpg">
+	
+			    <title>
+    TAKONOHEYA
+    </title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="/css/mic_main.css" />
+    <link rel="stylesheet" href="/css/dropdownMenu.css" />
+    <meta name="keywords" content="takooctopus takonoheya" />
+    <noscript>
+        <link rel="stylesheet" href="/css/noscript.css" />
+    </noscript>
+    <style type="text/css">
+        body:before {
+          content: ' ';
+          position: fixed;
+          top: 0;
+          background: url('/img/bg.jpg') center 0 no-repeat;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          background-size: cover; 
+        }
+    </style>
+
+			    
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+          processEscapes: true
+        },
+        TeX: {
+          equationNumbers: {
+            autoNumber: "AMS"
+          }
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    
+    <script async type="text/javascript" src="https://cdn.bootcss.com/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+  
+
+ 
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/jquery.scrollex.min.js"></script>
+    <script src="/js/jquery.scrolly.min.js"></script>
+    <script src="/js/skel.min.js"></script>
+    <script src="/js/util.js"></script>
+    <script src="/js/main.js"></script>
+	
+<meta name="generator" content="Hexo 5.4.0"><!-- hexo-inject:begin --><!-- hexo-inject:end --></head>
+    
+		
+<!-- Layouts -->
+
+
+<link rel="stylesheet" href="/css/prism_okaidia.css" />
+
+<link rel="stylesheet" href="/css/typo.css" />
+
+<!-- 文章页 -->
+<body class="is-loading">
+    <!-- hexo-inject:begin --><!-- hexo-inject:end --><!-- Wrapper 外包 s-->
+    <div id="wrapper" class="fade-in">
+        <!-- Intro 头部显示 s -->
+        <!-- Intro 头部显示 e -->
+        <!-- Header 头部logo start -->
+        <header id="header">
+    <a href="/" class="logo">TAKOOCTOPUS</a>
+</header>
+        <!-- Nav 导航条 start -->
+        <nav id="nav" class="special" >
+            <ul class="menu links" >
+			<!-- Homepage  主页  --> 
+			<li >
+	            <a href="/" rel="nofollow">主页</a>
+	        </li>
+			<!-- categories_name  分类   --> 
+	        
+	        <!-- archives  归档   --> 
+	        
+	        
+		        <!-- Pages 自定义   -->
+		        
+		        <li>
+		            <a href="/about/" title="简介">
+		                简介
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/group/" title="团队">
+		                团队
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/series/" title="系列">
+		                系列
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/gallery/" title="图库">
+		                图库
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/tag/" title="标签">
+		                标签
+		            </a>
+		        </li>
+		        
+
+
+            </ul>
+            <!-- icons 图标   -->
+			<ul class="icons">
+                    
+                    <li>
+                        <a title="github" href="https://github.com/takooctopus" target="_blank" rel="noopener">
+                            <i class="icon fa fa-github"></i>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a title="tv" href="https://space.bilibili.com/499056" target="_blank" rel="noopener">
+                            <i class="icon fa fa-tv"></i>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a title="home" href="https://takooctopus.github.io" target="_blank" rel="noopener">
+                            <i class="icon fa fa-home"></i>
+                        </a>
+                    </li>
+                    
+			</ul>
+</nav>
+
+        <div id="main" >
+            <div class ="post_page_title_img" style="height: 25rem;background-image: url(/assets/img/posts/IC/SoC/default.jpg);background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;overflow:hidden;" >
+                <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2 >IC-SoC（三）：SoC的架构</h2></a>
+            </div>
+            <!-- Post -->
+            <div class="typo" style="padding: 3rem;">
+                <blockquote>
+<p>本文由<a href="https://takooctopus.github.io" title="たこ焼きのGITHUB">本人@takooctopus</a>IC学习记录</p>
+</blockquote>
+<h1 id="soc的架构"><a class="markdownIt-Anchor" href="#soc的架构"></a> SoC的架构</h1>
+<h2 id="指令集isa类型"><a class="markdownIt-Anchor" href="#指令集isa类型"></a> 指令集(ISA)类型</h2>
+<ul>
+<li>Complex Instruction Set Computers 复杂指令集(CISC)</li>
+<li>Reduced Instruction Set Computers 精简指令集(SISC)</li>
+</ul>
+<h3 id="评价因素"><a class="markdownIt-Anchor" href="#评价因素"></a> 评价因素</h3>
+<ul>
+<li>instr.count</li>
+<li>code size</li>
+<li>CPI</li>
+<li>cycle time</li>
+</ul>
+<h2 id="指令的并行执行"><a class="markdownIt-Anchor" href="#指令的并行执行"></a> 指令的并行执行</h2>
+<ul>
+<li>Pipelining 流水线「执行不同的子序列」</li>
+<li>Superscalar 超标量「runtime时检查并行度，真正的并行执行」</li>
+<li>VLIW 超长指令字「与超标量的区别在于其并行度在编译时产生」</li>
+</ul>
+<p>明显的Superscalar 的SOC结构较于VLIW的架构复杂度更高</p>
+<h1 id="常见处理器类型"><a class="markdownIt-Anchor" href="#常见处理器类型"></a> 常见处理器类型</h1>
+<ul>
+<li>通用处理器
+<ul>
+<li>ARM「Advanced RISC Machines」
+<ul>
+<li>RISC architecture</li>
+<li>ARM7: 3 pipeline stages, ARM9: 5 pipeline stages</li>
+</ul>
+</li>
+<li>MIPS「Microprocessor without interlocked piped stages」
+<ul>
+<li>RISC architecture</li>
+<li>5,6,7,8 pipeline stages in different chip<br />
+families</li>
+</ul>
+</li>
+<li>powerPC
+<ul>
+<li>Harvard architecture <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Harvard_architecture">「wiki解释」</a></li>
+<li>Superscalar</li>
+<li>5 pipeline stages</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Digital Signal Processor(DSP) 数字信号处理</li>
+<li>Reconfigurable 可配置</li>
+</ul>
+<h2 id="选择方式"><a class="markdownIt-Anchor" href="#选择方式"></a> 选择方式</h2>
+<ul>
+<li>计算复杂度</li>
+<li>应用类型
+<ul>
+<li>计算密集型(Computation Intensive)</li>
+<li>控制密集型(Control Intensive)</li>
+</ul>
+</li>
+</ul>
+<h1 id="性能计算"><a class="markdownIt-Anchor" href="#性能计算"></a> 性能计算</h1>
+<ul>
+<li>CPI: average clock cycles per instruction</li>
+<li>Number of cycles for program P「<code>周期数 = 指令数 * CPI</code>」</li>
+<li>Execution time for P「<code>运行时间 = 时钟周期 * 周期数</code>」</li>
+<li>Number of instructions per second(MIPS)「<code>每秒指令数 = 指令数 / (时间 * 10^6)</code>」</li>
+</ul>
+<h1 id="总线"><a class="markdownIt-Anchor" href="#总线"></a> 总线</h1>
+<h2 id="总线属性"><a class="markdownIt-Anchor" href="#总线属性"></a> 总线属性</h2>
+<ul>
+<li>Bus width (bits)</li>
+<li>Bus frequency (Hz)</li>
+<li>Bandwidth
+<ul>
+<li>the total amount of data that can theoretically be transferred on the bus in a given unit of time.</li>
+</ul>
+</li>
+<li>Arbitration mechanism</li>
+<li>Transfer type</li>
+</ul>
+<h2 id="总线略述"><a class="markdownIt-Anchor" href="#总线略述"></a> 总线略述</h2>
+<ul>
+<li>ARM’AMBA
+<ul>
+<li>AMBA‐AHB</li>
+<li>AMBA‐AXI</li>
+</ul>
+</li>
+<li>IBM’s CoreConnect</li>
+<li>Silicore’s Wishbone</li>
+<li>Avalon bus</li>
+<li>OCP (Open Core Protocol) Bus</li>
+</ul>
+<h1 id="内存"><a class="markdownIt-Anchor" href="#内存"></a> 内存</h1>
+<ul>
+<li>SRAM「6个晶体管」</li>
+<li>SDRAM「电容（有充放电问题）」</li>
+<li>DDRAM「双数据速率的SDRAM」</li>
+<li>ROM</li>
+<li>Flash</li>
+<li>New non‐volatile memory
+<ul>
+<li>MRAM 电磁</li>
+<li>RRAM 阻抗</li>
+<li>FeRAM 铁磁</li>
+<li>PRAM 相位</li>
+</ul>
+</li>
+</ul>
+<h1 id="多核soc设计"><a class="markdownIt-Anchor" href="#多核soc设计"></a> 多核SoC设计</h1>
+<ul>
+<li>MPSoC (Multiprocessor SoC)</li>
+<li>Parallelism
+<ul>
+<li>Instruction level 指令级: pipeline, VLIW, superscalar</li>
+<li>Data level 数据级: SIMD</li>
+<li>Task level 任务级: video process &amp; audio process &amp; radio</li>
+</ul>
+</li>
+</ul>
+<p>设计考虑：</p>
+<ul>
+<li>Processor and memory
+<ul>
+<li>Distributed vs share</li>
+</ul>
+</li>
+<li>Inter‐core communication
+<ul>
+<li>Data sharing</li>
+<li>Synchronization</li>
+</ul>
+</li>
+<li>Operation system
+<ul>
+<li>Task allocation, interrupt mechanism, dealing with resource access conflict</li>
+</ul>
+</li>
+<li>Compiler
+<ul>
+<li>Increase parallelism</li>
+</ul>
+</li>
+<li>Performance evaluation
+<ul>
+<li>Amdahl law: fixed‐size of task 加速比
+<ul>
+<li>$ speedup = \frac{time_{单核}}{time_{多核}} = \frac{1}{(1-f_{1})+f_{1}/n} $ 其中 $ f_1 $ 指任务中并行部分</li>
+</ul>
+</li>
+<li>Gastofson law: fixed‐time
+<ul>
+<li>$ speedup = (1-f_{2})+nf_{2} $ 。其中$f_{2} $ 指并行时间， $ n $ 指核心数</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            </div>
+
+            <!-- Post Comments -->
+            
+
+        </div>
+        <!-- Copyright 版权 start -->
+                <div id="copyright">
+            <ul>
+                <li>&copy;Powered By <a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/" style="border-bottom: none;">hexo</a></li>
+                <li>Design: <a target="_blank" rel="noopener" href="http://miccall.tech " style="border-bottom: none;">miccall</a></li>
+            </ul>
+        </div>
+    </div>
+    <script src="/js/prism.js"></script><!-- hexo-inject:begin --><!-- Begin: Injected MathJax -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({{ JSON.stringify(config) }});
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+      all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+</script>
+
+<script type="text/javascript" src="{{ src }}">
+</script>
+<!-- End: Injected MathJax -->
+<!-- hexo-inject:end -->
+</body>
+
+
+
+ 	
+</html>

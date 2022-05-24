@@ -1,0 +1,346 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<!-- hexo-inject:begin --><!-- hexo-inject:end --><link rel="bookmark"  type="image/x-icon"  href="/img/logo_tako.jpg"/>
+	<link rel="shortcut icon" href="/img/logo_tako.jpg">
+	
+			    <title>
+    TAKONOHEYA
+    </title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="/css/mic_main.css" />
+    <link rel="stylesheet" href="/css/dropdownMenu.css" />
+    <meta name="keywords" content="takooctopus takonoheya" />
+    <noscript>
+        <link rel="stylesheet" href="/css/noscript.css" />
+    </noscript>
+    <style type="text/css">
+        body:before {
+          content: ' ';
+          position: fixed;
+          top: 0;
+          background: url('/img/bg.jpg') center 0 no-repeat;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          background-size: cover; 
+        }
+    </style>
+
+			    
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+          processEscapes: true
+        },
+        TeX: {
+          equationNumbers: {
+            autoNumber: "AMS"
+          }
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    
+    <script async type="text/javascript" src="https://cdn.bootcss.com/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+  
+
+ 
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/jquery.scrollex.min.js"></script>
+    <script src="/js/jquery.scrolly.min.js"></script>
+    <script src="/js/skel.min.js"></script>
+    <script src="/js/util.js"></script>
+    <script src="/js/main.js"></script>
+	
+<meta name="generator" content="Hexo 5.4.0"><!-- hexo-inject:begin --><link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/themes/prism.min.css'><link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/plugins/line-numbers/prism-line-numbers.min.css'><!-- hexo-inject:end --></head>
+    
+		
+<!-- Layouts -->
+
+
+<link rel="stylesheet" href="/css/prism_okaidia.css" />
+
+<link rel="stylesheet" href="/css/typo.css" />
+
+<!-- 文章页 -->
+<body class="is-loading">
+    <!-- hexo-inject:begin --><!-- hexo-inject:end --><!-- Wrapper 外包 s-->
+    <div id="wrapper" class="fade-in">
+        <!-- Intro 头部显示 s -->
+        <!-- Intro 头部显示 e -->
+        <!-- Header 头部logo start -->
+        <header id="header">
+    <a href="/" class="logo">TAKOOCTOPUS</a>
+</header>
+        <!-- Nav 导航条 start -->
+        <nav id="nav" class="special" >
+            <ul class="menu links" >
+			<!-- Homepage  主页  --> 
+			<li >
+	            <a href="/" rel="nofollow">主页</a>
+	        </li>
+			<!-- categories_name  分类   --> 
+	        
+	        <!-- archives  归档   --> 
+	        
+	        
+		        <!-- Pages 自定义   -->
+		        
+		        <li>
+		            <a href="/about/" title="简介">
+		                简介
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/group/" title="团队">
+		                团队
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/series/" title="系列">
+		                系列
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/gallery/" title="图库">
+		                图库
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/tag/" title="标签">
+		                标签
+		            </a>
+		        </li>
+		        
+
+
+            </ul>
+            <!-- icons 图标   -->
+			<ul class="icons">
+                    
+                    <li>
+                        <a title="github" href="https://github.com/takooctopus" target="_blank" rel="noopener">
+                            <i class="icon fa fa-github"></i>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a title="tv" href="https://space.bilibili.com/499056" target="_blank" rel="noopener">
+                            <i class="icon fa fa-tv"></i>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a title="home" href="https://takooctopus.github.io" target="_blank" rel="noopener">
+                            <i class="icon fa fa-home"></i>
+                        </a>
+                    </li>
+                    
+			</ul>
+</nav>
+
+        <div id="main" >
+            <div class ="post_page_title_img" style="height: 25rem;background-image: url(/assets/img/posts/CS/PythonKernel.jpg);background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;overflow:hidden;" >
+                <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2 >python 内核分析（七）：Dict类型对象</h2></a>
+            </div>
+            <!-- Post -->
+            <div class="typo" style="padding: 3rem;">
+                <blockquote>
+<p>本系列作为<a href="https://takooctopus.github.io/" title="TAKONOHEYA">本人@takooctopus</a>深入学习python机制的记录，这个博客遵照着<a target="_blank" rel="noopener" href="https://www.hongweipeng.com/" title="栖迟于一丘">栖迟于一丘</a>的博客上面的流程进行的，也包含我在实际查看源码时的感想，特此列出，表示感谢。</p>
+</blockquote>
+<h1 id="关于dict对象"><a class="markdownIt-Anchor" href="#关于dict对象"></a> 关于Dict对象</h1>
+<p>python中的<code>dict</code>对象也即<code>PyDictObject</code>对象，因为对搜索的效率要求很高，所以选择了散列表（hash table），因为在最优情况下，散列表能够提供O(1)的搜索效率。</p>
+<p>散列表的基本思想是：通过一定的函数将需要搜索的键值映射为一个整数，根据这个整数作为索引去访问某片连续的内存区域。用于映射的函数称为映射函数，映射所产生的值称为散列值（<code>hash value</code>）。散列函数对搜索效率有直接的决定性作用。在使用散列函数将不同的值可能映射到相同的散列值，这个时候就需要冲突解决（装载率大于2/3时，冲突的概率就会大大增加）</p>
+<p>冲突解决在python中使用的是开放定址法「闭散列法」，就是通过一个二次探测函数f，计算下一个位置，一直到找到下一个可用的位置为止，在这个过程中会到达多个位置，这些位置就形成了一个“冲突探测链”，这个冲突探测链在查找某个元素的时候起到重要作用，所以在删除某个位置上的元素，不能直接将这个位置的内容删除，如果删除的话，则导致后续依赖于这个位置的其他值就都无法寻找到了，所以只能进行“伪删除”（通过给元素设置状态，dummy态，表示没有存储具体的值但是还会用到的废弃态）</p>
+<p>先列出<code>PyDictObject</code>的定义：</p>
+
+<!-- Has Prism -->
+<pre class="{{ pre_class }}" style="{{ pre_style }}" {{ data_attr }}><code class="language-&#123;&#123; lang &#125;&#125;">
+&#123;&#123;- code -&#125;&#125;
+</code></pre>
+<p>我们看到其中属性中除了对象类型、<code>Active</code>元素个数，全局唯一id<code>ma_version_tag</code>，还有一个类<code>PyDictKeys</code>，以及一个<code>PyObject</code>的指针。我们去看一看它的定义：</p>
+
+<!-- Has Prism -->
+<pre class="{{ pre_class }}" style="{{ pre_style }}" {{ data_attr }}><code class="language-&#123;&#123; lang &#125;&#125;">
+&#123;&#123;- code -&#125;&#125;
+</code></pre>
+<p>我们看见<code>_dictkeysobject</code>的属性中包含了引用数<code>dk_refcnt</code>，键数<code>dk_size = 2^n</code>,以及哈希表寻找的函数<code>dk_lookup</code>「包含了4种函数」，<code>Active + Dummy</code>的元素个数<code>dk_usable</code>，<code>Active</code>的元素个数<code>dk_nentries</code>，以及哈希表的索引<code>dk_indices[]</code>「其中每个单元的大小与<code>dk_size</code>的大小有关」</p>
+
+<!-- Has Prism -->
+<pre class="{{ pre_class }}" style="{{ pre_style }}" {{ data_attr }}><code class="language-&#123;&#123; lang &#125;&#125;">
+&#123;&#123;- code -&#125;&#125;
+</code></pre>
+<p>我们可以看见在这里设立了三个宏，表示了<code>entry</code>键值对的对象状态。</p>
+<p>那么什么是<code>entry</code>键值对呢，其被称为关联容器，即<code>PyDictKeyEntry</code></p>
+
+<!-- Has Prism -->
+<pre class="{{ pre_class }}" style="{{ pre_style }}" {{ data_attr }}><code class="language-&#123;&#123; lang &#125;&#125;">
+&#123;&#123;- code -&#125;&#125;
+</code></pre>
+<p>在<code>dict_lookup_func()</code>中会返回键值对的<code>index</code>「主键」，我们可以像<code>DK_ENTRIES(dk)[index]</code>的方式使用主键，其三个值<code>-1</code>代表没有找到这个关联容器，<code>-3</code>代表当其比较时返回错误,<code>-2</code>的<code>dummy</code>代表了一种伪删除状态。</p>
+<p>当然上面那个是在寻找键值对关联容器时的返回值，但关联容器本身也是有三种状态的。</p>
+<ul>
+<li>Unused(未使用):<code>index == DKIX_EMPTY</code></li>
+<li>Active(活动): <code>index &gt;= 0</code>, <code>me_key != NULL</code> and <code>me_value != NULL</code></li>
+<li>Dummy(删除状态): <code>index == DKIX_DUMMY</code> 之所以不能直接转成Unused状态是因为这要会导致冲突探测链中断</li>
+</ul>
+<h1 id="新的pypydict"><a class="markdownIt-Anchor" href="#新的pypydict"></a> 新的PyPyDict</h1>
+<p>在其文档中提到现在其使用了<a target="_blank" rel="noopener" href="https://morepypy.blogspot.com/2015/01/faster-more-memory-efficient-and-more.html" title="PyPy Status Blog">新的PyPy字典结构</a></p>
+<p>在此简单的提一下其两者的差别：</p>
+<p>原来的字典结构：</p>
+
+<!-- Has Prism -->
+<pre class="{{ pre_class }}" style="{{ pre_style }}" {{ data_attr }}><code class="language-&#123;&#123; lang &#125;&#125;">
+&#123;&#123;- code -&#125;&#125;
+</code></pre>
+<p>其<code>dict</code>由一大块内存区组成，并伴有指向数组的指针。这些关联容器数组实际上是一个稀疏数组「其中大约1/3到1/2的空间是<code>NULL</code>」，形成大量的空间浪费。</p>
+<p>相比之下新的字典结构：</p>
+
+<!-- Has Prism -->
+<pre class="{{ pre_class }}" style="{{ pre_style }}" {{ data_attr }}><code class="language-&#123;&#123; lang &#125;&#125;">
+&#123;&#123;- code -&#125;&#125;
+</code></pre>
+<p>其<code>dict</code>的实现使用了两个数组，一个用于存储索引的<code>sparse_array[]</code>，其中只存储有符号的整数「<code>+</code>」用作hash的索引以及<code>KIX_EMPTY「-1」</code>或<code>DKIX_DUMMY「-2」</code>。另一个<code>compact_array []</code>按照插入顺序储存所有的关联容器。</p>
+<p>因为在<code>sparse_array[]</code>中存储的其实是在<code>compact_array[]</code>中<code>item</code>所在的插入序号，当改变<code>sparse_array[]</code>中的排列时，只是索引变化，不需要改动我们实际上存储的关联容器的储存顺序。</p>
+<p>这个设计不仅减少了操作量，更重要的是其节省内存的功能。因为<code>sparse_array[]</code>中存储的都是<code>int</code>，其内存占用量极小。举例来说，在64位系统下，我们最多，虽然几乎用不到，能储存大约40亿个元素。对于一个100个元素的字典，原来的字典设计会占用大约<code>100 * 12/7 * WORD * 3 =~ 4100 bytes</code>，而新的字典设计仅需要<code>100 * 12/7 + 3 * WORD * 100 =~ 2600 bytes</code>，内存使用大大减少。</p>
+<h1 id="pydictobject的创建操作"><a class="markdownIt-Anchor" href="#pydictobject的创建操作"></a> PyDictObject的创建操作</h1>
+<p>简单的，其通过<code>PyDict_New()</code>来新建一个<code>dict</code>对象</p>
+
+<!-- Has Prism -->
+<pre class="{{ pre_class }}" style="{{ pre_style }}" {{ data_attr }}><code class="language-&#123;&#123; lang &#125;&#125;">
+&#123;&#123;- code -&#125;&#125;
+</code></pre>
+<p>其默认<code>#define PyDict_MINSIZE 8</code>，即会附带创建8个关联容器<code>PyDictKeyEntry</code></p>
+
+<!-- Has Prism -->
+<pre class="{{ pre_class }}" style="{{ pre_style }}" {{ data_attr }}><code class="language-&#123;&#123; lang &#125;&#125;">
+&#123;&#123;- code -&#125;&#125;
+</code></pre>
+<p>其分配的大小随<code>size</code>的大小分成了几个区间。</p>
+<p>我们看其最后分配的内存空间，当没有使用缓冲池时，其分配的内存为</p>
+
+<!-- Has Prism -->
+<pre class="{{ pre_class }}" style="{{ pre_style }}" {{ data_attr }}><code class="language-&#123;&#123; lang &#125;&#125;">
+&#123;&#123;- code -&#125;&#125;
+</code></pre>
+<p>包含了三个部分，第一个<code>sizeof(PyDictKeysObject)</code>是这个空对象的内存大小，第二个是hash索引表的大小，第三个<code>sizeof(PyDictKeyEntry) * usable</code>是申请的关联容器数组的大小，这里<code>usable</code>一般取在<code>1/2</code>到<code>2/3</code>就比较合适。</p>
+
+<!-- Has Prism -->
+<pre class="{{ pre_class }}" style="{{ pre_style }}" {{ data_attr }}><code class="language-&#123;&#123; lang &#125;&#125;">
+&#123;&#123;- code -&#125;&#125;
+</code></pre>
+<p>在创建完主键对象后，再继续创建关联容器对象组，即<code>dict</code>的对象。</p>
+<h1 id="pydictobject的获取操作"><a class="markdownIt-Anchor" href="#pydictobject的获取操作"></a> PyDictObject的获取操作</h1>
+<p>获取Dict对象时我们调用的是<code>PyDict_GetItem()</code></p>
+
+<!-- Has Prism -->
+<pre class="{{ pre_class }}" style="{{ pre_style }}" {{ data_attr }}><code class="language-&#123;&#123; lang &#125;&#125;">
+&#123;&#123;- code -&#125;&#125;
+</code></pre>
+<p>我们在进行了类型检查和字符检查后，在确定其状态不为<code>empty「-1」</code>后，我们调用其属性中的<code>dk_lookup</code>，这个是查找方法，在类的初始化时被定义，有四种可能性：</p>
+<ul>
+<li>
+<p>lookdict(): general-purpose, and may return DKIX_ERROR if (and only if) a comparison raises an exception.</p>
+</li>
+<li>
+<p>lookdict_unicode(): specialized to Unicode string keys, comparison of which can never raise an exception; that function can never return DKIX_ERROR.</p>
+</li>
+<li>
+<p>lookdict_unicode_nodummy(): similar to lookdict_unicode() but further specialized for Unicode string keys that cannot be the <dummy> value.</p>
+</li>
+<li>
+<p>lookdict_split(): Version of lookdict() for split tables.</p>
+</li>
+</ul>
+<p>一般来说，<code>lookdict()</code>是通用的方法，我们去看一下其具体内容：</p>
+
+<!-- Has Prism -->
+<pre class="{{ pre_class }}" style="{{ pre_style }}" {{ data_attr }}><code class="language-&#123;&#123; lang &#125;&#125;">
+&#123;&#123;- code -&#125;&#125;
+</code></pre>
+<p>首先<code>mask</code>值是<code>2^(dk-&gt;dk_size)-1</code>，<code>i</code>相当于对其取模。</p>
+<p>在循环中，在取出第dict表中的稀疏数组<code>parse_array[]</code>即<code>dk_indices[]</code>，直接取出对应位置i的关联容器储存位置「即我们在前面新PyPyDict中提到的<code>compact_array[]</code>」的id:<code>ix</code>。</p>
+<p>再依次判断其是否非空，是否来自同一个引用。</p>
+<p>经过了上两步后，还需考虑因为hash导致的重复冲突，我们对两个对象进行相等性的比较「其中涉及了简单比较和完整比较(完整比较中返回<code>1</code>为相等，<code>0</code>为不等，还有一个<code>-1</code>视为出错)」，根据比较的结果，如果相等就返回；如果不相等，我们对hash值做位平移，并修改我们的hash探测函数值<code>i</code>，然后重新循环，继续下一次的探测。</p>
+<blockquote>
+<p>注意：我们这里简单比较中采用了值比较<code>==</code>而不是引用相同<code>is</code>，因为要考虑非小整数对象的影响。</p>
+</blockquote>
+<p>其中关联容器<code>entry</code>两种状态<code>Unuse</code>以及<code>Dummy</code>态，函数会分别以冲突弹窗结束搜索，或者设置为<code>freeslot</code>继续探测。</p>
+<p>关于冲突函数<code>i</code>，当遇到hash冲突时，<code>i = ((i &lt;&lt; 2) + i + perturb + 1) &amp; mask</code>，很神奇，其化简为<code>i = (i * 5 + i) % dk_size</code> 刚好能遍历所有元素。</p>
+<p>#PyDictObject的插入操作</p>
+<p>插入操作在<code>PyDict_SetItem()</code>方法中：</p>
+
+<!-- Has Prism -->
+<pre class="{{ pre_class }}" style="{{ pre_style }}" {{ data_attr }}><code class="language-&#123;&#123; lang &#125;&#125;">
+&#123;&#123;- code -&#125;&#125;
+</code></pre>
+<p>最后调用了<code>insertdict()</code>方法：</p>
+
+<!-- Has Prism -->
+<pre class="{{ pre_class }}" style="{{ pre_style }}" {{ data_attr }}><code class="language-&#123;&#123; lang &#125;&#125;">
+&#123;&#123;- code -&#125;&#125;
+</code></pre>
+<p>其最重要的还是基于搜索出来返回的<code>ix</code>值，如果其返回的是拥有<code>Active</code>的关联容器，可以直接对<code>value_addr</code>赋值<code>value</code>。而如果是<code>Unuse</code>或者<code>Dummy</code>,就需要完整的设置<code>dict_entry</code>结构体了。</p>
+<p>当空间达到一个阈值时，会调用<code>insertion_resize()</code>方法，即<code>dictresize()</code>方法。将空间扩大2倍并迁移数据。</p>
+
+<!-- Has Prism -->
+<pre class="{{ pre_class }}" style="{{ pre_style }}" {{ data_attr }}><code class="language-&#123;&#123; lang &#125;&#125;">
+&#123;&#123;- code -&#125;&#125;
+</code></pre>
+
+            </div>
+
+            <!-- Post Comments -->
+            
+
+        </div>
+        <!-- Copyright 版权 start -->
+                <div id="copyright">
+            <ul>
+                <li>&copy;Powered By <a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/" style="border-bottom: none;">hexo</a></li>
+                <li>Design: <a target="_blank" rel="noopener" href="http://miccall.tech " style="border-bottom: none;">miccall</a></li>
+            </ul>
+        </div>
+    </div>
+    <script src="/js/prism.js"></script><!-- hexo-inject:begin --><!-- Begin: Injected MathJax -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({{ JSON.stringify(config) }});
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+      all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+</script>
+
+<script type="text/javascript" src="{{ src }}">
+</script>
+<!-- End: Injected MathJax -->
+<script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/prism.min.js'></script><script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/plugins/line-numbers/prism-line-numbers.min.js'></script><script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/plugins/normalize-whitespace/prism-normalize-whitespace.min.js'></script><!-- hexo-inject:end -->
+</body>
+
+
+
+ 	
+</html>

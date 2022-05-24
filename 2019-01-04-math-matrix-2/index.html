@@ -1,0 +1,355 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<!-- hexo-inject:begin --><!-- hexo-inject:end --><link rel="bookmark"  type="image/x-icon"  href="/img/logo_tako.jpg"/>
+	<link rel="shortcut icon" href="/img/logo_tako.jpg">
+	
+			    <title>
+    TAKONOHEYA
+    </title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="/css/mic_main.css" />
+    <link rel="stylesheet" href="/css/dropdownMenu.css" />
+    <meta name="keywords" content="takooctopus takonoheya" />
+    <noscript>
+        <link rel="stylesheet" href="/css/noscript.css" />
+    </noscript>
+    <style type="text/css">
+        body:before {
+          content: ' ';
+          position: fixed;
+          top: 0;
+          background: url('/img/bg.jpg') center 0 no-repeat;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          background-size: cover; 
+        }
+    </style>
+
+			    
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+          processEscapes: true
+        },
+        TeX: {
+          equationNumbers: {
+            autoNumber: "AMS"
+          }
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    
+    <script async type="text/javascript" src="https://cdn.bootcss.com/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+  
+
+ 
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/jquery.scrollex.min.js"></script>
+    <script src="/js/jquery.scrolly.min.js"></script>
+    <script src="/js/skel.min.js"></script>
+    <script src="/js/util.js"></script>
+    <script src="/js/main.js"></script>
+	
+<meta name="generator" content="Hexo 5.4.0"><!-- hexo-inject:begin --><!-- hexo-inject:end --></head>
+    
+		
+<!-- Layouts -->
+
+
+<link rel="stylesheet" href="/css/prism_okaidia.css" />
+
+<link rel="stylesheet" href="/css/typo.css" />
+
+<!-- 文章页 -->
+<body class="is-loading">
+    <!-- hexo-inject:begin --><!-- hexo-inject:end --><!-- Wrapper 外包 s-->
+    <div id="wrapper" class="fade-in">
+        <!-- Intro 头部显示 s -->
+        <!-- Intro 头部显示 e -->
+        <!-- Header 头部logo start -->
+        <header id="header">
+    <a href="/" class="logo">TAKOOCTOPUS</a>
+</header>
+        <!-- Nav 导航条 start -->
+        <nav id="nav" class="special" >
+            <ul class="menu links" >
+			<!-- Homepage  主页  --> 
+			<li >
+	            <a href="/" rel="nofollow">主页</a>
+	        </li>
+			<!-- categories_name  分类   --> 
+	        
+	        <!-- archives  归档   --> 
+	        
+	        
+		        <!-- Pages 自定义   -->
+		        
+		        <li>
+		            <a href="/about/" title="简介">
+		                简介
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/group/" title="团队">
+		                团队
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/series/" title="系列">
+		                系列
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/gallery/" title="图库">
+		                图库
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/tag/" title="标签">
+		                标签
+		            </a>
+		        </li>
+		        
+
+
+            </ul>
+            <!-- icons 图标   -->
+			<ul class="icons">
+                    
+                    <li>
+                        <a title="github" href="https://github.com/takooctopus" target="_blank" rel="noopener">
+                            <i class="icon fa fa-github"></i>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a title="tv" href="https://space.bilibili.com/499056" target="_blank" rel="noopener">
+                            <i class="icon fa fa-tv"></i>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a title="home" href="https://takooctopus.github.io" target="_blank" rel="noopener">
+                            <i class="icon fa fa-home"></i>
+                        </a>
+                    </li>
+                    
+			</ul>
+</nav>
+
+        <div id="main" >
+            <div class ="post_page_title_img" style="height: 25rem;background-image: url(/assets/img/posts/Math/matrix.jpg);background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;overflow:hidden;" >
+                <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2 >矩阵分析与应用（二）：向量空间、内积空间和线性映射</h2></a>
+            </div>
+            <!-- Post -->
+            <div class="typo" style="padding: 3rem;">
+                <h1 id="向量空间-内积空间和线性映射"><a class="markdownIt-Anchor" href="#向量空间-内积空间和线性映射"></a> 向量空间、内积空间和线性映射</h1>
+<h2 id="集合的基本概念"><a class="markdownIt-Anchor" href="#集合的基本概念"></a> 集合的基本概念</h2>
+<p><code>集合</code>通常用花括号 $ S = \lbrace \cdot \rbrace $ 表示</p>
+<p>几个集合运算的基本数学符号：</p>
+<ul>
+<li>$ \forall $ 表示 “对所有”</li>
+<li>$ x \in A $ 表示 “x是集合A中的一个元素”</li>
+<li>$ x \notin A $ 表示 “x不是集合A中的一个元素”</li>
+<li>$ \ni $ 表示“使得”</li>
+<li>$ \exists $ 表示“存在”</li>
+</ul>
+<p>以及子集( $ \subseteq $ )、真子集( $ \subset $ )、空集( $ \varnothing $ )、并集( $ \cup $ )、交集( $ \cap $ )、和集( $ + $ )、集合差( $ - $ )和补集( $ A^\complement $ )的概念</p>
+<p>以及最后的<code>笛卡尔积</code>的概念：</p>
+<p>若X和Y是集合，且 $ x \in X $ 和 $ y \in Y $ ，则所有有序对「ordered pair」的集合记作：</p>
+<p>$$ X \times Y = \lbrace (x,y): x \in X , y \in Y \rbrace $$</p>
+<hr />
+<h2 id="向量空间"><a class="markdownIt-Anchor" href="#向量空间"></a> 向量空间</h2>
+<p>以向量为元素的集合V称为<code>向量空间</code>，我们有下面八个公理：</p>
+<ul>
+<li>闭合性「closure properties」
+<ul>
+<li>加法的闭合性</li>
+<li>标量乘法的闭合性</li>
+</ul>
+</li>
+<li>加法的公理
+<ul>
+<li>加法的交换律</li>
+<li>加法的结合律</li>
+<li>零向量的存在性</li>
+<li>负向量的存在性</li>
+</ul>
+</li>
+<li>标量乘法的公理
+<ul>
+<li>标量乘法的结合律</li>
+<li>标量乘法的分配律</li>
+<li>标量乘法的单位率</li>
+</ul>
+</li>
+</ul>
+<p><label class="label-theorem">定理1：</label></p>
+<p>如果V是一个向量空间：</p>
+<ul>
+<li>零向量「 <strong>0</strong> 」是唯一的</li>
+<li>对每一个向量<strong>y</strong>，加法的逆运算-<strong>y</strong>是唯一的</li>
+<li>对每一个向量<strong>y</strong>，恒有0<strong>y</strong> = 0</li>
+<li>对于每一个标量a,恒有a<strong>y</strong>=0</li>
+<li>若有a<strong>y</strong>=0，则a=0或者<strong>y</strong>=0</li>
+<li>(-1)<strong>y</strong> = -<strong>y</strong></li>
+</ul>
+<h2 id="子空间"><a class="markdownIt-Anchor" href="#子空间"></a> 子空间</h2>
+<p>令V和W是两个向量子空间，如果W是V中的一个非空子集合，则则称子集合W是V的一个<code>子空间</code></p>
+<p><label class="label-theorem">定理2：</label></p>
+<p>要让 $ R^{n} $ 的子集合W是 $ R^{n} $ 的子空间，其需要满足下列三个条件：</p>
+<ul>
+<li>满足加法的闭合性</li>
+<li>满足标量乘积的闭合性</li>
+<li>满足零向量<strong>0</strong>是W的元素</li>
+</ul>
+<p>我们考虑向量空间V的子空间A和B，若满足 $ V = A + B $ 且 $ A \cap B = \varnothing $，则称V是子空间A和B的直接求和，简称<code>直和</code>「direct sum」，记作：<p> $$ V = A \oplus B $$ </p></p>
+<p><label class="label-theorem">定理3：</label></p>
+<p>若A和B是向量空间V的向量子空间，则 $ A + B $ 和 $ A \cap B $ 都是V的向量子空间</p>
+<hr />
+<h2 id="实内积空间real-inner-product-space"><a class="markdownIt-Anchor" href="#实内积空间real-inner-product-space"></a> 实内积空间「real inner product space」</h2>
+<p><code>实内积空间</code>是满足下列条件的实向量空间E：</p>
+<ul>
+<li>内积需要是正定(positive definite)的： $ \langle x,x \rangle &gt; 0 ,\quad \forall x \neq 0 $</li>
+<li>内积的对称性(symmetry)：$ \langle x,y \rangle = \langle y,x \rangle $</li>
+<li>$ \langle x,y+z \rangle = \langle x,y \rangle + \langle x,z \rangle $</li>
+<li>$  \langle \alpha x,y \rangle = \alpha \langle x,y \rangle$</li>
+</ul>
+<p><code>典范内积</code>(canonical inner product):</p>
+<p>对于n阶向量空间 $ R^n $ 定义两个列向量 $ x,y $，则其典范内积为：</p>
+<p>$$ \langle x,y \rangle = \sum_{i=1}^{n}x_iy_i $$</p>
+<p>此时称 $ R^n $ 为<code>欧几里得</code>(Euclidean)空间</p>
+<h3 id="范数"><a class="markdownIt-Anchor" href="#范数"></a> 范数</h3>
+<p><code>范数</code>「长度」：</p>
+<p>若 $ R^n $ 是一个实内积空间，且 $ x \in R^n $ ，则 x 的范数记作 $ \lVert x \rVert $ ，并定义为：</p>
+<p>$$ \lVert x \rVert = \langle x,x \rangle ^{1/2} $$</p>
+<p><code>单位向量</code>：长度为1的向量</p>
+<p>向量x和y之间的距离：</p>
+<p>$$ d = \lVert x-y \rVert = \langle x-y,x-y \rangle ^{1/2} $$</p>
+<p><label class="label-warning">特别的</label></p>
+<p>对于欧几里得n空间，向量范数取：</p>
+<p> $$ \lVert x \rVert _2 $$ </p>
+<p>对于范数有以下定理</p>
+<p><label class="label-theorem">定理4：</label></p>
+<ul>
+<li>$ \lVert 0 \rVert = 0 $ ，且有 $ \lVert x \rVert &gt;0 , \forall x \neq 0 $</li>
+<li>$ \lVert cx \rVert = \lvert c \rvert \lVert x \rVert $</li>
+<li>范数符合极化恒等式(polarization identity) <p>$$ \langle x,y \rangle = \frac{1}{4} ( \lVert x+y \rVert ^2 - \lVert x-y \rVert ^2 ) \qquad \forall x,y $$</p></li>
+<li>范数满足平行四边形法则(parallelogram law) <p>$$ \lVert x+y \rVert ^2 + \lVert x-y \rVert ^2  = 2 \lVert x \rVert ^2 + 2 \lVert y \rVert ^2 \qquad \forall x,y $$</p></li>
+<li>范数服从Cauchy-Schwartz不等式：<p> $$ \lvert \langle x,y \rangle \rvert \leq \lVert x \rVert \lVert y \rVert $$ </p> 且仅在x,y线性相关时取等</li>
+<li>范数满足三角不等式：<p> $$  \lVert x+y \rVert \leq \lVert x \rVert + \lVert y \rVert $$ </p></li>
+</ul>
+<hr />
+<h2 id="复内积空间"><a class="markdownIt-Anchor" href="#复内积空间"></a> 复内积空间</h2>
+<p><code>复内积空间</code>：</p>
+<p>相比于实内积空间，复内积空间有些许的变化，体现在2，4条件的共轭上：</p>
+<ul>
+<li>内积需要是严格正性的： $ \quad \forall x \neq 0  \Rightarrow \langle x,x \rangle &gt; 0 $</li>
+<li>内积的<strong>共轭</strong>对称性(conjugate symmetry)「Hermitian 性」：$ \langle x,y \rangle ^\ast = \langle y,x \rangle $</li>
+<li>$ \langle x,y+z \rangle = \langle x,y \rangle + \langle x,z \rangle $</li>
+<li>$  \langle c x,y \rangle = c ^\ast \langle x,y \rangle$ 对所有<strong>复标量c</strong>成立</li>
+</ul>
+<p>相似的，有<strong>复向量</strong>的<code>典范内积</code>：</p>
+<p>$$ \langle x,y \rangle = x^Hy =\sum_{i}^{n} x^\ast_iy_i $$</p>
+<p>此时的n维复内积空间称为 $ C^n $</p>
+<p>复内积空间中，对于范数有以下性质</p>
+<p><label class="label-theorem">定理5：</label></p>
+<p>这几个性质中只有第3个和实内积空间有些不同：</p>
+<ul>
+<li>$ \lVert 0 \rVert = 0 $ ，且有 $ \lVert x \rVert &gt;0 , \forall x \neq 0 $</li>
+<li>$ \lVert cx \rVert = \lvert c \rvert \lVert x \rVert $</li>
+<li>范数符合极化恒等式(polarization identity) <p>$$ \langle x,y \rangle = \frac{1}{4} ( \lVert x+y \rVert ^2 - \lVert x-y \rVert ^2 - j\lVert x+jy \rVert ^2 + j\lVert x-jy \rVert ^2) \qquad \forall x,y $$</p></li>
+<li>范数满足平行四边形法则(parallelogram law) <p>$$ \lVert x+y \rVert ^2 + \lVert x-y \rVert ^2  = 2 \lVert x \rVert ^2 + 2 \lVert y \rVert ^2 \qquad \forall x,y $$</p></li>
+<li>范数服从Cauchy-Schwartz不等式：<p> $$ \lvert \langle x,y \rangle \rvert \leq \lVert x \rVert \lVert y \rVert $$ </p> 且仅在x,y线性相关时取等</li>
+<li>范数满足三角不等式：<p> $$  \lVert x+y \rVert \leq \lVert x \rVert + \lVert y \rVert $$ </p></li>
+</ul>
+<hr />
+<h2 id="线性映射"><a class="markdownIt-Anchor" href="#线性映射"></a> 线性映射</h2>
+<p><code>映射</code>：</p>
+<p>映射本身是一个函数，如果V是欧几里得m空间 $ R^m $ 的子空间，而W是 $ R^n $ 的子空间，则 <p>$$ T:V \mapsto W $$</p> 为子空间 V到子空间W的映射「函数、变换」</p>
+<p>对于 $ v \in V , w \in W $ ，则我们有 <p>$$ w = T(v) $$</p></p>
+<p>此时子空间V是映射T的<code>始集</code>(initial set)或<code>域</code>(domain)</p>
+<p>子空间W是映射T的<code>终集</code>(final set)或<code>上域</code>(codomain)</p>
+<p>「我们在这里将v称为原像，T(v)称为在映射下的<code>像</code>(image)或映射在v处的<code>值</code>(value)」</p>
+<p><code>值域</code>(range)：</p>
+<p>一般的值域的符号为 <p> $$ T(V) = Im(T) = \lbrace T(v: v \in V) \rbrace $$ </p></p>
+<h3 id="单射和满射"><a class="markdownIt-Anchor" href="#单射和满射"></a> 单射和满射</h3>
+<p><code>单射</code>(injective)：</p>
+<p>只要对于V中两个不同向量，他们映射后的值不同即可</p>
+<p><code>满射</code>(surjective):</p>
+<p>当映射的值域等于向量空间W，即称 $ T: V \mapsto W $ 为满射</p>
+<p><code>一对一映射</code>(bijective)：</p>
+<p>当一个映射同时是单射和满射时，称其为一对一映射</p>
+<p>还有几个需要了解的映射：压缩映射、膨胀映射和矩阵变换.</p>
+<p><label class="label-theorem">定理6：</label></p>
+<p>当V和W是两个向量空间，而 $ T: V \mapsto W $ 是一<code>线性变换</code>，我们有如下性质：</p>
+<ul>
+<li>若M是V的线性子空间，则T(M)是W的线性子空间</li>
+<li>若N是W的线性子空间，则线性反变换 $ T^{-1}(N) $ 是V的线性子空间</li>
+</ul>
+<h3 id="同构"><a class="markdownIt-Anchor" href="#同构"></a> 同构</h3>
+<p><code>同构</code>(isomorphic):</p>
+<p>两个具有相同结构的向量空间E和F称为同构，使用 <p> $$ E \cong F $$ </p></p>
+<p><code>同构映射</code>(isomorphism)：</p>
+<p>两个实「或复」内积空间E和F同构，如果存在一个一对一映射 $ T: E \mapsto F $ 保持向量内积不变，即</p>
+<p>$$ \langle Tx,Ty \rangle = \langle x,y \rangle \qquad  \forall x,y \in E $$</p>
+<p>则这样的映射T为向量空间的同构映射</p>
+
+            </div>
+
+            <!-- Post Comments -->
+            
+
+        </div>
+        <!-- Copyright 版权 start -->
+                <div id="copyright">
+            <ul>
+                <li>&copy;Powered By <a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/" style="border-bottom: none;">hexo</a></li>
+                <li>Design: <a target="_blank" rel="noopener" href="http://miccall.tech " style="border-bottom: none;">miccall</a></li>
+            </ul>
+        </div>
+    </div>
+    <script src="/js/prism.js"></script><!-- hexo-inject:begin --><!-- Begin: Injected MathJax -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({{ JSON.stringify(config) }});
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+      all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+</script>
+
+<script type="text/javascript" src="{{ src }}">
+</script>
+<!-- End: Injected MathJax -->
+<!-- hexo-inject:end -->
+</body>
+
+
+
+ 	
+</html>
